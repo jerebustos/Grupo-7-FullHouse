@@ -1,0 +1,22 @@
+{
+  "name": "trabajo-integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerebustos/grupo_7_proyecto_integrador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerebustos/grupo_7_proyecto_integrador/issues"
+  },
+  "homepage": "https://github.com/jerebustos/grupo_7_proyecto_integrador#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
