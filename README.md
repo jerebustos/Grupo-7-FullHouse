@@ -17,6 +17,13 @@ ___
 ___
 
 + ## __Referentes__
+
+     - [___Fravega___](https://www.fravega.com/)
+      
+        [![Captura-de-pantalla-2.png](https://i.postimg.cc/FRcHDHm7/Captura-de-pantalla-2.png)](https://postimg.cc/9Rm2fVDh)
+        ```
+
+        como muestra los productos y las ofertas en la home.
 ___
 
 
