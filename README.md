@@ -11,7 +11,8 @@ ___
 
 + ##  __Idea General__
     ```
-    Creacion de una e-commerce de venta de electrodomesticos para el hogar para nuestro cliente DH Venture Capitals
+    Creacion de una e-commerce de venta de electrodomesticos para el hogar
+    para nuestro cliente DH Venture Capitals
 
 ___
 
