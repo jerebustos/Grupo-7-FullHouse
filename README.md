@@ -1,6 +1,13 @@
 # FullHouse
 ___
 
++ ##  __Idea General__
+    ```
+    Creacion de una e-commerce de venta de electrodomesticos para el hogar
+    para nuestro cliente DH Venture Capitals
+
+___
+
 + ##  __Productos__
 ___
 
@@ -9,12 +16,6 @@ ___
 
 ___
 
-+ ##  __Idea General__
-    ```
-    Creacion de una e-commerce de venta de electrodomesticos para el hogar
-    para nuestro cliente DH Venture Capitals
-
-___
 
 + ## __Referentes__
 
