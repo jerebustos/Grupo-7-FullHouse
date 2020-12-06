@@ -32,7 +32,7 @@ ___
         
         como aparece en el home las opciones de que esta buscando el comprador, asi es mas organizado todo
 ___
-  
+        
         
  +  ## __Equipo__
 
@@ -49,8 +49,6 @@ ___
 
 
 
-        
-        
         ### Jorge David Iomini
 [![20160908-124331.jpg](https://i.postimg.cc/VsXdrvVZ/20160908-124331.jpg)](https://postimg.cc/yWYV21B0)
 
