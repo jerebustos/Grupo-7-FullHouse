@@ -50,13 +50,13 @@ ___
      - [___Rodo___](https://rodo.com.ar/)
      
         [![Screenshot (15).png](https://i.postimg.cc/hvkMdS3q/Screenshot-15.png)](https://postimg.cc/wRkhKdpW)
-        
+        ```
         como aparece en el home las opciones de que esta buscando el comprador, asi es mas organizado todo
 
-      - [___Necxus___](https://www.necxus.com.ar/)
+     - [___Necxus___](https://www.necxus.com.ar/)
 
         [![S.png](https://i.postimg.cc/Gp1MRqHh/S.png)](https://postimg.cc/pmqQYQfg)
-        [S.png](https://postimg.cc/pmqQYQfg)
+        
 
 ___
         
