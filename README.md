@@ -32,8 +32,6 @@ ___
         
         como aparece en el home las opciones de que esta buscando el comprador, asi es mas organizado todo
 ___
-
-
   
         
  +  ## __Equipo__
@@ -52,4 +50,11 @@ ___
 
 
         
-        
+        ### Jorge David Iomini
+
+[![20160908-124331.jpg](https://i.postimg.cc/VsXdrvVZ/20160908-124331.jpg)](https://postimg.cc/yWYV21B0)
+
+-    27 años
+-    soy chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
+-    Amante del hip-hop y de los animales.
+-    Fanatico del Boxeo!
