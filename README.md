@@ -2,9 +2,8 @@
 ___
 
 + ##  __Idea General__
-    ```
-    Creacion de una e-commerce de venta de electrodomesticos para el hogar
-    para nuestro cliente DH Venture Capitals
+    
+    #### Creacion de una e-commerce de venta de electrodomesticos para el hogar para nuestro cliente DH Venture Capitals
 
 ___
 
@@ -33,9 +32,8 @@ ___
 
 
 + ## __Publico Objetivo__
-    ```
-    Nuestro objetivo es llegar a un publico mayor de 18 años que pueda efectuar
-    cualquier tipo de compra relacionado con "Cocina,Gaming y Electronica".
+    
+   #### Nuestro objetivo es llegar a un publico mayor de 18 años que pueda efectuar cualquier tipo de compra relacionado con "Cocina,Gaming y Electronica".
    
 ___
 
@@ -85,7 +83,7 @@ ___
 
 
 ### Jorge David Iomini
-[![20160908-124331.jpg](https://i.postimg.cc/VsXdrvVZ/20160908-124331.jpg)](https://postimg.cc/yWYV21B0)
+[![20160908-124331.jpg](https://i.postimg.cc/FsZCmbsK/20160908-124331.jpg)](https://postimg.cc/1f8rrqFx)
 
 -     27 años
 -     soy chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
