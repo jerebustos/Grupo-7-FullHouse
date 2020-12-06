@@ -9,11 +9,32 @@ ___
 ___
 
 + ##  __Productos__
+    ```
+    Nuestra empresa se dedicara a la venta de insumos electronicos para el hogar y uso personal con las siguientes categorias:
+### Cocina
++ Heladeras
++ Freezer
++ Microondas
++ Cocinas
+### Gaming
++ Consolas
++ Laptops
++ Ordenadores
++ Joysticks/Teclados/Mouses
+
+### Electronica
++ Televisores
++ Celulares
++ Tablet
++ Proyectores
 ___
 
 
-+ ## __Publico Objetivo__
 
++ ## __Publico Objetivo__
+    ```
+    Nuestro objetivo es llegar a un publico mayor de 18 años que pueda efectuar cualquier tipo de compra relacionado con "Cocina,Gaming y Electronica".
+   
 ___
 
 
@@ -31,6 +52,9 @@ ___
         [![Screenshot (15).png](https://i.postimg.cc/hvkMdS3q/Screenshot-15.png)](https://postimg.cc/wRkhKdpW)
         
         como aparece en el home las opciones de que esta buscando el comprador, asi es mas organizado todo
+
+      - [___Necxus___](https://www.necxus.com.ar/)
+
 ___
         
         
