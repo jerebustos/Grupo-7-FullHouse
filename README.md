@@ -73,20 +73,28 @@ ___
 
 ### Jeremias Bustos
 
-[![82428882-10221289123522666-45356555452809216-n-2.jpg](https://i.postimg.cc/26gg6Hzh/82428882-10221289123522666-45356555452809216-n-2.jpg)](https://postimg.cc/bDHmV9Sw)
+[![82428882-10221289123522666-45356555452809216-n-3.jpg](https://i.postimg.cc/sgBVhgL5/82428882-10221289123522666-45356555452809216-n-3.jpg)](https://postimg.cc/21DRprr5)
 
 -     32 años
 -     Un programador en construccion viniendo del mundo de la gastronomia buscando nuevos rumbos. 
 -      Papa de victoria!  
 -      Fanatico de BOCA!
 
+[![55f4c04a-e18b-48c6-ad9e-5c092c2418ac.jpg](https://i.postimg.cc/nz5M2N12/55f4c04a-e18b-48c6-ad9e-5c092c2418ac.jpg)](https://postimg.cc/TLVRY7F5)
+
+-     18 años.
+-     Recien finalizado el secundario y completamente nuevo en el mundo de la programacion.
+-     Amante de la musica y aprender siempre a tocar nuevos instrumentos.
+-     Fanatico de Racing.
+
+
 
 
 ### Jorge David Iomini
-[![20160908-124331.jpg](https://i.postimg.cc/FsZCmbsK/20160908-124331.jpg)](https://postimg.cc/1f8rrqFx)
+[![20160908-124331.jpg](https://i.postimg.cc/1zq5L3cy/20160908-124331.jpg)](https://postimg.cc/GBbCDr5f)
 
 -     27 años
--     soy chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
+-     Un chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
 -     Amante del hip-hop y de los animales.
 -     Fanatico del Boxeo!
         
