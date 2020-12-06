@@ -9,31 +9,33 @@ ___
 ___
 
 + ##  __Productos__
-    ```
-    Nuestra empresa se dedicara a la venta de insumos electronicos para el hogar y uso personal con las siguientes categorias:
-### Cocina
-+ Heladeras
-+ Freezer
-+ Microondas
-+ Cocinas
-### Gaming
-+ Consolas
-+ Laptops
-+ Ordenadores
-+ Joysticks/Teclados/Mouses
+   
+   - ### Insumos electronicos para el hogar y uso personal:
+    
+      ### Cocina
+      + Heladeras
+      + Freezer
+      + Microondas
+      + Cocinas
+      ### Gaming
+      + Consolas
+      + Laptops
+      + Ordenadores
+      + Joysticks/Teclados/Mouses
 
-### Electronica
-+ Televisores
-+ Celulares
-+ Tablet
-+ Proyectores
+      ### Electronica
+      + Televisores
+      + Celulares
+      + Tablet
+      + Proyectores
 ___
 
 
 
 + ## __Publico Objetivo__
     ```
-    Nuestro objetivo es llegar a un publico mayor de 18 años que pueda efectuar cualquier tipo de compra relacionado con "Cocina,Gaming y Electronica".
+    Nuestro objetivo es llegar a un publico mayor de 18 años que pueda efectuar
+    cualquier tipo de compra relacionado con "Cocina,Gaming y Electronica".
    
 ___
 
@@ -56,7 +58,13 @@ ___
      - [___Necxus___](https://www.necxus.com.ar/)
 
         [![S.png](https://i.postimg.cc/Gp1MRqHh/S.png)](https://postimg.cc/pmqQYQfg)
+        ```
         
+        
+     - [___Garbarino___](https://www.garbarino.com)
+     [![Captura-de-pantalla-3.png](https://i.postimg.cc/ZYGqTZgn/Captura-de-pantalla-3.png)](https://postimg.cc/hh0nsFKR)
+        ```
+        registro sencillo y rapido
 
 ___
         
