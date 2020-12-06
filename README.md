@@ -25,6 +25,12 @@ ___
         ```
 
         como muestra los productos y las ofertas en la home.
+        
+     - [___Rodo___](https://rodo.com.ar/)
+     
+        [![Screenshot (15).png](https://i.postimg.cc/hvkMdS3q/Screenshot-15.png)](https://postimg.cc/wRkhKdpW)
+        
+        como aparece en el home las opciones de que esta buscando el comprador, asi es mas organizado todo
 ___
 
 
