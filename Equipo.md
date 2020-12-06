@@ -10,3 +10,12 @@
 -     Un programador en construccion viniendo del mundo de la gastronomia buscando nuevos rumbos. 
 -      Papa de victoria!  
 -      Fanatico de BOCA!
+
+### Juan Ignacio Santoro
+
+[![55f4c04a-e18b-48c6-ad9e-5c092c2418ac.jpg](https://i.postimg.cc/nz5M2N12/55f4c04a-e18b-48c6-ad9e-5c092c2418ac.jpg)](https://postimg.cc/TLVRY7F5)
+
+-     18 años.
+-     Recien finalizado el secundario y completamente nuevo en el mundo de la programacion.
+-     Amante de la musica y aprender siempre a tocar nuevos instrumentos.
+-     Fanatico de Racing.
