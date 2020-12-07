@@ -4,7 +4,7 @@
 
 ### Jeremias Bustos
 
-[![82428882-10221289123522666-45356555452809216-n-2.jpg](https://i.postimg.cc/26gg6Hzh/82428882-10221289123522666-45356555452809216-n-2.jpg)](https://postimg.cc/bDHmV9Sw)
+[![82428882-10221289123522666-45356555452809216-n-3.jpg](https://i.postimg.cc/sgBVhgL5/82428882-10221289123522666-45356555452809216-n-3.jpg)](https://postimg.cc/21DRprr5)
 
 -     32 años
 -     Un programador en construccion viniendo del mundo de la gastronomia buscando nuevos rumbos. 
@@ -24,7 +24,7 @@
 
 ### Jorge David Iomini
 
-[![20160908-124331.jpg](https://i.postimg.cc/VsXdrvVZ/20160908-124331.jpg)](https://postimg.cc/yWYV21B0)
+[![20160908-124331.jpg](https://i.postimg.cc/1zq5L3cy/20160908-124331.jpg)](https://postimg.cc/GBbCDr5f)
 
 -     27 años
 -     soy chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.

@@ -5,5 +5,12 @@
         3. ![#247ba0](https://via.placeholder.com/15/247ba0/000000?text=+) `#247ba0`
         4. ![#3887A9](https://via.placeholder.com/15/3887A9/000000?text=+) `#3887A9`
         5. ![#4A92B1](https://via.placeholder.com/15/4A92B1/000000?text=+) `#4A92B1`
+        
+El azul es el color del cielo y del agua, y representa la tranquilidad, la frescura y la inteligencia. 
+
+En el mundo del marketing se emplea en muchos logotipos como Facebook o Twitter. 
+
+Es un color elegante y corporativo, uno de los más usados por las empresas. Transmite confianza y pureza.
+
    
   
