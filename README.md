@@ -56,7 +56,8 @@ ___
      - [___Necxus___](https://www.necxus.com.ar/)
 
         [![S.png](https://i.postimg.cc/Gp1MRqHh/S.png)](https://postimg.cc/pmqQYQfg)
-        
+        ```
+        me gusto mucho la forma dinamica en el que va cambiando el banner
 
 ___
         
