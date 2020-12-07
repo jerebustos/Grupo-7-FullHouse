@@ -97,7 +97,8 @@ ___
 [![20160908-124331.jpg](https://i.postimg.cc/1zq5L3cy/20160908-124331.jpg)](https://postimg.cc/GBbCDr5f)
 
 -     27 años
--     Un chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
+-     Un chofer de media distancia, y me gustaria poder cambiar mi rumbo laboral, me gusta mucho la programacion, 
+      aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
 -     Amante del hip-hop y de los animales.
 -     Fanatico del Boxeo!
         
