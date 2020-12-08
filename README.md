@@ -49,9 +49,9 @@ ___
         
      - [___Rodo___](https://rodo.com.ar/)
      
-        [![Screenshot (15).png](https://i.postimg.cc/hvkMdS3q/Screenshot-15.png)](https://postimg.cc/wRkhKdpW)
+        [![Screenshot (15).png](https://i.postimg.cc/mD1xSW1V/Screenshot-16.png)](https://postimg.cc/gXpBY5D6)
         ```
-        como aparece en el home las opciones de que esta buscando el comprador, asi es mas organizado todo
+        realizar asi el carrito de compra, es sencillo y entendible.
 
      - [___Necxus___](https://www.necxus.com.ar/)
 
