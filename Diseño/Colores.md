@@ -1,16 +1,12 @@
 + ## _Paleta de colores_
-    - __Basado en la siguiente:__ [___Link___](https://coolors.co/1d3461-1f487e-247ba0-3887a9-4a92b1)
-        1. ![#1d3461](https://via.placeholder.com/15/1d3461/000000?text=+) `#1d3461`
-        2. ![#1F487E](https://via.placeholder.com/15/1F487E/000000?text=+) `#1F487E`
-        3. ![#247ba0](https://via.placeholder.com/15/247ba0/000000?text=+) `#247ba0`
-        4. ![#3887A9](https://via.placeholder.com/15/3887A9/000000?text=+) `#3887A9`
-        5. ![#4A92B1](https://via.placeholder.com/15/4A92B1/000000?text=+) `#4A92B1`
+    - __Basado en la siguiente:__ [___Link___](https://coolors.co/4f000b-720026-ce4257-ff7f51-ff9b54)
+        1. ![#4F000B](https://via.placeholder.com/15/4F000B/000000?text=+) `#4F000B`
+        2. ![#720026](https://via.placeholder.com/15/720026/000000?text=+) `#720026`
+        3. ![#CE4257](https://via.placeholder.com/15/CE4257/000000?text=+) `#CE4257`
+        4. ![#FF7F51](https://via.placeholder.com/15/FF7F51/000000?text=+) `#FF7F51`
+        5. ![#FF9B54](https://via.placeholder.com/15/FF9B54/000000?text=+) `#FF9B54`
         
-El azul es el color del cielo y del agua, y representa la tranquilidad, la frescura y la inteligencia. 
-
-En el mundo del marketing se emplea en muchos logotipos como Facebook o Twitter. 
-
-Es un color elegante y corporativo, uno de los más usados por las empresas. Transmite confianza y pureza.
+### Agregar una descripcion de los colores elegidos 
 
    
   
