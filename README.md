@@ -64,6 +64,7 @@ ___
        [![Captura-de-pantalla-3.png](https://i.postimg.cc/ZYGqTZgn/Captura-de-pantalla-3.png)](https://postimg.cc/hh0nsFKR)
        ```
        registro sencillo y rapido
+       
 
 ___
         
