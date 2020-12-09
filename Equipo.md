@@ -1,6 +1,6 @@
 # Equipo
 
-[![grupo-7.jpg](https://i.postimg.cc/TPDNjNpT/grupo-7.jpg)](https://postimg.cc/QBjqhbQz)
+![](https://media.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif)
 
 ### Jeremias Bustos
 
