@@ -77,4 +77,4 @@ ___
 
 [***TipoGrafia***](Diseño/tipografia.md)
 
-[***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
+
