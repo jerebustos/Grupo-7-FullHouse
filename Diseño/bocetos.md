@@ -10,8 +10,8 @@ ___
 
 [***Equipo***](Equipo.md)
 
-[***Paleta de Colores***](Diseño/Colores.md)
+[***Paleta de Colores***](Colores.md)
 
-[***TipoGrafia***](Diseño/tipografia.md)
+[***TipoGrafia***](tipografia.md)
 
 [***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
