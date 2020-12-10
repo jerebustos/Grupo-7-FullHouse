@@ -1,9 +1,14 @@
-aca van los wireframe
+# Wireframe
+- [___Home Cel___](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/home%20cel.png)
++ ![homeCel](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/home%20cel.png)
+   ```
+   
+   version de home para celulares
 
-
-
-
-## __Otros enlaces__
+___
+   
+   
+ ## __Otros enlaces__
 ___
         
         
