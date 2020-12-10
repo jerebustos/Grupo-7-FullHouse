@@ -71,3 +71,10 @@ ___
 
 [***Equipo***](Equipo.md)
 
+[***Bocetos***](Diseño/bocetos.md)
+
+[***Paleta de Colores***](Diseño/Colores.md)
+
+[***TipoGrafia***](Diseño/tipografia.md)
+
+[***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
