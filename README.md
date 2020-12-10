@@ -44,13 +44,13 @@ ___
         [![Captura-de-pantalla-2.png](https://i.postimg.cc/FRcHDHm7/Captura-de-pantalla-2.png)](https://postimg.cc/9Rm2fVDh)
         ```
 
-        como muestra las categorias y las ofertas en la home.
+        Como muestra las categorias y las ofertas en la home.
         
      - [___Rodo___](https://rodo.com.ar/)
      
         [![Screenshot (15).png](https://i.postimg.cc/mD1xSW1V/Screenshot-16.png)](https://postimg.cc/gXpBY5D6)
         ```
-        realizar asi el carrito de compra, es sencillo y entendible.
+        Realizar asi el carrito de compra, es sencillo y entendible.
 
      - [___Necxus___](https://www.necxus.com.ar/)
 
@@ -62,7 +62,12 @@ ___
      
        [![Captura-de-pantalla-3.png](https://i.postimg.cc/ZYGqTZgn/Captura-de-pantalla-3.png)](https://postimg.cc/hh0nsFKR)
        ```
-       registro sencillo y rapido
+       Registro sencillo y rapido
+       
+     - [___Musimundo___](https://www.musimundo.com/electrohogar/heladeras/heladera-cycle-defrost-standard-electric-ste-2f1600b-blanco/p/00240151)
+       ![](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Dise%C3%B1o/imagenes/musimundo.png)
+       ```
+       Como resalta los botones 
        
 ## __Otros enlaces__
 ___
