@@ -5,5 +5,20 @@
         
 ### Agregar una descripcion de los colores elegidos 
 
+
+
+## __Otros enlaces__
+___
+        
+        
+
+[***Equipo***](Equipo.md)
+
+[***Bocetos***](Diseño/bocetos.md)
+
+[***TipoGrafia***](Diseño/tipografia.md)
+
+[***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
+
    
   
