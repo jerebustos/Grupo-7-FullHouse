@@ -31,7 +31,7 @@ ___
 + ## __Publico Objetivo__
     
    #### Genero : Masculino, Femenino
-   #### Edad : 18 años a 55 años
+   #### Edad : 25 años a 55 años
    #### Poder adquisitivo : Clase media , Clase media alta y clase alta
    
 ___
