@@ -31,3 +31,15 @@
       aunque deberia encontrar la manera de dedicarle mas tiempo aun para un mejor aprendizaje.
 -     Amante del hip-hop y de los animales.
 -     Fanatico del Boxeo!
+
+## __Otros enlaces__
+___
+        
+
+[***Bocetos***](Diseño/bocetos.md)
+
+[***Paleta de Colores***](Diseño/Colores.md)
+
+[***TipoGrafia***](Diseño/tipografia.md)
+
+[***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
