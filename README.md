@@ -44,7 +44,7 @@ ___
         [![Captura-de-pantalla-2.png](https://i.postimg.cc/FRcHDHm7/Captura-de-pantalla-2.png)](https://postimg.cc/9Rm2fVDh)
         ```
 
-        como muestra los productos y las ofertas en la home.
+        como muestra las categorias y las ofertas en la home.
         
      - [___Rodo___](https://rodo.com.ar/)
      
@@ -56,7 +56,7 @@ ___
 
         [![S.png](https://i.postimg.cc/Gp1MRqHh/S.png)](https://postimg.cc/pmqQYQfg)
         ```
-        me gusto mucho la forma dinamica en el que va cambiando el banner
+        Logo sencillo 
         
      - [___Garbarino___](https://www.garbarino.com)
      
