@@ -14,9 +14,9 @@ ___
 
 [***Equipo***](Equipo.md)
 
-[***Bocetos***](Diseño/bocetos.md)
+[***Bocetos***](bocetos.md)
 
-[***TipoGrafia***](Diseño/tipografia.md)
+[***TipoGrafia***](tipografia.md)
 
 [***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
 
