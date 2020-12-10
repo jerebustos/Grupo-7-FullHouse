@@ -11,9 +11,11 @@
     - Logeate con tu cuenta de gmail, facebook o cuenta con la empresa
 
 
+ - [    Home   ](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/FullHouse%20Home.png)
+ ![    Home   ](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/FullHouse%20Home.png)
 
-___
-   
+    - Home del sitio web FullHouse, en el cual encontraremos el carrito de compras, inicio de sesion, registro, carrusel de imagenes, ofertas de la semana y ofertas del dia!.
+    ___
    
  ## __Otros enlaces__
 ___
