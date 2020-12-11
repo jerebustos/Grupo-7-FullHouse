@@ -21,8 +21,8 @@
 
     - A la izquierda los productos agregados al carrito y a la derecha el total de lo que hay que pagar y para finalizar la compra.
     
-   - [    Detalle del Porducto   ]
-   ![    Detalle del Producto   ]
+   - [    Detalle del Porducto   ](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/Detalle%20del%20pruducto.%202.png)
+   ![    Detalle del Producto   ](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/Detalle%20del%20pruducto.%202.png)
    
      - Detalle donde te dice que es el producto, como por ejemplo el origen del producto, el tamaño y muchas cosas mas.
     ___
