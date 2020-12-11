@@ -16,8 +16,15 @@
    
     - Logeate con tu cuenta de gmail, facebook o cuenta con la empresa
 
+  - [    Carrito de Compras   ](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/Carrito%20de%20Compra.%202.png)
+  ![    Carrito de Compras   ](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/wireframe/Carrito%20de%20Compra.%202.png)
 
-
+    - A la izquierda los productos agregados al carrito y a la derecha el total de lo que hay que pagar y para finalizar la compra.
+    
+   - [    Detalle del Porducto   ]
+   ![    Detalle del Producto   ]
+   
+     - Detalle donde te dice que es el producto, como por ejemplo el origen del producto, el tamaño y muchas cosas mas.
     ___
    
  ## __Otros enlaces__
