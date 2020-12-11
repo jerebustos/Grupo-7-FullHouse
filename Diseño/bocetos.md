@@ -32,7 +32,7 @@ ___
         
         
 
-[***Equipo***](Equipo.md)
+[***Equipo***](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Equipo.md)
 
 [***Paleta de Colores***](Colores.md)
 
