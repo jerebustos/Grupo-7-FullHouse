@@ -48,8 +48,8 @@ ___
         
      - [___Rodo___](https://rodo.com.ar/)
      
-        [![Screenshot (15).png](https://i.postimg.cc/mD1xSW1V/Screenshot-16.png)](https://postimg.cc/gXpBY5D6)
-        ```
+        [![rodo-fullhouse.png](https://i.postimg.cc/nrkDy1Kd/rodo-fullhouse.png)](https://postimg.cc/2L1yvhKv)
+        
         Realizar asi el carrito de compra, es sencillo y entendible.
 
      - [___Necxus___](https://www.necxus.com.ar/)
