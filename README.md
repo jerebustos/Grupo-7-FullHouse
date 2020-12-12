@@ -49,7 +49,7 @@ ___
      - [___Rodo___](https://rodo.com.ar/)
      
         [![rodo-fullhouse.png](https://i.postimg.cc/nrkDy1Kd/rodo-fullhouse.png)](https://postimg.cc/2L1yvhKv)
-        
+        ```
         Realizar asi el carrito de compra, es sencillo y entendible.
 
      - [___Necxus___](https://www.necxus.com.ar/)
