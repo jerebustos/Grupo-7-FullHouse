@@ -42,4 +42,7 @@ ___
 
 [***TipoGrafia***](Diseño/tipografia.md)
 
+[***Logotipos***](Diseño/Logotipos.md)
+
+
 [***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)

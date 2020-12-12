@@ -82,4 +82,5 @@ ___
 
 [***TipoGrafia***](Diseño/tipografia.md)
 
+[***Logotipos***](Diseño/Logotipos.md)
 
