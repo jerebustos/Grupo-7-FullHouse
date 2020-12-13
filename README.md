@@ -1,4 +1,4 @@
-# FullHouse
+![](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Dise%C3%B1o/Logotipos/Imagenes/FullhouseV7.png)
 ___
 
 + ##  __Idea General__
