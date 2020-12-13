@@ -15,3 +15,19 @@
 
 </center>
 
+
+
+## __Otros enlaces__
+___
+
+
+[***Equipo***](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Equipo.md)
+
+[***Bocetos***](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Dise%C3%B1o/bocetos.md)
+
+[***Paleta de Colores***](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Dise%C3%B1o/Colores.md)
+
+[***TipoGrafia***](https://github.com/jerebustos/Grupo-7-FullHouse/blob/master/Dise%C3%B1o/tipografia.md)
+
+[***Volver***](https://github.com/jerebustos/Grupo-7-FullHouse)
+
