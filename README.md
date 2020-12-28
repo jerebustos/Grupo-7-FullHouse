@@ -72,6 +72,8 @@ ___
 ## __Otros enlaces__
 ___
         
+
+[***Tablero de Trabajo***](https://trello.com/b/qqokXi3O/fullhouse)
         
 
 [***Equipo***](Equipo.md)
