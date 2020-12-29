@@ -75,6 +75,7 @@ ___
 
 [***Tablero de Trabajo***](https://trello.com/b/qqokXi3O/fullhouse)
         
+[***Retrospectiva***](retro.md)
 
 [***Equipo***](Equipo.md)
 
