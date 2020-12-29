@@ -1,11 +1,11 @@
-#Retrospectiva
+# Retrospectiva
 ___
 
 
 1.**Comenza hacer:**
 Tener reuniones de equipo semanales por Discord
 
-2.**Hacer mas: **
+2.**Hacer mas:**
 Comunicarnos más en equipo.
 
 3.**Continuar haciendo:**
