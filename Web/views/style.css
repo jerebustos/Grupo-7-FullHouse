@@ -1,0 +1,118 @@
+body{
+    background: #ff9b54;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0px;
+
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+
+}
+p{
+    margin-bottom: 1.6em;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header{
+    background: #ff7f51;
+    color: black;
+    padding: 2rem 0;
+
+    /* cabezera fija */
+    position: fixed;
+    left:0 ;
+    top: 0;
+    right: 0;}
+    .header a{
+        color:black;
+        text-decoration:none ;
+     }
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    letter-spacing: 5px;
+    font-size: 1.2em;
+}
+.menu-icon{
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navigation ul li {
+        display: inline-block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 1rem 1.3rem;
+        transition: all 0.4s linear;
+        border-radius: 20px;
+    }
+    .navigation ul li a:hover{
+        background: #ff9b54;
+    }
+
+    .main{
+        padding-top: 10rem;
+    }
+    .footer {
+    background:#ff7f51 ;
+    text-align: center;
+    padding: 0.4rem;
+        margin: 0 auto;
+}
+
+@media only screen and (max-width:767px){
+    
+.menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+
+}
+    .navigation{
+        width: 100%;
+        margin: 1rem;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1.3rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navigation ul li a:hover{
+        background: #ff9b54;
+    }
+
+    .main{
+        padding-top: 10rem;
+
+        }
+    }
