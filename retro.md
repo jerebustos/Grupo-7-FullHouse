@@ -1,6 +1,7 @@
-# Retrospectiva
+# Retrospectiva 
 ___
-
+## Sprint n°1
+___
 
 1.**Comenza hacer:**
 Tener reuniones de equipo semanales por Discord
