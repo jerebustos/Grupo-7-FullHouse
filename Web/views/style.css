@@ -139,6 +139,49 @@ opacity: 1;
     .main{
         padding-top: 10rem;
     }
+
+    .buscar{
+        position: fixed;
+        padding: 5px;
+        top: 0;
+
+    }
+    .buscar input{
+        width: 0px;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: black;
+        outline:none;      
+        border: 1px solid silver;
+        border-radius: 30px;
+        transition: all 0.5s ease;
+       
+    }
+    
+    .btn{
+        position: absolute;
+        top:0;
+        right: 0;
+        background: #ff7f51;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .buscar:hover input{
+        width: 240px;
+
+    }
+
+    .buscar input:focus{
+        width: 240px;
+    }
+
     .footer {
     background:#ff7f51 ;
     text-align: center;
