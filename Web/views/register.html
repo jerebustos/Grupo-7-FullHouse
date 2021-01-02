@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Registro</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="#" class="logo"><img src="images/FullhouseV7.png"> </a>        
+        </div>
+
+    </header>
+    <main class="register">
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Nombre y apellido">
+            <input type="text" name="user" placeholder="Nombre de usuario">
+            <input type="email" name="email" placeholder="E-mail">
+            <br>
+            <label for="birth_date">Fecha de nacimiento</label>
+            <br>
+            <input type="date" name="birth_date" id="birth_date">
+            <br>
+            <input type="text" name="addres" placeholder="Domicilio">
+            <br>
+            <label for="Nacionalidad">Nacionalidad</label>
+            <select name="Nacionalidad" id="Nacionalidad">
+                
+                <option value="Argentina">Argentina</option>
+                <option value="Brasilera">Brasilera</option>
+                <option value="Chilena">Chilena</option>
+                <option value="Uruguaya">Uruguaya</option>
+                <option value="Paraguaya">Paraguaya</option>
+
+            </select>
+            <br>
+            <br>
+           
+            <h4>Elegí tu foto de usuario</h4>
+            <input type="file" name="avatar">
+            <br>
+            <br>
+            <input type="password" name="pass" placeholder="Elegí tu contraseña">
+            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <br>
+            <br>
+        </form>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
