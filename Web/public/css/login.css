@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background: #ff7f51;
+    color: black;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+   
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #dadada;
+    
+}
+
+.login input,
+.register input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: black 1px solid;
+}
+
+.login input[type='submit'],
+.register input[type='submit']{
+    color: #FFF;
+    background-color: #00C0FF;  
+    border-radius: 5px;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #00C0FF;
+}
+
+footer{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    border-top: #96989A solid 1px;
+}
