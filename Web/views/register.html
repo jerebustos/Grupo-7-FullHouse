@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Registro</title>
 </head>
 <body>
     <header class="header">
         <div class="container logo-nav-container">
-            <a href="#" class="logo"><img src="images/FullhouseV7.png"> </a>        
-        </div>
-
+        <a href="/" class="logo"><img src="images/FullhouseV7.png"> </a>        
+        <span class="menu-icon">ver menu</span>
+        <nav class="navigation">
+            <ul>
+           <li><a href="/login">Logeate</a></li>
+           <li><a href="/register">Registrarse</a></li>
+           <li><button><a href="/productCart"><i class="fas fa-shopping-cart"></i></a></button></li>
+        </ul>
+        </nav>
+    </div>
+    
+      
     </header>
+
     <main class="register">
         <form action="/" method="POST">
+            
             <input type="text" name="name" placeholder="Nombre y apellido">
             <input type="text" name="user" placeholder="Nombre de usuario">
             <input type="email" name="email" placeholder="E-mail">
@@ -53,6 +67,9 @@
         </form>
     </main>
     <footer>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
     </footer>
 </body>
 </html>
