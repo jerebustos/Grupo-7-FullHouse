@@ -2,7 +2,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background: #dadada;
+    background: snow;
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 1.2rem;
@@ -21,10 +21,9 @@ p{
 }
 
 .container{
-    width: 85%;
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    display: inline-block;
+    
     
 }
 
@@ -36,7 +35,7 @@ p{
 
 ul.slider{
     position: relative;
-    width: 800px;   
+    width: 100%;   
     height: 300px;
 }
 
@@ -45,12 +44,15 @@ ul.slider li{
     left: 0px;
     top: 0px;
     opacity: 0;
-    width: 600px;
+    width: 100%;
     height: 300px;
     background-color: #dadada;
     transition: opacity .5s;
 }
 ul.slider li img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width:40rem;
     height: 300px;
     object-fit: cover;
@@ -82,10 +84,39 @@ opacity: 1;
     border-radius: 100%;
 }
 
+
+.ofertas{
+    width: 100%;
+}
+
+.ofertas ul li{       
+    display: inline-block;
+    border: 1px solid black;
+    padding: 12px;
+    
+}
+.ofertas h1 {
+    position: relative;
+    text-align: center;
+    top: 1.6rem;
+}
+.listaoferta{
+    padding: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+}
+
+
+
 .header{
-    background: #ff7f51;
+    background:snow;
     color: black;
     padding: 2rem 0;
+    box-shadow: slategrey 5px 10px;
+    justify-content: center;
     
 
     /* cabezera fija */
@@ -118,6 +149,11 @@ opacity: 1;
 .menu-icon{
     display: none;
 }
+.menu-icon:hover .navigation ul {
+
+    display: block;
+    
+}
 
 .navigation ul{
     margin: 0;
@@ -137,7 +173,7 @@ opacity: 1;
         border-radius: 20px;
         
     }
-.navigation ul li button{
+    .navigation ul li button{
     background:#ff7f51 ;
     border: 0;
     margin-left: 2rem;
@@ -147,7 +183,7 @@ opacity: 1;
         background: #ff9b54;
     }
     .listaoferta li:hover{
-        background: #ff9b54;
+        background: #ff7f51;
         
     }
 
@@ -245,17 +281,4 @@ opacity: 1;
         }
     }
 
-    .ofertas ul li{
-        
-        position: relative;
-        display: inline-block;
-        left:15rem;
-        right: auto;
-        border: 1px solid black;
-        padding: 12px;
-    }
-    .ofertas h1 {
-        position: relative;
-        text-align: center;
-        top: 1.6rem;
-    }
+    
