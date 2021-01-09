@@ -2,8 +2,13 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
+<<<<<<< HEAD
     background: snow;
+=======
+    
+>>>>>>> b73c10deb1cd232233d7c58b241ee4f3dc51cbf0
     font-family: 'Roboto', sans-serif;
+    background-color: #dadada;
     color: black;
     font-size: 1.2rem;
     line-height: 1.6em;
@@ -188,6 +193,7 @@ opacity: 1;
     }
 
     .main{
+        background: #dadada
         padding-top: 10rem;
     }
 
@@ -235,7 +241,7 @@ opacity: 1;
     }
 
     .footer {
-    background:#ff7f51 ;
+    background-color: white;  
     text-align: center;
     padding: 0.5rem;
         margin:0px;
