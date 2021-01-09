@@ -24,19 +24,20 @@
     
  }
 
- .logo-nav-container{
+ /*.logo-nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     
-}
+}*/
 .logo {
-    left: 300px;
+    top:15px;
+    left: 20rem;
     letter-spacing: 5px;
     font-size: 1.2em;
     /* justify-content: center; */
-    position: relative;
+    position: absolute;
 }
 
 .menu-icon{
@@ -49,6 +50,8 @@
 }
 
 .navigation ul{
+    position: relative;
+    left: 93rem;
     margin: 0;
     padding:0px;
     list-style: none;
@@ -57,6 +60,7 @@
 
     .navigation ul li {
         display: inline-block;
+      
        
     }
     .navigation ul li a {
@@ -67,7 +71,7 @@
         
     }
     .navigation ul li button{
-    background:snow ;
+    background:none ;
     border: 0;
     margin-left: 2rem;
 }
