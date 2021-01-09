@@ -1,0 +1,13 @@
+#footer{
+    background: gray;
+    width: 100%;
+    height: auto;
+}
+#pie-footer{
+    background: black;
+    width: 100%;
+    height: auto;
+}
+.titulo-footer{
+    color: white;
+}
