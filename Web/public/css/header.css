@@ -1,0 +1,115 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background:snow;
+    color: black;
+    padding: 2rem 0;
+    
+       /* cabezera fija */
+    position: fixed;
+    left:0px ;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+   }
+
+.header a{
+    color:black;
+    text-decoration:none ;
+    
+ }
+
+ .logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.logo {
+    left: 300px;
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    /* justify-content: center; */
+    position: relative;
+}
+
+.menu-icon{
+    display: none;
+}
+.menu-icon:hover .navigation {
+
+    
+    
+}
+
+.navigation ul{
+    margin: 0;
+    padding:0px;
+    list-style: none;
+    
+}
+
+    .navigation ul li {
+        display: inline-block;
+       
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 1rem 1.6rem;
+        transition: all 0.4s linear;
+        border-radius: 20px;
+        
+    }
+    .navigation ul li button{
+    background:snow ;
+    border: 0;
+    margin-left: 2rem;
+}
+
+    .navigation ul li a:hover{
+        background: #ff9b54;
+    }
+
+
+    .btn{
+        position: absolute;
+        top:0;
+        right: -9px;
+        background: #ff7f51;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    .buscar input{
+        width: 0px;
+        height: 40px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: black;
+        outline:none;      
+        border: 1px solid #dadada;
+        border-radius: 30px;
+        transition: all 0.5s ease;
+       
+    }
+    .buscar:hover input{
+        width: 240px;
+
+    }
+
+    .buscar input:focus{
+        width: 240px;
+    }
