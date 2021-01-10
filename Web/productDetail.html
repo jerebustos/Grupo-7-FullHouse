@@ -5,35 +5,46 @@
     <meta name="viewport" content="width=device-width">
     <title>Smart-Tek Kitchen</title>
     
-    <link href="css/productoDetail.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    
-
+    <link href="css/producto.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header class="header">
-        <div class="logo-nav-container">
-        <a href="/" class="logo"><img src="images/FullhouseV7.png"> </a>        
-        <span class="menu-icon">ver menu</span>
-        <nav class="navigation">
-            <ul>
-           <li><a  href="/login">Logeate</a></li>
-           <li><a  href="/register">Registrarse</a></li>
-           <li><button><a href="/productCart"><i class="fas fa-shopping-cart"></i></a></button></li>
-          
-        </ul>
-        </nav>
-    </div>
-    <div class="buscar">
-        <input type="text" placeholder="buscar"required>
-        <div class="btn">
-            <i class="fas fa-search icon"></i>
+  
+<body>
+
+   
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="/img/FullhouseV7.png">
+                
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="/"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="/login"> <i class="fas fa-user"></i></i>Logeate</a></li>
+                        <li class="menu-selected"><a href="/register" class="text-menu-selected"> 
+                            <i class="fas fa-file-alt"></i>Registrate</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
         </div>
-    </div>
-      
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
     </header>
+
     <div class="contenedor">
       <div class="poducto">
        <img class="imagen"      src="https://d34zlyc2cp9zm7.cloudfront.net/products/8b4ee385a850cd2ae2e16f74d9a332d5e27aa3ac17e9535ce6793b53646de69c.webp_500" alt="Batidora">
