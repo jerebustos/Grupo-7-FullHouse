@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    padding-top: 85px;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 192, 255, .6);
+
+    
+}
+form{
+    background-color: rgba(250, 255, 255, .75);
+    padding:32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 32px;
+    padding:0px 8px;
+    border-radius: 36px;
+    margin-top: 16px;
+    transition: all .3s ease-in-out;
+}
+
+input:focus{
+background-color: #FF9B54;
+color: snow;
+}

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>FullHouse</title>
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="/Fullhouse/img/FullHouse-Icono.ico">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 </head>
@@ -28,9 +30,9 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#"> <i class="fas fa-home"></i> Inicio</a></li>
-                        <li><a href="#"> <i class="fas fa-user"></i></i>Logeate</a></li>
-                        <li class="menu-selected"><a href="#" class="text-menu-selected"> 
+                        <li><a href="/"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="/login"> <i class="fas fa-user"></i></i>Logeate</a></li>
+                        <li class="menu-selected"><a href="/register" class="text-menu-selected"> 
                             <i class="fas fa-file-alt"></i>Registrate</a></li>
                     </ul>
                 </nav>
@@ -44,10 +46,11 @@
         </div>
 
     </header>
+    
+    <main class="main">
+<!--Portada-->
 
-    <!--Portada-->
-
-    <div class="container-all" id="move-content">
+<div class="container-all" id="move-content">
 
     
     <div class="container-cover">
@@ -56,35 +59,32 @@
             <p>Venta de articulos para tu cocina !</p>
         </div>
     </div>
-
-    <main class="main">
-
-        
+        </div>
 
     </main>
 
-    <div class="container-footer">	
+    <footer class="container-footer">
+            
+        <div class="logo-footer">
+            <img src="img/FullHouse-Icono.ico" alt="">
+        </div>
 
-        <footer>
-            <div class="logo-footer">
-                <img src="img/FullHouse-Icono.ico" alt="">
-            </div>
+        <div class="redes-footer">
+            <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+            <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+        </div>
 
-            <div class="redes-footer">
-                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-            </div>
+        <hr>
+        <h4>© 2021 Equipo7 - Todos los Derechos Reservados</h4>
 
-            <hr>
-            <h4>© 2021 Equipo7 - Todos los Derechos Reservados</h4>
+    </footer>
 
-        </footer>
+    
 
-    </div>
 
-</div>
-
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>
