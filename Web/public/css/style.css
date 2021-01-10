@@ -2,13 +2,8 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-<<<<<<< HEAD
     background: snow;
-=======
-    
->>>>>>> b73c10deb1cd232233d7c58b241ee4f3dc51cbf0
     font-family: 'Roboto', sans-serif;
-    background-color: #dadada;
     color: black;
     font-size: 1.2rem;
     line-height: 1.6em;
@@ -19,6 +14,9 @@ body{
 h1{
     font-size: 2rem;
     line-height: 1.3em;
+    top: 10rem;
+    position: absolute;
+    left: 47rem;
 
 }
 p{
@@ -36,12 +34,17 @@ p{
     list-style: none;
     margin: 0px;    
     padding: 0px;
+    position: relative;
+    top: 13.5rem;
 }
+
 
 ul.slider{
     position: relative;
     width: 100%;   
     height: 300px;
+    top: 13rem;
+    z-index: 0;
 }
 
 ul.slider li{
@@ -110,90 +113,14 @@ opacity: 1;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    
-
-}
-
-
-
-.header{
-    background:snow;
-    color: black;
-    padding: 2rem 0;
-    box-shadow: slategrey 5px 10px;
-    justify-content: center;
-    
-
-    /* cabezera fija */
-    position: fixed;
-    left:0px ;
-    top: 0px;
-    right: 0px;
-}
-
-    .header a{
-        color:black;
-        text-decoration:none ;
-        
-     }
-
-.logo-nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-.logo{
-    letter-spacing: 5px;
-    font-size: 1.2em;
-    
-}
-
-
-.menu-icon{
-    display: none;
-}
-.menu-icon:hover .navigation ul {
-
-    display: block;
-    
-}
-
-.navigation ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    
-}
-
-    .navigation ul li {
-        display: inline-block;
-       
     }
-    .navigation ul li a {
-        display: block;
-        padding: 1rem 1.6rem;
-        transition: all 0.4s linear;
-        border-radius: 20px;
-        
-    }
-    .navigation ul li button{
-    background:#ff7f51 ;
-    border: 0;
-    margin-left: 2rem;
-}
 
-    .navigation ul li a:hover{
-        background: #ff9b54;
-    }
     .listaoferta li:hover{
         background: #ff7f51;
         
     }
 
     .main{
-        background: #dadada
         padding-top: 10rem;
     }
 
@@ -204,44 +131,8 @@ opacity: 1;
         left: 0rem;
 
     }
-    .buscar input{
-        width: 0px;
-        height: 40px;
-        padding: 0 20px;
-        font-size: 18px;
-        color: black;
-        outline:none;      
-        border: 1px solid #dadada;
-        border-radius: 30px;
-        transition: all 0.5s ease;
-       
-    }
-    
-    .btn{
-        position: absolute;
-        top:0;
-        right: 0;
-        background: #ff7f51;
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .buscar:hover input{
-        width: 240px;
-
-    }
-
-    .buscar input:focus{
-        width: 240px;
-    }
-
     .footer {
-    background-color: white;  
+    background:#ff7f51 ;
     text-align: center;
     padding: 0.5rem;
         margin:0px;
