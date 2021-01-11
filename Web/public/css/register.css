@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 main{
@@ -15,6 +16,11 @@ main{
     background: rgba(0, 192, 255, .6);
 
     
+}
+
+.formulario{
+    background: #fff;
+    margin: 5%;
 }
 form{
     background-color: rgba(250, 255, 255, .75);
@@ -32,6 +38,7 @@ input{
     font-size: 32px;
     padding:0px 8px;
     border-radius: 36px;
+    border: black 1px solid;
     margin-top: 16px;
     transition: all .3s ease-in-out;
 }
@@ -40,3 +47,17 @@ input:focus{
 background-color: #FF9B54;
 color: snow;
 }
+.boton{
+    background: #00C0FF;
+    color: #FFF;
+     width: 50%;
+      padding: 10px;
+      margin: 20px 0px;
+      border-radius: 36px;
+      border: black 1px solid;
+      transition: 150ms
+  }
+  .boton:hover{
+    background: rgb(0, 72, 226);
+    cursor:pointer;
+  }

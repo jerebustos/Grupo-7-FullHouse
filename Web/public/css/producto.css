@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: rgba(0, 192, 255, .6);
+}
+
+.contenedor{
+  border: 1px rgba(0, 0, 0, 0.315) solid;
+  margin: 5%;
+  display: flex;
+  margin-top:14%;
+  background-color: white;
+  
+  
+}
+
+.poducto{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem
+  
+}
+
+.imagen{
+  width: 50vw;
+  border-right: 1px rgba(0, 0, 0, 0.315) solid;
+  transition:all .9s ease;
+}
+.imagen:hover{
+  box-shadow: 1px 7px 14px 1px rgb(0, 0, 0);
+transform: scale(0.95);
+cursor: pointer;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+  margin-left: 5%;
+  
+}
+
+h1{
+  color: #FF7F51;
+  font-size: 3vw;
+}
+
+h2{
+  color: rgb(58, 245, 51)
+}
+
+.botonDeCompra{
+  background: #00C0FF;
+  color: #FFF;
+   width: 80%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: black 1px solid;
+    transition: 150ms
+}
+.botonDeCompra:hover{
+  background: rgb(75, 205, 248);
+  cursor:pointer;
+}
+
+
+
+
