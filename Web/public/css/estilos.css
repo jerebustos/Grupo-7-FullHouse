@@ -66,7 +66,7 @@
 .container-content{
     width: 1200px;
     margin: auto;
-    margin-top: -4em;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
@@ -108,14 +108,51 @@ article img{
     margin-top: 20px;
 }
 
+/*Aside de los articulos  relacionados*/
 
+.container-aside aside{
+  width: 320px;
+  border-right: 6px;
+  box-shadow: 0 0 20px -20px black;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #00C0FF;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+    opacity: 0.9;
+}
 
 /* imagenes de oferta */
 
 .texto-oferta{
     text-align: center;
     font-size: 40px;
-    margin-top: 350px;
+    margin-top: 300px;
     color: #00C0FF;
     text-shadow: 0px 0px 6px black;
 }
@@ -126,8 +163,7 @@ article img{
     margin-left: auto;
     margin-right: auto;
      margin-top: 6em;
-     margin-bottom: 3em;
-    
+     margin-bottom: 3em;        
     display: flex;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
@@ -241,6 +277,10 @@ h2{
     transform: scale(1.2);
     transition: all 300ms;
 }
+
+
+
+  
 
 
 @keyframes rotar{
@@ -366,3 +406,5 @@ h2{
     display: inline-block;
     font-size: 50px;
 }
+
+
