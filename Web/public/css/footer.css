@@ -6,7 +6,6 @@
     padding: 40px 0;
     background: #f7f7f7;
     margin-top: 40px;
-    max-width: 1200px;
     margin: auto;
 }
 
@@ -141,35 +140,7 @@ footer .redes-footer .fa-instagram:hover{
         transform: translateX(0px);
     }
 
-    .menu nav ul {
-        flex-direction: column;
-    }
-
-    .menu nav ul li{
-        max-width: 200px;
-        height: 50px;
-        justify-content: flex-start;
-    }
-
-    .menu-selected:before{
-        width: 0;
-    }
-
-    .menu nav ul li a{
-        margin-top: 40px;
-        color: #858585;
-    }
-
-    .menu nav ul li a i{
-        width: 20px;
-        display: inline-block;
-        margin-right: 10px;
-        color: #00C0FF;
-    }
-
-    #icon-menu{
-        display: flex;
-    }
+    
 
     .container-aside{
         flex-wrap: wrap;

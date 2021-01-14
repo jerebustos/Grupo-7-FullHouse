@@ -12,12 +12,17 @@ main{
     justify-content: center;
     align-items: center;
     background: rgba(0, 192, 255, .6);
+    background-image: url(../img/cocina.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 
     
 }
 
 .formulario{
-    background: #fff;
+    
     margin: 5%;
 }
 form{

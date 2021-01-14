@@ -16,10 +16,10 @@
 
 .container-cover{
     width: 100%;
-    height: 500px;
+    height: 260px;
     position: relative;
     margin-top: 80px;
-    background-image: url(../img/imagenfondo.jpg);
+    background-image: url(../img/cocina.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
 .container-info-cover{
     max-width: 800px;
-    height: 500px;
+    height: 275px;
     margin: auto;
     text-align: center;
     display: flex;
@@ -298,8 +298,7 @@ h2{
 @media screen and (max-width: 1220px){
 
     
-    .container-content,
-    .container-footer footer{
+    .container-content{
         max-width: 1000px;
          padding: 0 20px
     }
@@ -364,35 +363,7 @@ h2{
         transform: translateX(0px);
     }
 
-    .menu nav ul {
-        flex-direction: column;
-    }
-
-    .menu nav ul li{
-        max-width: 200px;
-        height: 50px;
-        justify-content: flex-start;
-    }
-
-    .menu-selected:before{
-        width: 0;
-    }
-
-    .menu nav ul li a{
-        margin-top: 40px;
-        color: #858585;
-    }
-
-    .menu nav ul li a i{
-        width: 20px;
-        display: inline-block;
-        margin-right: 10px;
-        color: #00C0FF;
-    }
-
-    #icon-menu{
-        display: flex;
-    }
+    
 
     .container-aside{
         flex-wrap: wrap;

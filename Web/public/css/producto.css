@@ -1,9 +1,11 @@
-
-
-
-.cabezera{
-  display: flex;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
+
 body{
     background: rgba(0, 192, 255, .6);
 }
@@ -20,7 +22,6 @@ body{
 
 .poducto{
   display: flex;
-    
     align-items: center;
     flex-direction: column
   
@@ -70,5 +71,23 @@ h2{
 }
 
 
+@media screen and (min-width:800px  ){
+
+  .contenedor{
+    margin-top: 16%
+  }
+
+  .poducto{
+    flex-direction: row-reverse;
+  }
+}
+
+
+@media screen and (min-width:1190px  ){
+
+  .contenedor{
+    margin-top: 10%
+  }
+}
 
 
