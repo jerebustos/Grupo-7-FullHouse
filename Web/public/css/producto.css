@@ -1,10 +1,9 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
 
+
+
+.cabezera{
+  display: flex;
+}
 body{
     background: rgba(0, 192, 255, .6);
 }
@@ -13,7 +12,7 @@ body{
   border: 1px rgba(0, 0, 0, 0.315) solid;
   margin: 5%;
   display: flex;
-  margin-top:14%;
+  margin-top:26%;
   background-color: white;
   
   
@@ -21,15 +20,15 @@ body{
 
 .poducto{
   display: flex;
-    justify-content: space-between;
+    
     align-items: center;
-    padding: 2rem
+    flex-direction: column
   
 }
 
 .imagen{
-  width: 50vw;
-  border-right: 1px rgba(0, 0, 0, 0.315) solid;
+  width: 64vw;
+  border-bottom: black solid 1px;
   transition:all .9s ease;
 }
 .imagen:hover{

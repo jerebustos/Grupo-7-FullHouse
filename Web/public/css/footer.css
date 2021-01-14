@@ -1,12 +1,6 @@
 /*Footer - pie de pagina*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
+
 .container-footer{
     width: 100%;
     padding: 40px 0;
@@ -82,7 +76,6 @@ footer .redes-footer .fa-instagram:hover{
 
 @media screen and (max-width: 1220px){
 
-    .header-content,
     .container-content,
     .container-footer footer{
         max-width: 1000px;

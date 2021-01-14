@@ -1,11 +1,5 @@
 /*header*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 header{
     position: fixed;
@@ -25,11 +19,12 @@ header{
     justify-content: space-between;
 }
 
+.logotipo{
+    width: 300px;
+}
+
 .logo{
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 12px;
 }
 
 .logo h1 b{
@@ -63,7 +58,7 @@ header{
 .menu-selected:before{
     content: '';
     width: 100%;
-    height: 4px;
+    
     background: #00C0FF;
     position: absolute;
     top: 0;
@@ -80,9 +75,7 @@ header{
     color: #00C0FF;
 }
 
-.menu .text-menu-selected{
-    color: #00C0FF;
-}
+
 
 .menu nav ul li a i{
     display: none;
@@ -92,14 +85,14 @@ header{
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 20px;
-    top: 16px;
+    right: 9px;
+    top: 13px;
     padding: 10px;
     font-size: 20px;
     background: #eeeeeefa;
     border-radius: 100%;
     color: #787878;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -112,14 +105,11 @@ header{
 
 /* Responsive Design - adaptable a dispositivos moviles*/
 
-@media screen and (max-width: 1220px){
-
-    .header-content,
-    .container-content,
-    .container-footer footer{
-        max-width: 1000px;
-        padding: 0 20px;
+@media screen and (min-width: 800px){
+    #icon-menu{
+        display: none;
     }
+    
 
 
 }

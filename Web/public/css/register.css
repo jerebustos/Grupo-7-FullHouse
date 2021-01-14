@@ -42,6 +42,9 @@ input{
     margin-top: 16px;
     transition: all .3s ease-in-out;
 }
+input[type="file"]{
+    font-size: 15px;
+}
 
 input:focus{
 background-color: #FF9B54;
