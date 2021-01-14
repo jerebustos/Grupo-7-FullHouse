@@ -42,7 +42,7 @@ input{
     padding:0px 8px;
     border-radius: 36px;
     border: black 1px solid;
-    margin-top: 16px;
+    margin-top: 4px;
     transition: all .3s ease-in-out;
 }
 
@@ -51,6 +51,7 @@ background-color: #FF9B54;
 color: snow;
 }
 .boton{
+    FONT-WEIGHT: bold;
     background: #00C0FF;
     color: #FFF;
      width: 50%;
@@ -63,4 +64,14 @@ color: snow;
   .boton:hover{
     background: rgb(0, 72, 226);
     cursor:pointer;
+  }
+
+
+  .olvidaste{
+      margin-left: 144px;
+      color: #00C0FF;
+  }
+
+  .olvidaste:hover{
+      color:#FF9B54
   }
