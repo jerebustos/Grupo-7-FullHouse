@@ -33,7 +33,7 @@ body{
 
 .imagen{
   width: 64vw;
-  border-bottom: black solid 1px;
+  
   transition:all .9s ease;
 }
 .imagen:hover{

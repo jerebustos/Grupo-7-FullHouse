@@ -71,6 +71,19 @@
     justify-content: center;
 }
 
+<<<<<<< HEAD
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;    
+    border: black solid 1px;
+}
+=======
+>>>>>>> 72f99f2e09dc7b88ed63747a01f262eca555bce6
 
 
 
