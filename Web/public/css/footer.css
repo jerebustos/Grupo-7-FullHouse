@@ -95,15 +95,7 @@ footer .redes-footer .fa-instagram:hover{
         box-shadow: 0 0 0 0;
     }
 
-    .container-aside{
-        display: flex;
-        justify-content: center;
-    }
-
-    .container-aside aside{
-        max-width: 300px;
-        margin: 10px;
-    }
+   
 
 }
 
@@ -142,8 +134,5 @@ footer .redes-footer .fa-instagram:hover{
 
     
 
-    .container-aside{
-        flex-wrap: wrap;
-    }
 
 }

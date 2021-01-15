@@ -218,15 +218,6 @@ header{
         box-shadow: 0 0 0 0;
     }
 
-    .container-aside{
-        display: flex;
-        justify-content: center;
-    }
-
-    .container-aside aside{
-        max-width: 300px;
-        margin: 10px;
-    }
 
 }
 
@@ -290,9 +281,6 @@ header{
     }
 
    
-    .container-aside{
-        flex-wrap: wrap;
-    }
 
 }
-   
+

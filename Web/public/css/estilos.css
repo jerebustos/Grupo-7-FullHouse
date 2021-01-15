@@ -86,44 +86,9 @@ article{
 >>>>>>> 72f99f2e09dc7b88ed63747a01f262eca555bce6
 
 
-/*Aside de los articulos  relacionados*/
 
-.container-aside aside{
-  width: 320px;
-  border-right: 6px;
-  box-shadow: 0 0 20px -20px black;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-left: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-}
 
-.container-aside aside img{
-    width: 100%;
-}
 
-.container-aside aside h2,
-.container-aside aside p{
-    margin-top: 20px;
-    padding: 0px 20px;
-}
-
-.container-aside aside button{
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 10px 50px;
-    font-size: 16px;
-    background: #00C0FF;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.container-aside aside button:hover{
-    opacity: 0.9;
-}
 
 /* imagenes de oferta */
 
@@ -293,16 +258,6 @@ h2{
     }
     
 
-    .container-aside{
-        display: flex;
-        justify-content: center;
-    }
-
-    .container-aside aside{
-        max-width: 300px;
-        margin: 10px;
-    }
-
 }
 
 
@@ -342,9 +297,7 @@ h2{
 
     
 
-    .container-aside{
-        flex-wrap: wrap;
-    }
+  
 
 
 
