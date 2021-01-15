@@ -190,18 +190,13 @@ header{
     }
 
     .container-1 .icon{
-        display: flex }
+        display: none }
 
         .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
             background: #FF7F51;}
 
             .container-1 input#search{
-                color: white;
-                width: 300px;
-                background: none;
-                border:none;
-                font-size: 14pt;
-                padding-left: 45px;
+                display: none;
             }
     
 
