@@ -79,6 +79,7 @@ article{
     border-radius: 6px;
     position: relative;
     overflow: hidden;    
+    border: black solid 1px;
 }
 
 article:before{
