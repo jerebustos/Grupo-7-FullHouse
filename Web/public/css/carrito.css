@@ -39,25 +39,29 @@ h1{
     font-size: 20px;
 }
 
-h3{
-    width: 55%
+
+
+.descripcion{
+    font-size: 3vw;
+    padding-top: 5%
 }
 
 .eliminar{
     width: 19%;
     color: blue;
+    padding-left: 3%
 }
 
 .cantidad{ width: 49%;
     position: relative;
-    left: 86px;
-    bottom: 20px;}
+    left: 27%;
+    bottom: 10vw}
 
     .precio{
     width: 49%;
     position: relative;
-    bottom: 20px;
-    left: 69px;
+    bottom: 10vw;
+    left: 24%;;
     }
 
     .detalle1,.detalle2{
@@ -91,3 +95,48 @@ h3{
                 background: rgb(0, 72, 226);
                 cursor:pointer;
               }
+            
+
+              @media screen and (min-width: 800px){
+                .contenedor{
+                    display: flex;
+                }
+
+                .producto{
+                    width: 70%;
+                }
+
+                .final{
+                    width: 27%;
+                    margin: 0 0 0px 11px
+                }
+
+                .descripcion{
+                    font-size: 2vw;
+                }
+
+                .eliminar{
+                    padding-left: 12%
+                }
+
+              }
+
+              @media screen and (min-width: 1200px){
+
+
+                .eliminar {
+                    padding-left: 18%
+                }
+
+                .cantidad{
+                    bottom: 8vw;
+                }
+
+                .precio{
+                    bottom: 8vw
+                }
+                
+
+
+              }
+            

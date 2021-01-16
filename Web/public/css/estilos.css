@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
 }
 
-.container-cover:before{
+/*.container-cover:before{
     content: '';
     width: 100%;
     height: 100%;
@@ -33,7 +33,7 @@
     position: absolute;
     top: 0;
     left: 0;
-}
+}*/
 
 .container-info-cover{
     max-width: 800px;

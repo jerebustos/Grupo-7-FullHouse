@@ -11,8 +11,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 192, 255, .6);
-    background-image: url(../img/cocina.jpg);
+    background-image: url(../img/home-1416381_1920.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
