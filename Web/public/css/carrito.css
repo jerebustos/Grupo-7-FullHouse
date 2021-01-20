@@ -136,7 +136,18 @@ h1{
                     bottom: 8vw
                 }
                 
+                .icono_carrito{
+                    font-size: 20px;
+                    color: black;
+                    transition: .4s all;
+                 }
 
+                 .icono_carrito:hover{
+                    font-size: 27px;
+                    background-color: none;
+                    color: #00C0FF;
+                    transform: rotate(360deg);
+                 }
 
               }
             
