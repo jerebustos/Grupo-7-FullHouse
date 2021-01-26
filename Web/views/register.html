@@ -2,95 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
+    <title>FullHouse</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/FullHouse-Icono.ico">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-        
-    
-        
-        <link rel="icon" href="/Diseño/Logotipos/Imagenes/FullHouse-Icono.ico">
-    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrito.css">
+
+
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
-<body>   <header class="header">
-    <div class="container logo-nav-container">
-    <a href="/" class="logo"><img src="images/FullhouseV7.png"> </a>        
-    <span class="menu-icon">ver menu</span>
-    <nav class="navigation">
-        <ul>
-       <li><a href="/login">Logeate</a></li>
-       <li><a href="/register">Registrarse</a></li>
-       <li><button><a href="/productCart"><i class="fas fa-shopping-cart"></i></a></button></li>
-    </ul>
-    </nav>
-</div>
-<div class="buscar">
-    <input type="text" placeholder="buscar"required>
-    <div class="btn">
-        <i class="fas fa-search icon"></i>
-    </div>
-</div>
+<body>
+
+    <!--Header - menu-->
+    <header>
   
-</header>
 
-    <main class="register">
-        <form action="/" method="POST">
-            
-            <input type="text" name="name" placeholder="Nombre y apellido">
-            <input type="text" name="user" placeholder="Nombre de usuario">
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <label for="birth_date">Fecha de nacimiento</label>
-            <br>
-            <input type="date" name="birth_date" id="birth_date">
-            <br>
-            <input type="text" name="addres" placeholder="Domicilio">
-            <br>
-            <label for="Nacionalidad">Nacionalidad</label>
-            <select name="Nacionalidad" id="Nacionalidad">
+        <div class="header-content">
+
+            <div class="logo">
+                <img src="/img/FullhouseV7.png" class="logotipo">
                 
-                <option value="Argentina">Argentina</option>
-                <option value="Brasilera">Brasilera</option>
-                <option value="Chilena">Chilena</option>
-                <option value="Uruguaya">Uruguaya</option>
-                <option value="Paraguaya">Paraguaya</option>
+            </div>
 
-            </select>
-            <br>
-            <br>
-           
-            <h4>Elegí tu foto de usuario</h4>
-            <input type="file" name="avatar">
-            <br>
-            <br>
-            <input type="password" name="pass" placeholder="Elegí tu contraseña">
-            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-            <br>
-            <br>
-        </form>
-    </main>
-    <footer>
-        <footer class="footer">
-            <div class="container">
-            <p>Pagina diseñada por @Equipo7</p>
-            <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="/"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="/login"> <i class="fas fa-user"></i></i>Logeate</a></li>
+                        <li class="menu-selected"><a href="/register" class="text-menu-selected">  
+                            <i class="fas fa-file-alt"></i>Registrate</a>
+                            <li><i class="fas fa-shopping-cart icono_carrito"></i></li>
+                    </ul>
+                </nav>
+
+            </div>
+
         </div>
-        
-    </footer>
-    <script src="https://kit.fontawesome.com/61891375e2.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="/Web/scripts.js"></script>
 
+        
+        <img src="img/FullHouse-Icono.ico" alt="" class="logoPequeño">
+        
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="box">
+          <div class="container-1">
+              <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Click para buscar..." />
+          </div>
+        </div>
+ 
+    </header>
+
+<main class="register">
+    <div class="formulario">
+    <form action="/" method="POST">
+        
+        <input type="text" name="name" placeholder="Nombre y apellido">
+        <input type="text" name="user" placeholder="Nombre de usuario">
+        <input type="email" name="email" placeholder="E-mail">
+        <br>
+        <label for="birth_date"><h3>Fecha de nacimiento</h3></label>
+        <br>
+        <input type="date" name="birth_date" id="birth_date">
+        <br>
+        <input type="text" name="addres" placeholder="Domicilio">
+        <br>
+        <br>
+        <br>
+       
+        <h3>Elegí tu foto de usuario</h3>
+        <input type="file" name="avatar">
+        <br>
+        <br>
+        <input type="password" name="pass" placeholder="Elegí tu contraseña">
+        <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+        <br>
+        <br>
+        <button class="boton" type="submit" value="Enviar">Enviar</button>
+        <button class="boton" type="reset" value="Borrar">Borrar</button>
+        <br>
+        <br>
+    </form>
+</div>
+</main>
+    
+   
+
+        <footer class="container-footer">
+            
+            <div class="logo-footer">
+                <img src="img/FullHouse-Icono.ico" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>© 2021 Equipo7 - Todos los Derechos Reservados</h4>
+
+        </footer>
+
+    
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
 
 </body>
 </html>

@@ -19,6 +19,21 @@ Buscar menos por la web y preguntarle mas a los profesores.
 Dejar de ser individualista y poder trabajar mas en equipo.
 
 
+___
+## Sprint n°2
+___
+
+
+1.**Comenzar hacer:** trabajar en equipo.
+
+2.**Hacer mas:** seguir trabajando en equipo atreves de discord y wsp
+
+3.**Continuar haciendo:** siguiendo una buena química, y compartiendo hacia un mismo proyecto.
+
+4.**Hacer menos:** tener menos distracciones y abocarnos un poco mas al proyecto
+
+5.**Dejar de hacer:** ignorar a los compañero de grupo.
+
 
 ## __Otros enlaces__
 ___

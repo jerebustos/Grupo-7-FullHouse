@@ -4,10 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    
 }
+
 main{
     padding-top: 85px;
-    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +17,6 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-
-    
 }
 
 .formulario{
@@ -41,8 +40,11 @@ input{
     padding:0px 8px;
     border-radius: 36px;
     border: black 1px solid;
-    margin-top: 10px;
+    margin-top: 16px;
     transition: all .3s ease-in-out;
+}
+input[type="file"]{
+    font-size: 15px;
 }
 
 input:focus{
@@ -51,26 +53,18 @@ color: snow;
 }
 .boton{
     FONT-WEIGHT: bold;
-    background: #00C0FF;
-    color: #FFF;
-     width: 50%;
+    background: #FFF;
+    color: #00C0FF;
+     width: 76%;
       padding: 10px;
       margin: 20px 0px;
       border-radius: 36px;
       border: black 1px solid;
+      box-shadow:10px 10px 30px -4px rgb(168, 167, 167);
       transition: 150ms
   }
   .boton:hover{
-    background: rgb(0, 72, 226);
+    background:#00C0FF ;
+    color: #FFF;
     cursor:pointer;
-  }
-
-
-  .olvidaste{
-      margin-left: 144px;
-      color: #00C0FF;
-  }
-
-  .olvidaste:hover{
-      color:#FF9B54
   }

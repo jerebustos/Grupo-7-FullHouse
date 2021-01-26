@@ -2,54 +2,129 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Smart-Tek Kitchen</title>
+    
+    <link rel="icon" href="img/FullHouse-Icono.ico">
+    
+    <link href="css/producto.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  </head>
+  
+<body>
 
-    <link href="css/productoDetail.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
+   
+  <header>
+  
+
+    <div class="header-content">
+
+        <div class="logo">
+            <img src="/img/FullhouseV7.png" class="logotipo">
+            
+        </div>
+
+        <div class="menu" id="show-menu">
+
+            <nav>
+                <ul>
+                    <li><a href="/"> <i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="/login"> <i class="fas fa-user"></i></i>Logeate</a></li>
+                    <li class="menu-selected"><a href="/register" class="text-menu-selected"> 
+                      <li><i class="fas fa-shopping-cart icono_carrito"></i></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    
+    <img src="img/FullHouse-Icono.ico" alt="" class="logoPequeño">
+    
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="box">
+      <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="search" placeholder="Click para buscar..." />
+      </div>
+    </div>
+
+</header>
+    
+    <main class="main">
     
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-        <div class="logo-nav-container">
-        <a href="/" class="logo"><img src="images/FullhouseV7.png"> </a>        
-        <span class="menu-icon">ver menu</span>
-        <nav class="navigation">
-            <ul>
-           <li><a  href="/login">Logeate</a></li>
-           <li><a  href="/register">Registrarse</a></li>
-           <li><button><a href="/productCart"><i class="fas fa-shopping-cart"></i></a></button></li>
-          
-        </ul>
-        </nav>
-    </div>
-    <div class="buscar">
-        <input type="text" placeholder="buscar"required>
-        <div class="btn">
-            <i class="fas fa-search icon"></i>
-        </div>
-    </div>
-      
-    </header>
     <div class="contenedor">
       <div class="poducto">
        <img class="imagen"      src="https://d34zlyc2cp9zm7.cloudfront.net/products/8b4ee385a850cd2ae2e16f74d9a332d5e27aa3ac17e9535ce6793b53646de69c.webp_500" alt="Batidora">
        <div class="columna">
        <h1>Batidora Smart-Tek Kitchen assist Rojo</h1>
        <br>
-       <p class="descripcion">La batidora de pie Daewoo KA2216R tiene un moderno diseño con práctica tapa antisalpicaduras. Además, su bowl es de acero inoxidable y una capacidad de 4 litros, que te permite realizar múltiples creaciones.Tiene una potencia de 650 watts y un selector de 6 velocidades. También, cuenta con función pulsar.</p>
+       <ul>
+       <li>
+         <h3>Caracteristicas generales</h3>
+         <div>
+           <div class="detalle1">
+            <div class="specName">Potencia</div>
+            <div class="specValue">650W</div>
+           </div>
+           <div class="detalle2">
+            <div class="specName">Nivel de Velocidad</div>
+            <div class="specValue">6</div>
+           </div>
+           <div class="detalle3">
+            <div class="specName">Capacidad del bowl</div>
+            <div class="specValue">4 litros</div>
+           </div>
+           <div class="detalle4">
+            <div class="specName">Accesorios</div>
+            <div class="specValue">Amasador</div>
+           </div>
+         </div>
+       </li>
+
+       </ul>
        <br>
 
        <h2>$15.499</h2>
         <form action="/" method="get">
-       <input class="botonDeCompra" type="submit" value="Comprar">
+          <button class="botonDeCompra" type="submit" value="Comprar"><h3>Comprar</h3></button>
        </form>
        </div>
       </div>
     </div>
+
+    </main>
+
+    <footer class="container-footer">
+            
+      <div class="logo-footer">
+          <img src="img/FullHouse-Icono.ico" alt="">
+      </div>
+
+      <div class="redes-footer">
+          <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+          <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+      </div>
+
+      <hr>
+      <h4>© 2021 Equipo7 - Todos los Derechos Reservados</h4>
+
+  </footer>
+
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     
   </body>
+
+
+
 </html>
