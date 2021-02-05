@@ -108,6 +108,23 @@ header{
     margin-bottom: 10px
 }
 
+.icono_carrito{
+               
+    font-size: 20px;
+    color: black;
+    position: fixed;
+    top: 173px;
+    left: 10px;
+    transition: .4s all;
+}
+
+.icono_carrito:hover{
+font-size: 27px;
+background-color: none;
+color: #00C0FF;
+transform: rotate(360deg);
+}
+
 
 
 /*Barra de busqueda*/
@@ -198,11 +215,28 @@ header{
             .container-1 input#search{
                 display: none;
             }
+
+            .icono_carrito{
+                font-size: 20px;
+                color: black;                              
+            
+                right: 0px;
+                top: 27px;
+                position:static;
+                transition: .4s all;
+             }
+        
+             .icono_carrito:hover{
+                font-size: 27px;
+                background-color: none;
+                color: #00C0FF;
+                transform: rotate(360deg);
+             }
     
 
 }
 
-@media screen and (max-width: 1020px){
+@media screen and (min-width: 1020px){
 
     .container-content{
         width: 100%;
@@ -212,6 +246,23 @@ header{
     article{
         box-shadow: 0 0 0 0;
     }
+
+    .icono_carrito{
+        font-size: 20px;
+        color: black;                              
+    
+        right: 0px;
+        top: 27px;
+        position:static;
+        transition: .4s all;
+     }
+
+     .icono_carrito:hover{
+        font-size: 27px;
+        background-color: none;
+        color: #00C0FF;
+        transform: rotate(360deg);
+     }
 
 
 }
