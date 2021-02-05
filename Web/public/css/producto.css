@@ -18,7 +18,7 @@ body{
   border: 1px rgba(0, 0, 0, 0.315) solid;
   margin: 5%;
   display: flex;
-  margin-top:26%;
+  margin-top:3%;
   background-color: white;
   
   
@@ -92,9 +92,7 @@ li{
 
 @media screen and (min-width:800px  ){
 
-  .contenedor{
-    margin-top: 16%
-  }
+  
 
   .poducto{
     flex-direction: row-reverse;
@@ -104,9 +102,7 @@ li{
 
 @media screen and (min-width:1190px  ){
 
-  .contenedor{
-    margin-top: 10%
-  }
+  
   h1{
     font-size: 3vw;
 }
