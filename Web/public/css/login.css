@@ -34,6 +34,10 @@ form{
     justify-content: center;
 }
 
+.user{
+    margin-bottom: -27px
+}
+
 input{
     border: none;
     outline: none;
@@ -41,7 +45,7 @@ input{
     padding:0px 8px;
     border-radius: 36px;
     border: black 1px solid;
-    margin-top: 10px;
+    margin-top: 3px;
     transition: all .3s ease-in-out;
 }
 
