@@ -2,34 +2,28 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const methodOverride =  require('method-override');
 
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, './public')))
+app.use(methodOverride('_method'));
 
+
+const mainRouter = require('./routes/main'); // Rutas main
+const productsRouter = require('./routes/products'); //Rutas Products
 
 app.listen(3000, ()=>{
     console.log(' Servidor funcionando ');
 });
 
-app.get('/', (req,res)=>{
-       res.render("index");
-});
+app.use('/', mainRouter);
+app.use('/products', productsRouter)
 
-app.get('/login', (req,res)=>{
-    res.render('login');
-});
 
-app.get('/register', (req,res)=>{
-    res.render('register');
-});
 
-app.get('/carrito', (req,res)=>{
-    res.render('productCart');
-});
 
-app.get('/producto', (req,res)=>{
-    res.render('productDetail');
-});
+
+
