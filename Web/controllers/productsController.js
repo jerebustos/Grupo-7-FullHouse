@@ -9,6 +9,15 @@ const controller = {
     create: (req, res) => {
 		res.render('products/productCreate');
 	},
+    store:(req, res) => {
+		res.render();},
+
+    edit: (req, res) => {
+            res.render('products/productEdit');
+        },
+    update: (req, res) => {
+            res.render();
+        },
 
 }
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include ('../partials/head') %>
+        <link rel="stylesheet" href="/css/formularios.css">
+      </head>
+ 
+<body>
+
+    
+    <%-include ('../partials/header') %>
+
+    <main class="create">
+
+        <div>
+            <h1 class="products-title">Formulario de edicion de producto</h1>
+        </div>
+
+        <div class="formulario">
+        <form action="/products/:id/edit?_method=PUT" method="POST">
+            
+            <input type="text" name="name" placeholder="Nombre del producto">
+            <input type="text" name="price" placeholder="Precio del producto">
+            <input type="text" name="Color" placeholder="Colores del producto">
+          
+            <br>
+
+            <h3>Subi una foto de tu producto</h3>
+            <input type="file" name="producto">
+            <br>
+
+
+            <div class="category">
+                <label for="category" class="form-label-1">Categoría</label>
+                <select name="category" id="category" class="form-input">
+                    <option value="">Elegí</option>
+                    <option value="pequeño">Pequeños electrodomesticos</option>
+                    <option value="grande">Grandes electrodomesticos</option>
+                </select>
+            </div>
+            <div class="category">
+                <label for="description" class="form-label-2">Descipción</label>
+                <textarea name="description" id="description" class="form-input"></textarea>
+            </div>
+            <div>
+                <button class="botonGuardar" type="submit" value="Guardar">Guardar producto</button>
+                
+            </div>
+        </form>
+    </div>
+    </main>
+
+
+
+      <!-- footer -->
+      <%-include ('../partials/footer.ejs') %> 
+    <!-- footer -->
+
+    
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+
+</body>
+</html>
