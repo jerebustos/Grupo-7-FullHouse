@@ -11,6 +11,7 @@ main{
     padding-top: 85px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-image: url(../img/home-1416381_1920.jpg);
     background-position: center;
@@ -68,3 +69,57 @@ color: snow;
     color: #FFF;
     cursor:pointer;
   }
+
+  textarea.form-input {
+    width: 20vw;
+    height: 5vw;
+    resize: horizontal;
+    padding: 10px;
+  }
+
+  .form-label-1 {
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 10px 0;
+    position: relative;
+    left: 22%;
+  }
+  .form-label-2 {
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 10px 0;
+    position: relative;
+    left: 30%;
+  }
+
+  .products-title{    
+    color: coral;
+    font-size: 3vw;
+    position: relative;
+    height: 0px;}
+
+
+    .botonGuardar{
+        FONT-WEIGHT: bold;
+        background: #FFF;
+        color: #00C0FF;
+          padding: 10px;
+          margin: 20px 0px;
+          border-radius: 36px;
+          border: black 1px solid;
+          box-shadow:10px 10px 30px -4px rgb(168, 167, 167);
+          transition: 150ms
+      }
+      .botonGuardar:hover{
+        background:#00C0FF ;
+        color: #FFF;
+        cursor:pointer;
+      }
+
+      .category{
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      

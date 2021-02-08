@@ -1,11 +1,14 @@
 
 const controller = {
     detail:(req,res)=>{
-        res.render('productDetail')
+        res.render('products/productDetail')
     },
     carrito:(req,res)=>{
-        res.render('productCart')
+        res.render('products/productCart')
     },
+    create: (req, res) => {
+		res.render('products/productCreate');
+	},
 
 }
 
