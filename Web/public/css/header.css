@@ -1,5 +1,24 @@
+/*
+
+    (0-100)VH = Viewport Height Altura maxima de la pantalla
+    (0-100)VW = Viewport Width Anchura maxima de la pantalla
+    (0-4)REM = Browser Font Size 1rem => 16px
+    (0-4)EM = Parent Element Font Size 1rem => ?
+
+
+*/
+
+
 /*header*/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
 
 header{
     position: fixed;
@@ -56,6 +75,10 @@ header{
     position: relative;
 }
 
+.menu nav ul li:first-child{ 
+    display: none;
+}
+
 .menu-selected:before{
     content: '';
     width: 100%;
@@ -78,9 +101,11 @@ header{
 
 
 
-.menu nav ul li a i{
+.menu_items i{
     display: none;
 }
+
+
 
 #icon-menu{
     width: 50px;
@@ -112,12 +137,11 @@ header{
                
     font-size: 20px;
     color: black;
-    position: fixed;
-    top: 173px;
-    left: 10px;
     transition: .4s all;
 }
-
+.cart-text{
+    display: none;
+}
 .icono_carrito:hover{
 font-size: 27px;
 background-color: none;
@@ -129,69 +153,55 @@ transform: rotate(360deg);
 
 /*Barra de busqueda*/
 
-   
-.box{
-    margin: -81px 0px;
-    width: 300px;
-    height: 50px;
-  }
+.search-desktop {
+    align-self: center;
+    display: flex;
+}
 
-  .container-1{
-    width: 300px;
-    vertical-align: middle;
-    white-space: nowrap;
-    position: relative;
-  }
+input.search_input {
+    outline: none;
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+    border-left: .25rem solid #00C0FF;
+    padding-left: .25rem;
+    transition: all .3s ease-in-out;
+}
 
-  .container-1 input#search{
-        height: 44px;
-        background: none;
-        font-size: 17px;
-        float: left;
-        color: black;
-        margin-left: 67px;
-        padding-right: 46px;
-        margin-top: 15px;
-        border: 1px solid #eee;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-  }
+input.search_input::placeholder{
+    opacity: 1;
+    color: #00C0FF;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+} 
 
-  .container-1 input#search::-webkit-input-placeholder {
-    color: rgb(255, 127, 81, );
- }
+input.search_input:focus{
+    background-color: #00C0FF ;
+    color: snow;
+}
+button.search_buton {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: .25rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00C0FF;
+    color: snow;
+    transition: all .3s ease-in-out;
+}
 
- .container-1 .icon{
-    position: absolute;
-    top: 50%;
-    margin-left: 17px;
-    margin-top: 17px;
-    z-index: 1;
-    display: none;
-    color:#00C0FF;
-  }
-
-  
-.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
-    outline:none;
-    
-    
-   
-   }
-   
-   .container-1 input#search{
-   
-   
-   -webkit-transition: background .55s ease;
-   -moz-transition: background .55s ease;
-   -ms-transition: background .55s ease;
-   -o-transition: background .55s ease;
-   transition: background .55s ease;
-   }
+input.search_input:focus ~ button.search_buton {
+    background-color: snow;
+    color: #00C0FF;
+}
 
 
-   /* Responsive Design - adaptable a dispositivos moviles*/
+
+/* Responsive Design - adaptable a dispositivos moviles*/
 
 @media screen and (min-width: 800px){
     #icon-menu{
@@ -206,15 +216,7 @@ transform: rotate(360deg);
         display: block;
     }
 
-    .container-1 .icon{
-        display: none }
 
-        .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
-            background: #FF7F51;}
-
-            .container-1 input#search{
-                display: none;
-            }
 
             .icono_carrito{
                 font-size: 20px;
@@ -232,7 +234,6 @@ transform: rotate(360deg);
                 color: #00C0FF;
                 transform: rotate(360deg);
              }
-    
 
 }
 
@@ -326,7 +327,19 @@ transform: rotate(360deg);
         color: #00C0FF;
     }
 
-   
+    .menu nav ul li:first-child{ 
+        display: flex;
+    }
+    .search-desktop{
+        display: none;
+    }
+
+    .search-mobile{
+        display: flex;
+    }
+    .cart-text{
+        display: inline-block;
+    }
 
 }
 

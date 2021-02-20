@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <%-include ('partials/head') %>
+  <link rel="stylesheet" href="/css/carrito.css">
+</head>    
+
+<body>
+    <%-include ('partials/header') %>  
+    <main>
+     <h1 class="titulo">Mi Carrito</h1>
+     <br>
+
+    <div class="contenedor">
+    <div class="producto">
+        <img src="https://d34zlyc2cp9zm7.cloudfront.net/products/8b4ee385a850cd2ae2e16f74d9a332d5e27aa3ac17e9535ce6793b53646de69c.webp_500" alt="Batidora" class="Batidora">
+         <h3 class="descripcion">Batidora Smart-Tek Kitchen assist Rojo</h3>
+         <a href="#" class="eliminar">Eliminar</a>
+         
+<form class="cantidad" action="">
+<label for="cantidad">cantidad:</label>
+<select name="cantidad" id="unidad">
+    
+    <option value="uno">1</option>
+    <option value="dos">2</option>
+    <option value="tres">3</option>
+    <option value="cuatro">4</option>
+    <option value="cinco">5</option>
+  <optin value="seis">6</option>
+</select></form>
+  <h3 class="precio">$15.499</h3>
+
+    </div>
+    <div class="final">
+        <div class="detalle1">
+            <div class="specName"><h4>Subtotal</h4></div>
+            <div class="specValue">$15.499</div>
+           </div>
+           <div class="detalle2">
+            <div class="specName"><h1 class="titulo">Total</h1></div>
+            <div class="specValue">$15.499</div>
+           </div>
+           <form action="">
+            <button class="boton" type="submit" value="Comprar">FINALIZAR COMPRA</button>
+            <button class="boton" type="submit" value="SeguirComprando">CONTINUAR COMPRANO</button>
+           </form>
+    </div>
+</div>
+</main>
+
+   <!-- footer -->
+      <%-include ('partials/footer') %> 
+    <!-- footer -->
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

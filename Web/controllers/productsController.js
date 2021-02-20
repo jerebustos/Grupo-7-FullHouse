@@ -1,23 +1,33 @@
+// Requerir el modelo de los Productos
+// Requerir el modelo de las Categorias
 
 const controller = {
-    detail:(req,res)=>{
+    show:(req,res)=>{
+        // Buscar al producto en la base de datos por el parametro id (req.params)
+        // Enviar esa información en el render
         res.render('products/productDetail')
     },
-    carrito:(req,res)=>{
-        res.render('products/productCart')
-    },
     create: (req, res) => {
+        // Enviar a la vista un array con todas las categorias posibles
 		res.render('products/productCreate');
 	},
     store:(req, res) => {
-		res.render();},
-
+       // Guardar un nuevo producto
+       // Con la informacion del formulario (req.body)
+    },
     edit: (req, res) => {
-            res.render('products/productEdit');
-        },
+        // Buscar al producto en la base de datos por el parametro id (req.params)
+        // Enviar esa información en el render
+        res.render('products/productEdit');
+    },
     update: (req, res) => {
-            res.render();
-        },
+        // Modificar el producto seleccionado por el id  (req.params)
+        // Con la información del formulario (req.body) 
+        
+    },
+    destroy: (req, res) => {
+        // Eliminar el producto seleccionado por el id  (req.body)
+    },
 
 }
 

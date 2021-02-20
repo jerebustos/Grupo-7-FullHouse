@@ -1,10 +1,11 @@
 <header>
-  
-
+    
+    
     <div class="header-content">
-
+        
         <div class="logo">
             <img src="/img/FullhouseV7.png" class="logotipo">
+            <img src="img/FullHouse-Icono.ico" alt="" class="logoPequeño">
             
         </div>
 
@@ -12,29 +13,60 @@
 
             <nav>
                 <ul>
-                    <li><a href="/"> <i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="/users/login"> <i class="fas fa-user"></i></i>Logeate</a></li>
-                    <li class="menu-selected"><a href="/users/register" class="text-menu-selected"> 
-                        <i class="fas fa-file-alt"></i>Registrate</a></li>
-                        <a href="/products/carrito"><li><i class="fas fa-shopping-cart icono_carrito"></i></li></a>
+                    <li>
+                        <form action="/buscar" method="GET" class="search-mobile">
+                            <input type="text" name="keyword" class="search_input" placeholder="Click para buscar..." />
+                            <button type="submit" class="search_buton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="menu_items">
+                        <a href="/"> 
+                            <i class="fas fa-home"></i> 
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="menu_items">
+                        <a href="/usuario/ingresar"> 
+                            <i class="fas fa-user"></i>
+                            Logeate
+                        </a>
+                    </li>
+                    <li class="menu_items">
+                        <a href="/usuario/registro" class="text-menu-selected"> 
+                            <i class="fas fa-file-alt"></i>Registrate
+                        </a>
+                    </li>
+                    <li >
+                        <a href="/carrito">
+                            <i class="fas fa-shopping-cart icono_carrito"></i>
+                            <span class="cart-text">
+                                Carrito
+                            </span>
+                        </a>
+                    </li>
                 </ul>  
             </nav>
 
         </div>
 
+        <form action="/buscar" method="GET" class="search-desktop">
+            <input type="text" name="keyword" class="search_input" placeholder="Click para buscar..." />
+            <button type="submit" class="search_buton">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
     </div>
 
     
-    <img src="img/FullHouse-Icono.ico" alt="" class="logoPequeño">
     
-    <div id="icon-menu">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="box">
-      <div class="container-1">
-          <span class="icon"><i class="fa fa-search"></i></span>
-          <input type="search" id="search" placeholder="Click para buscar..." />
-      </div>
-    </div>
+
+   
 
 </header>

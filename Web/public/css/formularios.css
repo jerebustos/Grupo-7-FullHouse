@@ -24,7 +24,7 @@ main{
     
     margin: 5%;
 }
-form{
+.formulario{
     background-color: rgba(250, 255, 255, .75);
     padding:32px;
     border-radius: 8px;
@@ -34,7 +34,7 @@ form{
     justify-content: center;
 }
 
-input{
+.formulario input{
     border: none;
     outline: none;
     font-size: 32px;
@@ -44,11 +44,11 @@ input{
     margin-top: 16px;
     transition: all .3s ease-in-out;
 }
-input[type="file"]{
+.formulario input[type="file"]{
     font-size: 15px;
 }
 
-input:focus{
+.formulario input:focus{
 background-color: #FF9B54;
 color: snow;
 }

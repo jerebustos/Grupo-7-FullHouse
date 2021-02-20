@@ -2,21 +2,20 @@ const express = require('express');
 const router = express.Router();
 const productsController = require('../controllers/productsController');
 
+router.get('/detalle/:id',productsController.show);
 
+// No deberia crear o editar o borrar sin permisos de administrador
+// Middleware de Logged User
+// Middleware de Authentication User
 
-router.get('/detalle',productsController.detail);
-router.get('/carrito',productsController.carrito);
+router.get('/nuevo',productsController.create);
 
+router.get('/editar/:id',productsController.edit);
 
-router.get('/create',productsController.create);
 router.post('/', productsController.store);
 
-router.get('/edit',productsController.edit);
 router.put('/:id', productsController.update);
 
-
-
-
-
+router.delete('/borrar', productsController.destroy);
 
 module.exports = router
