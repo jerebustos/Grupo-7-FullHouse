@@ -1,12 +1,23 @@
-// Requerir el modelo de los Productos
-// Requerir el modelo de las Categorias
+const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.resolve(__dirname, '../data/productosBaseDatos.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
     show:(req,res)=>{
-        // Buscar al producto en la base de datos por el parametro id (req.params)
-        // Enviar esa información en el render
-        res.render('products/productDetail')
+        const productoDetalle = products.find( producto => producto.id == req.params.id);
+
+        let paraLaVista = {
+            productoDetalle,
+            toThousand
+        }
+
+        res.render('products/productDetail',paraLaVista)
     },
+
     create: (req, res) => {
         // Enviar a la vista un array con todas las categorias posibles
 		res.render('products/productCreate');
