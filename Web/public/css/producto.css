@@ -1,10 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 body{
   background-image: url(../img/cocina.jpg);
@@ -88,6 +82,22 @@ li{
   background: rgb(75, 205, 248);
   cursor:pointer;
 }
+
+.editar{
+  background: #00C0FF;
+  color: #FFF;
+   width: 80%;
+    padding: 10px;
+    margin: 2% 10%;
+    border-radius: 5px;
+    border: black 1px solid;
+    transition: 150ms
+}
+.editar:hover{
+  background: rgb(75, 205, 248);
+  cursor:pointer;
+}
+
 
 
 @media screen and (min-width:800px  ){

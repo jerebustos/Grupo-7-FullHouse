@@ -12,21 +12,20 @@
 
     <main class="create">
 
-        <div>
-            <h1 class="products-title">Formulario de creación de productos</h1>
-        </div>
 
-        <div class="formulario">
-        <form action="/" method="POST">
-            
+        <div>
+        <form class="formulario" action="/producto/"  method="POST" enctype="multipart/form-data">
+            <h1 class="products-title">Formulario de creación </h1>
             <input type="text" name="name" placeholder="Nombre del producto">
             <input type="text" name="price" placeholder="Precio del producto">
             <input type="text" name="color" placeholder="Colores del producto">
             <input type="text" name="accesorios" placeholder="Accesorios del producto">
+            <input type="text" name="marca" placeholder="Marca del producto">
+            <input type="text" name="modelo" placeholder="Modelo del producto">
             <br>
 
             <h3>Subi una foto de tu producto</h3>
-            <input type="file" name="producto">
+            <input type="file" id="image" name="image" >
             <br>
 
 

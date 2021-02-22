@@ -23,21 +23,76 @@ const controller = {
 		res.render('products/productCreate');
 	},
     store:(req, res) => {
-       // Guardar un nuevo producto
-       // Con la informacion del formulario (req.body)
+
+        let productoAgregar = {
+			id: products.length == 0 ? 1 : products[products.length -1].id +1,
+			name: req.body.name,
+			price: req.body.price,
+			color: req.body.color ,
+            accesorios: req.body.accesorios,
+            marca: req.body.marca,
+            modelo: req.body.modelo,
+			category: req.body.category ,
+			description: req.body.description,
+			image: req.file.filename
+
+			
+		};
+
+		
+		products.push(productoAgregar);
+        let productoSubir = JSON.stringify(products, null , 2);
+		fs.writeFileSync(productsFilePath ,productoSubir)
+        
+
+		return res.redirect("/")
+      
     },
     edit: (req, res) => {
-        // Buscar al producto en la base de datos por el parametro id (req.params)
-        // Enviar esa información en el render
-        res.render('products/productEdit');
+
+        let productoAEditar = products.find( producto => producto.id == req.params.id);
+        
+        res.render('products/productEdit',productoAEditar);
     },
     update: (req, res) => {
-        // Modificar el producto seleccionado por el id  (req.params)
-        // Con la información del formulario (req.body) 
+       	let productoAEditar = products.find( producto => producto.id == req.params.id);
+
+		const productoEditado = products.map( producto => {
+			if(producto.id == productoAEditar.id ){
+                producto.name = req.body.name;
+                producto.price = req.body.price;
+                producto.color = req.body.color;
+                producto.accesorios = req.body.accesorios;
+                producto.marca = req.body.marca;
+                producto.modelo = req.body.modelo;
+                producto.category = req.body.category;
+                producto.description = req.body.description;
+             }
+			 return producto;
+			 
+		})
+
+		let productoSubir = JSON.stringify(productoEditado, null , 2);
+		fs.writeFileSync(productsFilePath,productoSubir);
+
+		res.redirect("/")
         
     },
     destroy: (req, res) => {
-        // Eliminar el producto seleccionado por el id  (req.body)
+        let productoEliminado = products.filter(producto => producto.id != req.params.id);
+        
+		let imagenABorrar = products.find( producto => producto.id == req.params.id)
+
+		let filePath = path.resolve(__dirname,'../public/img/products/' + imagenABorrar.image)
+
+		fs.unlinkSync(filePath)
+
+
+		let productoSubir = JSON.stringify(productoEliminado, null , 2);
+		fs.writeFileSync(productsFilePath,productoSubir);
+		
+
+		res.redirect("/")
     },
 
 }

@@ -29,6 +29,14 @@
             <div class="specName">Color</div>
             <div class="specValue"><%=productoDetalle.color%> </div>
            </div>
+           <div class="detalle2">
+            <div class="specName">Marca</div>
+            <div class="specValue"><%=productoDetalle.marca%> </div>
+           </div>
+           <div class="detalle3">
+            <div class="specName">Modelo</div>
+            <div class="specValue"><%=productoDetalle.modelo%> </div>
+           </div>
            <div class="detalle4">
             <div class="specName">Accesorios</div>
             <div class="specValue"><%=productoDetalle.accesorios%></div>
@@ -48,6 +56,14 @@
         <form action="/" method="POST">
           <button class="botonDeCompra" type="submit" value="Comprar"><h3>Comprar</h3></button>
        </form>
+       
+       <a href="/producto/editar/<%= productoDetalle.id%>" class="editar"><h3>Editar</h3></a>
+
+       <form action="/producto/borrar/<%= productoDetalle.id %>?_method=DELETE" method="POST">
+        <button type="submit" class="botonDeCompra"><h3>Eliminar</h3></button>
+      </form>
+
+      
        </div>
       </div>
     </div>
