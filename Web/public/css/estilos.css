@@ -299,7 +299,7 @@ h2{
 
 .column {
     float: left;
-    width: 24%;
+    width: 25%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -310,7 +310,7 @@ h2{
 
   @media screen and (max-width: 1000px){
     .column {
-        width: 45%;
+        width: 50%;
     }
 
   }
