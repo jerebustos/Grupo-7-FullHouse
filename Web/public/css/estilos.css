@@ -1,16 +1,4 @@
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
 /*Portada*/
 
 
@@ -75,7 +63,7 @@
     font-size: 40px;
     margin-top: 320px;
     color: #00C0FF;
-    text-shadow: 0px 0px 6px black;
+    
 }
 
 .container{
@@ -141,9 +129,8 @@ h2{
     text-align: center;
     font-size: 40px;
     font-family: arial;
-    margin-top: 80px;
     color: #00C0FF;
-    text-shadow: 0px 0px 6px black;
+    
 }
 
 .content-all{
@@ -212,7 +199,9 @@ h2{
     }
 }
 
-
+.row{
+    text-align: center;
+}
 
 /* Responsive Design - adaptable a dispositivos moviles*/
 
@@ -306,3 +295,62 @@ h2{
 }
 
 }
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 24%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .price{
+    color: rgb(101, 255, 96)
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .containerProduct {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .containerProduct::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background:#00C0FF ;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  
+  .button:hover {
+    background:#00C0FF ;
+    color: #FFF;
+  }

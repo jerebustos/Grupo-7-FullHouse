@@ -16,22 +16,22 @@
         <div>
         <form class="formulario" action="/producto/"  method="POST" enctype="multipart/form-data">
             <h1 class="products-title">Formulario de creación </h1>
-            <input type="text" name="name" placeholder="Nombre del producto">
-            <input type="text" name="price" placeholder="Precio del producto">
-            <input type="text" name="color" placeholder="Colores del producto">
-            <input type="text" name="accesorios" placeholder="Accesorios del producto">
-            <input type="text" name="marca" placeholder="Marca del producto">
-            <input type="text" name="modelo" placeholder="Modelo del producto">
+            <input type="text" name="name" placeholder="Nombre del producto" required>
+            <input type="text" name="price" placeholder="Precio del producto" required>
+            <input type="text" name="color" placeholder="Colores del producto" required>
+            <input type="text" name="accesorios" placeholder="Accesorios del producto" required>
+            <input type="text" name="marca" placeholder="Marca del producto" required>
+            <input type="text" name="modelo" placeholder="Modelo del producto" required>
             <br>
 
             <h3>Subi una foto de tu producto</h3>
-            <input type="file" id="image" name="image" >
+            <input type="file" id="image" name="image" required>
             <br>
 
 
             <div class="category">
                 <label for="category" class="form-label-1">Categoría</label>
-                <select name="category" id="category" class="form-input">
+                <select name="category" id="category" class="form-input" required>
                     <option value="">Elegí</option>
                     <option value="pequeño">Pequeños electrodomesticos</option>
                     <option value="grande">Grandes electrodomesticos</option>
@@ -39,7 +39,7 @@
             </div>
             <div class="category">
                 <label for="description" class="form-label-2">Descipción</label>
-                <textarea name="description" id="description" class="form-input"></textarea>
+                <textarea name="description" id="description" class="form-input" required></textarea>
             </div>
             <div>
                 <button class="botonGuardar" type="submit" value="Guardar">Guardar producto</button>

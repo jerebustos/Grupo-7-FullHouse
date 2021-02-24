@@ -30,59 +30,30 @@
      
     </div>
 </div>
-<h2 class="texto-oferta">Ofertas de la semana!</h2>
+<br>
+<br>
 
- 
-      <div class="container">
-        <div class="item">
-          <img src="img/liliana_batidoras_powermix1-79018ba5901630aad615536427824834-640-0.png" alt="Cafetera" class="item-img">
-          <div class="item-text">
-            <h3>Cafetera</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-        </div>
-        
-        <div class="item">
-          <img src="img/horno electrico.png" alt="Horno" class="item-img">
-          <div class="item-text">
-            <h3>Horno Electrico </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-        </div>
-        
-        <div class="item">
-          <img src="img/hornotophouseoferta.png" alt="Horno" class="item-img">
-          <div class="item-text">
-            <h3>Horno Electrico TopHouse</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-        </div>
-        
-        <a href="products/detalle"><div class="item">
-          <img src="img/Cafetera.jpg" alt="Batidora" class="item-img">
-                         <div class="item-text">
-            <h3>Smart-Tek Kitchen</h3>
-            <p>tocame que voy al producto</p>
-          </div>
-        </div> </a>
-        
-        
-        <div class="item">
-          <img src="img/microondas.png" alt="Microondas" class="item-img">
-          <div class="item-text">
-            <h3>Microondas</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-        </div>
-        
-        <div class="item">
-          <img src="img/minipimeroferta.png" alt="Minipimer" class="item-img">
-          <div class="item-text">
-            <h3>Minipimer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-        </div>
+
+<h2 class="texto-oferta">Pequeños Electros!</h2>
+<br>
+<br>
+<% products.forEach(producto => { %>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
+      <div class="containerProduct">
+        <h3><%= producto.marca%></h3>
+        <p class="title"><%= producto.name%></p>
+         <h2 class="price">$ <%= toThousand(producto.price) %></h2>
+        <a href="/producto/detalle/<%= producto.id %>"><p><button class="button">Detalle</button></p></a>
       </div>
+    </div>
+  </div>
+
+  <% }) %>
+      
     </main>
 
     
