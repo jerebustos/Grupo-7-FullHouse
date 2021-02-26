@@ -12,7 +12,7 @@ body{
   border: 1px rgba(0, 0, 0, 0.315) solid;
   margin: 5%;
   display: flex;
-  margin-top:10%;
+  margin-top:30%;
   background-color: white;
   
   
@@ -26,7 +26,7 @@ body{
 }
 
 .imagen{
-  width: 64vw;
+  width: 50%;
   
   transition:all .9s ease;
 }
@@ -41,6 +41,7 @@ cursor: pointer;
     flex-direction: column;
   text-align: center;
   margin-left: 5%;
+  margin-right: 5%;
   
 }
 
@@ -100,9 +101,11 @@ li{
 
 
 
-@media screen and (min-width:800px  ){
+@media screen and (min-width:750px  ){
 
-  
+  .contenedor{
+    margin-top:10%;
+  }
 
   .poducto{
     flex-direction: row-reverse;
