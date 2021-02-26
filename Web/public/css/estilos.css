@@ -61,7 +61,7 @@
 .texto-oferta{
     text-align: center;
     font-size: 40px;
-    margin-top: 320px;
+    margin-top: 8%;
     color: #00C0FF;
     
 }
@@ -308,6 +308,14 @@ h2{
     color: rgb(101, 255, 96)
   }
 
+  .banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 31%;
+  }
+
   @media screen and (max-width: 1000px){
     .column {
         width: 50%;
@@ -325,6 +333,10 @@ h2{
   /* Add some shadows to create a card effect */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover{
+    border: rgb(129, 127, 127) 2px solid;
   }
   
   /* Some left and right padding inside the container */
