@@ -15,7 +15,7 @@
     "id": 4,
     "name": "Pava Eléctrica",
     "price": "4999",
-    "color": "Gris",
+    "color": "Negro",
     "accesorios": "Sin Acceserios",
     "marca": "Peabody",
     "modelo": "PE-DK1850",
@@ -24,7 +24,19 @@
     "image": "image-1614170955855.jpg"
   },
   {
-    "id": 5,
+    "id": 6,
+    "name": "Horno microondas ",
+    "price": "25000",
+    "color": "Blanco",
+    "accesorios": "Sin Acceserios",
+    "marca": "Atma",
+    "modelo": "MWF300G",
+    "category": "pequeño",
+    "description": "Este modelo de microondas de Atma te permite cocinar o calentar con 8 niveles distintos. También cuenta con la función descongelado automático, reloj con timer e incluye traba de seguridad para niños, que bloquea el teclado para evitar accidentes.",
+    "image": "image-1615934383274.jpg"
+  },
+  {
+    "id": 7,
     "name": "Mixer",
     "price": "7999",
     "color": "Negro",
@@ -33,18 +45,6 @@
     "modelo": "HR2625/80",
     "category": "pequeño",
     "description": "La licuadora de mano Philips HR2625/80 tiene un moderno diseño en color negro. Posee tecnología Speed Touch para un control de potencia perfecto. También cuenta con desmontaje el cual permite que con sólo pulsar un botón se pueda cambiar de accesorio.",
-    "image": "image-1614174945209.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Horno microondas ",
-    "price": "28690",
-    "color": "Blanco",
-    "accesorios": "Sin acceserios",
-    "marca": "Atma",
-    "modelo": "Md928gn",
-    "category": "pequeño",
-    "description": "Este modelo de microondas de Atma te permite cocinar o calentar con 8 niveles distintos. También cuenta con la función descongelado automático, reloj con timer e incluye traba de seguridad para niños, que bloquea el teclado para evitar accidentes.",
-    "image": "image-1614175247028.jpg"
+    "image": "image-1616672159881.jpg"
   }
 ]

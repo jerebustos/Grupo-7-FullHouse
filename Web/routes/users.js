@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
+const uploadFile = require("../middleware/usersMulter")
 
 router.get('/ingresar', userController.login);
 
@@ -12,11 +13,11 @@ router.get('/editar', userController.edit);
 
 router.post('/acceder', userController.access);
 
-router.post('/guardar', userController.save);
+router.post('/guardar',uploadFile.single("avatar"), userController.save);
 
 router.put('/perfil', userController.update);
 
-router.put('/desactivar', userController.disable);
+router.delete('/desactivar', userController.disable);
 
 
 module.exports = router;
