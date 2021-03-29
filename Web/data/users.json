@@ -5,6 +5,7 @@
       "lastName": "bustos",
       "user": "jerebustos",
       "email": "jerebustos@hotmail.com",
+      "admi" : true,
       "birth_date": "",
       "pass": "",
       "avatar": ""

@@ -20,6 +20,10 @@ main{
     position: relative;
 }
 
+.text-danger{
+  color: red;
+}
+
 .formulario{
     
     margin: 5%;

@@ -16,16 +16,64 @@
         <div>
         <form class="formulario" action="/producto/"  method="POST" enctype="multipart/form-data">
             <h1 class="products-title">Formulario de creación </h1>
-            <input type="text" name="name" placeholder="Nombre del producto" required>
-            <input type="text" name="price" placeholder="Precio del producto" required>
-            <input type="text" name="color" placeholder="Colores del producto" required>
-            <input type="text" name="accesorios" placeholder="Accesorios del producto" required>
-            <input type="text" name="marca" placeholder="Marca del producto" required>
-            <input type="text" name="modelo" placeholder="Modelo del producto" required>
+            <input type="text" name="name" placeholder="Nombre del producto" <%= locals.errors && errors.name ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.name : null %>"
+        >
+        <% if (locals.errors && errors.name) { %>
+            <div class="text-danger">
+                <%= errors.name.msg %> 
+            </div>
+        <% } %>
+            <input type="text" name="price" placeholder="Precio del producto" <%= locals.errors && errors.price ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.price : null %>"
+        >
+        <% if (locals.errors && errors.price) { %>
+            <div class="text-danger">
+                <%= errors.price.msg %> 
+            </div>
+        <% } %>
+            <input type="text" name="color" placeholder="Colores del producto" <%= locals.errors && errors.color ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.color : null %>"
+        >
+        <% if (locals.errors && errors.color) { %>
+            <div class="text-danger">
+                <%= errors.color.msg %> 
+            </div>
+        <% } %>
+            <input type="text" name="accesorios" placeholder="Accesorios del producto" <%= locals.errors && errors.accesorios ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.accesorios : null %>"
+        >
+        <% if (locals.errors && errors.accesorios) { %>
+            <div class="text-danger">
+                <%= errors.accesorios.msg %> 
+            </div>
+        <% } %>
+            <input type="text" name="marca" placeholder="Marca del producto" <%= locals.errors && errors.marca ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.marca : null %>"
+        >
+        <% if (locals.errors && errors.marca) { %>
+            <div class="text-danger">
+                <%= errors.marca.msg %> 
+            </div>
+        <% } %>
+            <input type="text" name="modelo" placeholder="Modelo del producto" <%= locals.errors && errors.modelo ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.modelo : null %>"
+        >
+        <% if (locals.errors && errors.modelo) { %>
+            <div class="text-danger">
+                <%= errors.modelo.msg %> 
+            </div>
+        <% } %>
             <br>
 
             <h3>Subi una foto de tu producto</h3>
-            <input type="file" id="image" name="image" required>
+            <input type="file" id="image" name="image" <%= locals.errors && errors.image ? 'is-invalid' : null %>"
+            >
+            <% if (locals.errors && errors.image) { %>
+                <div class="text-danger">
+                    <%= errors.image.msg %>
+                </div>
+            <% } %>
             <br>
 
 
