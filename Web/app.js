@@ -28,11 +28,13 @@ app.use(session({
     secret: 'fulanito',
     resave: false,
     saveUninitialized: true
-}))
+}));
 
-app.use(userLoggedMiddleware)
+
 
 app.use(cookieParser())
+
+app.use(userLoggedMiddleware)
 
 const mainRouter = require('./routes/main'); // Rutas Main
 const productsRouter = require('./routes/products'); //Rutas Products
