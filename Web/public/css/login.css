@@ -49,23 +49,22 @@ main{
     transition: all .3s ease-in-out;
 }
 
-.formulario input:focus{
-background-color: #FF9B54;
-color: snow;
-}
+
 .boton{
     FONT-WEIGHT: bold;
-    background: #00C0FF;
-    color: #FFF;
-     width: 50%;
+    background: #FFF;
+    color: #00C0FF;
+     width: 76%;
       padding: 10px;
       margin: 20px 0px;
       border-radius: 36px;
       border: black 1px solid;
+      box-shadow:10px 10px 30px -4px rgb(168, 167, 167);
       transition: 150ms
   }
   .boton:hover{
-    background: rgb(0, 72, 226);
+    background:#00C0FF ;
+    color: #FFF;
     cursor:pointer;
   }
 

@@ -22,6 +22,8 @@ main{
 
 .text-danger{
   color: red;
+  font-weight: bold;
+  
 }
 
 .formulario{
@@ -52,10 +54,7 @@ main{
     font-size: 15px;
 }
 
-.formulario input:focus{
-background-color: #FF9B54;
-color: snow;
-}
+
 .boton{
     FONT-WEIGHT: bold;
     background: #FFF;
