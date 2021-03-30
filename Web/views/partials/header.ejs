@@ -33,6 +33,15 @@
                             Nuevo
                         </a>
                     </li>
+                    <% if (locals.userLogged) { %>
+                        <li class="menu_items">
+                        
+                        <a href="/usuario/perfil">
+                        hola! <%= locals.userLogged.user %>
+                    </a>       
+                    </li>   
+                   
+                    <% } else { %>
                     <li class="menu_items">
                         <a href="/usuario/ingresar"> 
                             <i class="fas fa-user"></i>
@@ -44,6 +53,7 @@
                             <i class="fas fa-file-alt"></i>Registrate
                         </a>
                     </li>
+                    <% } %>
                     <li >
                         <a href="/carrito">
                             <i class="fas fa-shopping-cart icono_carrito"></i>
