@@ -1,10 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
+
 main{
     padding-top: 85px;
     min-height: 90vh;
@@ -34,10 +28,6 @@ main{
     justify-content: center;
 }
 
-.user{
-    margin-bottom: -27px
-}
-
 .formulario input{
     border: none;
     outline: none;
@@ -46,7 +36,6 @@ main{
     border-radius: 36px;
     border: black 1px solid;
     margin-top: 3px;
-    transition: all .3s ease-in-out;
 }
 
 
@@ -68,6 +57,11 @@ main{
     cursor:pointer;
   }
 
+  .text-danger{
+    color: red;
+    font-weight: bold;
+    
+  }
 
   .olvidaste{
       margin-left: 144px;

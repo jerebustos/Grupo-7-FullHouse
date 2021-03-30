@@ -13,12 +13,26 @@
     
 
 <main class="login">
-        <form class="formulario" action="/" method="POST">
-            <input class="user" type="text" name="user" placeholder="Nombre de usuario">
-            <br>
-            <br>
+        <form class="formulario" action="/usuario/acceder" method="POST">
+            <div> <input class="user" type="text" name="user" placeholder="Nombre de usuario">
+                <br>
+            
+        </div>
+
+        <% if (locals.errors && errors.user) { %>
+            <div class="text-danger">
+                <%= errors.user.msg %>
+            </div>
+        <% } %>
+        
+        
             <a class="olvidaste" href="#"> ¿olvidaste tu contraseña? </a>
-            <input type="password" name="pass" placeholder="Contraseña">
+
+            <div> <input class="user" type="password" name="pass" placeholder="Contraseña"> </div>
+            <br>
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="remember_user">Recordar mi usuario
+            </label>
 
             <button class="boton" type="submit" value="Enviar"> Enviar </button>
         </form>

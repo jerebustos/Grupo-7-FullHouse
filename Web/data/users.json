@@ -1,14 +1,46 @@
 [
-    {
-      "id": 1,
-      "name": "jeremias",
-      "lastName": "bustos",
-      "user": "jerebustos",
-      "email": "jerebustos@hotmail.com",
-      "admi" : true,
-      "birth_date": "",
-      "pass": "",
-      "avatar": ""
-      
-    }
-  ]
+  {
+    "id": 1,
+    "name": "jeremias",
+    "lastName": "bustos",
+    "user": "jerebustos",
+    "email": "jerebustos@hotmail.com",
+    "admi": true,
+    "birth_date": "",
+    "pass": "",
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "name": "Jorge David",
+    "lastName": "Iomini",
+    "user": "JD",
+    "email": "jd@gmail.com",
+    "admi": false,
+    "birth_date": "2021-03-30",
+    "pass": "$2a$10$n4lQyBRSvfer3WO43KR.hOlr0zuiKGdSri2IJAyPJZ1mm7Cgf7rqK",
+    "avatar": "avatar-1617112952884.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jeremias",
+    "lastName": "Bustos reyes",
+    "user": "jerebustos25",
+    "email": "jerebustos25@hotmail.com",
+    "admi": true,
+    "birth_date": "2021-03-17",
+    "pass": "$2a$10$46NsyibtgFIttW3hW/u/puicNjp2q0pLJovpWeicLDT/aOiV12MRe",
+    "avatar": "avatar-1617115799159.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Nacho",
+    "lastName": "Santoro",
+    "user": "nachito",
+    "email": "nachito@gmail.com",
+    "admi": false,
+    "birth_date": "2021-03-24",
+    "pass": "$2a$10$.yvnnsrkDtKTIR7NtjRo/usIKJFMtiOU7rOTvJFtHON7tLLTfhzLK",
+    "avatar": "avatar-1617119423648.jpg"
+  }
+]
