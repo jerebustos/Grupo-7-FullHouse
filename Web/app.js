@@ -6,6 +6,7 @@ const path = require('path');
 const methodOverride =  require('method-override');
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
+const userLoggedMiddleware = require('./middleware/userLogMiddleware')
 
 app.set('port', process.env.PORT || 3000);
 
@@ -28,6 +29,8 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }))
+
+app.use(userLoggedMiddleware)
 
 app.use(cookieParser())
 
