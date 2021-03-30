@@ -52,10 +52,15 @@ const controller = {
     save: (req,res)=>{
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
+		
+		let filePath = path.resolve(__dirname,'../public/img/users/' + req.file.filename);
+        fs.unlinkSync(filePath);
+
 			return res.render('users/register', {
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			});
+			
 		}
         let userInDB = users.find( usuario => usuario.email == req.body.email)
         if (userInDB) {
@@ -85,6 +90,7 @@ const controller = {
             lastName:req.body.lastName ,
             user:req.body.user ,
             email:req.body.email ,
+			addres: req.body.addres,
             admi : false,
             birth_date: req.body.birth_date,
             pass: bcryptjs.hashSync(req.body.pass, 10),
@@ -100,7 +106,9 @@ const controller = {
 
     },
     profile: (req,res)=>{
-		res.render("users/profile")
+		res.render("users/profile", {
+			user: req.session.userLogged
+		})
     },
     edit: (req,res)=>{
 
@@ -111,6 +119,11 @@ const controller = {
     disable: (req,res)=>{
 
     },
+	logout:  (req,res)=>{
+		res.clearCookie('user');
+		req.session.destroy();
+		return res.redirect('/');
+    }
 }
     
     

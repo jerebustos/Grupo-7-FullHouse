@@ -25,6 +25,10 @@ const controller = {
     store:(req, res) => {
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
+
+            let filePath = path.resolve(__dirname,'../public/img/products/' + req.file.filename);
+            fs.unlinkSync(filePath);
+
 			return res.render('products/productCreate', {
 				errors: resultValidation.mapped(),
 				oldData: req.body

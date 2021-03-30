@@ -2,13 +2,34 @@
 <html lang="en">
     <head>
         <%-include ('../partials/head') %>
+
+        <link rel="stylesheet" href="/css/profile.css">
+
+    
      
       </head>
  
 <body>
     <%-include ('../partials/header') %>
 
-
+    
+        <div class="perfil">
+        <h1 style="text-align:center"> <%= user.user%> </h1>
+        
+        <div class="card">
+          <img src="/img/users/<%= user.avatar%>"  alt="Avatar" style="width:100%">
+          <h2><%= user.name%> <%= user.lastName%></h2>
+          <p class="title"><%= user.email%></p>
+          <p class="title"><%= user.addres%></p>
+          <p class="title"><%= user.birth_date%></p>
+         
+          <form action="/usuario/salir" method="get">
+          <p><button>Cerrar sesión</button></p>
+        </form>
+        </div>
+    </div>
+        
+        
 
 
 

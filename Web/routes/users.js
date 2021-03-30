@@ -5,14 +5,17 @@ const validations = require('../middleware/validateRegister');
 const uploadFile = require("../middleware/usersMulter")
 const guestMiddleware = require('../middleware/guestMiddleware');
 const authMiddleware = require('../middleware/authMiddleware');
+const userLoggedMiddleware = require("../middleware/userLogMiddleware")
 
-router.get('/ingresar',guestMiddleware, userController.login);
+router.get('/ingresar',userLoggedMiddleware, guestMiddleware, userController.login);
 
-router.get('/registro',guestMiddleware, userController.register);
+router.get('/registro',userLoggedMiddleware, guestMiddleware, userController.register);
 
 router.get('/perfil',authMiddleware, userController.profile);
 
 router.get('/editar', userController.edit);
+
+router.get('/salir', userController.logout);
 
 router.post('/acceder', userController.access);
 

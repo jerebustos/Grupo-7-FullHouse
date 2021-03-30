@@ -46,17 +46,5 @@
     "category": "pequeño",
     "description": "La licuadora de mano Philips HR2625/80 tiene un moderno diseño en color negro. Posee tecnología Speed Touch para un control de potencia perfecto. También cuenta con desmontaje el cual permite que con sólo pulsar un botón se pueda cambiar de accesorio.",
     "image": "image-1616672159881.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Heladera",
-    "price": "59999",
-    "color": "Blanco ",
-    "accesorios": "Sin Acceserios ",
-    "marca": "Patrick",
-    "modelo": "HPK151M00B",
-    "category": "pequeño",
-    "description": "Heladera cíclica. Eficiencia A. Color Blanca. Capacidad bruta 394 litros. Capacidad Neta 392 Litros. Capacidad Freezer Neta 124 Litros. Capacidad Refrigerador Neta 268 Litros. Estantes regulables en altura en freezer y refrigerador. Anaqueles en contrapuerta para botellas y alimentos regulables en altura. Crisper para frutas y verduras. Luz interior. Huevera. Hielera. Origen Argentina.",
-    "image": "image-1617103557732.jpg"
   }
 ]
