@@ -71,3 +71,11 @@ main{
   .olvidaste:hover{
       color:#FF9B54
   }
+
+  .form-check-label{
+  position: relative;
+  right: 21%;
+  font-size: 1.3rem;
+  color: coral;
+  font-weight: bold;
+  }
