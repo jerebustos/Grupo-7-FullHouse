@@ -46,5 +46,56 @@
     "category": "pequeño",
     "description": "La licuadora de mano Philips HR2625/80 tiene un moderno diseño en color negro. Posee tecnología Speed Touch para un control de potencia perfecto. También cuenta con desmontaje el cual permite que con sólo pulsar un botón se pueda cambiar de accesorio.",
     "image": "image-1616672159881.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Cocina Whirlpool",
+    "price": "66899",
+    "color": "Gris",
+    "accesorios": "Sin Acceserios",
+    "marca": "Whirlpool",
+    "modelo": "WFX57DI",
+    "category": "grande",
+    "description": "La Whirlpool WFX57DI es una cocina de diseño clásico en color Silver que cuenta con cuatro hornallas; horno y cajón parrilla independiente. Dispone de 1 quemador grande; 2 medianos y uno pequeño. A su vez, su construcción hermética evita que se filtre suciedad o líquidos previniendo desgaste y brindando mayor seguridad",
+    "image": "image-1617483674990.png",
+    "_locals": {
+      "isLogged": false
+    }
+  },
+  {
+    "id": 9,
+    "name": "Freezer Inelro",
+    "price": "62999",
+    "color": "Blanco",
+    "accesorios": "Sin Acceserios",
+    "marca": "Inelro",
+    "modelo": " FIH-350A+",
+    "category": "grande",
+    "description": "El freezer Inelro FIH-350A+ está fabricado con ruedas de alta resistencia, canastos plásticos, puerta robusta con manijas ergonómicas e interior de gabinete electrozincado prepintado. Además, ofrece compresor EMBRACO de última generación y termostato de función múltiple (Enfriador/Conservadora/Freezer/Frío extremo). Por otro lado, utilizada gas refrigerante ecológico (R600a, libre CFC) y su clasificación energética es Clase A+.",
+    "image": "image-1617483930704.png"
+  },
+  {
+    "id": 10,
+    "name": "Heladera Samsung",
+    "price": "77999",
+    "color": "Gris",
+    "accesorios": "Sin Acceserios",
+    "marca": "Samsung",
+    "modelo": "RT29K577JS8",
+    "category": "grande",
+    "description": "La heladera Samsung RT29K577JS8 tiene un diseño fino e innovador que combina en cualquier tipo de cocina. En su interior, cuenta con estantes de vidrio templado y cajón para frutas y verduras. Por otra parte, cuenta con un cómodo dispenser de agua fresca que evita el abrir y cerrar del refrigerador. A su vez, un Display LED permite el control de la unidad desde afuera.",
+    "image": "image-1617484337143.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cava Vondom",
+    "price": "43000",
+    "color": "Negro",
+    "accesorios": "Sin Acceserios",
+    "marca": "Vondom",
+    "modelo": " 18ST",
+    "category": "grande",
+    "description": "La cava de vinos Vondom 18ST es especial para vinos tintos. Dada sus medidas es ideal para colocar sobre el piso en cualquier ambiente de su casa, agregando de esta manera sofisticación y elegancia a su hogar. Además, su puerta de vidrio espejado y marco con terminaciones en negro le dan una apariencia atractiva y estilizada de cuerpo completo.",
+    "image": "image-1617484628238.jpg"
   }
 ]
