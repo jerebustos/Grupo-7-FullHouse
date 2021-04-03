@@ -11,30 +11,48 @@
     
     <main class="main">
 <!--Portada-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-<div class="container-all" id="move-content">
-  <div class="container-cover">
-    <div class="container-info-cover">
-        <h1>¡Todo para tu cocina!</h1>
-        <p>En FullHouse tenemos todo para tu cocina!</p>
-    </div>
-</div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img class="imgSlides" src="img/Web-1440x350-Nespresso.jpg">
+  </div>
 
-<h2>Mira Nuestras Ofertas Destacadas!</h2>
-<div class="content-all">
-    <div class="content-carrousel">
-        <figure><img src="img/HELADERA.jpg"></figure>
-        <figure><img src="img/MICROONDAS1.webp"></figure>
-        <figure><img src="img/COCINA.png"></figure>
-        <figure><img src="img/FREEZER.png"></figure>
-     
-    </div>
+  <div class="mySlides fade">
+    <img class="imgSlides" src="img/grafica-06.jpg" >
+    
+  </div>
+
+  <div class="mySlides fade">
+    <img class="imgSlides" src="img/BANNER-WEB-ENERO-DOMEC.jpg" >
+  </div>
+
+ 
 </div>
 <br>
+<h2 class="texto-oferta">Grandes Electros!</h2>
 <br>
+<br>
+<% products.forEach(producto => { %>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
+      <div class="containerProduct">
+        <h3><%= producto.marca%></h3>
+        <p class="title"><%= producto.name%></p>
+         <h2 class="price">$ <%= toThousand(producto.price) %></h2>
+        <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <% }) %>
+  <br>
 
 <img class="banner" src="img/15949632928586098418.jpg" alt="baneer">
-
 
 <h2 class="texto-oferta">Pequeños Electros!</h2>
 <br>
@@ -49,7 +67,7 @@
         <h3><%= producto.marca%></h3>
         <p class="title"><%= producto.name%></p>
          <h2 class="price">$ <%= toThousand(producto.price) %></h2>
-        <a href="/producto/detalle/<%= producto.id %>"><p><button class="button">Detalle</button></p></a>
+        <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>
       </div>
     </div>
   </div>
@@ -66,7 +84,7 @@
 
     
     
-    
+    <script src="js/slideshow.js"></script>
     
 </body>
 </html>

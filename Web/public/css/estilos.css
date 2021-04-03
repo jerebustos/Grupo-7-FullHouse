@@ -1,58 +1,77 @@
 
+#detalle{
+  font-size: 20px;
+}
+
+
 /*Portada*/
 
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 16vh;
+  position: relative;
+}
 
-.container-cover{
-    width: 100%;
-    height: 260px;
-    position: relative;
-    background-image: url(../img/cocina.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.imgSlides{
+  width: 100vw;
+  height: 64vh
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 
 
-.container-info-cover{
-    max-width: 800px;
-    height: 275px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.container-info-cover h1{
-    font-size: 60px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 20px;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.container-info-cover p{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
+
 
 /*Contenedor - contenido del articulo*/
-
-.container-content{
-    width: 1200px;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
 
 
 
@@ -62,142 +81,12 @@
     text-align: center;
     font-size: 40px;
     margin-top: 8%;
-    color: #00C0FF;
-    
-}
-
-.container{
-    width: 90%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-     margin-top: 6em;
-     margin-bottom: 3em;        
-    display: flex;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-  }
-  
-  
-  .item{
-    background-color: #fff;
-    cursor: pointer;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
-    width: 45vw;
-    height: 50vh;
-    
-    transition: all 300ms;
-    
-    position: relative;
-  }
-  
-  
-  .item::after {
-    content: "";
-    background-color:rgba(255, 155, 84, .1);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    transform: scale(0);
-    transition: all 300ms;
-    opacity: 0;
-  }
-  
-  .item:hover:after{
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .item:hover {
-    transform: scale(1.05);
-  }
-  
-  .item-text{
-    padding: 1em;
-  }
-  
-  
-  .item-img{
-    max-width: 100%;
-    display: block;
-  }
-/* carrusel*/
-
-h2{
-    text-align: center;
-    font-size: 40px;
     font-family: arial;
     color: #00C0FF;
     
 }
 
-.content-all{
-    width: 210px;
-    margin: auto;
-    perspective: 800px;
-    position: relative;
-    margin-top: 50px;
-}
 
-.content-carrousel{
-    width: 100%;
-    position: absolute;
-    animation: rotar 10s infinite linear;
-    transform-style: preserve-3d;
-}
-
-.content-carrousel:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-
-.content-carrousel figure{
-    width: 100%;
-    height: 150px;
-    background: rgba(255, 155, 84,.1);
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 20px 0px black;
-    transition: all 300ms;
-    
-}
-
-.content-carrousel figure:hover{
-    box-shadow: 0px 0px 0px 0px black;
-    transition: all 300ms;
-}
-
-.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
-.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
-.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
-.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
-
-
-.content-carrousel img{
-    width: 100%;
-    transition: all 300ms;
-}
-
-.content-carrousel img:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
-
-
-
-  
-
-
-@keyframes rotar{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(360deg);
-    }
-}
 
 .row{
     text-align: center;
@@ -205,44 +94,11 @@ h2{
 
 /* Responsive Design - adaptable a dispositivos moviles*/
 
-@media screen and (max-width: 1220px){
-
-    
-    .container-content{
-        max-width: 1000px;
-         padding: 0 20px
-    }
-
-
-}
-
-
-@media screen and (max-width: 1020px){
-
-    .container-content{
-        width: 100%;
-        flex-direction: column;
-    }
-    
-
-}
-
-
-
-
 
 @media screen and (max-width: 800px){
 
     body{
         overflow-x: hidden;
-    }
-
-    .container-all{
-        transition: all 300ms cubic-bezier(1,0,0,1);
-    }
-
-    .move-container-all{
-        transform: translateX(300px);
     }
 
     .menu{
@@ -263,37 +119,13 @@ h2{
         transform: translateX(0px);
     }
 
-    .container{
-        width: 100%;
-        flex-direction:row;
-        flex-wrap: wrap;
-    }
-
-  
-
-
-
+    
 .container-ofertas{
     background-color: aquamarine;
     margin: 12rem;
     display: inline-block;
     font-size: 50px;
 }
-}
-
-
-@media screen and (max-width: 500px){
-
-.container-content{
-    width: 100%;
-    flex-direction: column;
-}
-.container{
-    width: 100%;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-
 }
 
 
@@ -305,7 +137,7 @@ h2{
   }
 
   .price{
-    color: rgb(101, 255, 96)
+    color:sandybrown;
   }
 
   .banner{
@@ -356,6 +188,7 @@ h2{
   }
   
   .button {
+    font-weight: bold;
     border: none;
     outline: 0;
     display: inline-block;

@@ -17,10 +17,17 @@
         <h1 style="text-align:center"> <%= user.user%> </h1>
         
         <div class="card">
-          <img src="/img/users/<%= user.avatar%>"  alt="Avatar" style="width:100%">
-          <h2><%= user.name%> <%= user.lastName%></h2>
+          <img src="/img/users/<%= user.avatar%>"  style="width:100%">
+          <h3>Nombre y Apellido</h3>
+          <p class="title"><%= user.name%> <%= user.lastName%></p>
+          <br>
+          <h3>Email</h3>
           <p class="title"><%= user.email%></p>
+          <br>
+          <h3>Dirección</h3>
           <p class="title"><%= user.addres%></p>
+          <br>
+          <h3>Fecha de nacimiento</h3>
           <p class="title"><%= user.birth_date%></p>
          
           <form action="/usuario/salir" method="get">

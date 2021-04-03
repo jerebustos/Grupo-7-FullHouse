@@ -10,7 +10,7 @@
     max-width: 300px;
     margin: auto;
     text-align: center;
-    font-family: arial;
+    
   }
   
   .title {
@@ -20,11 +20,12 @@
   
   button {
     border: none;
+    font-weight: bold;
     outline: 0;
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color:#00C0FF;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -35,4 +36,8 @@
   
   button:hover, a:hover {
     opacity: 0.7;
+  }
+
+  h3{
+    background-color: gainsboro;
   }
