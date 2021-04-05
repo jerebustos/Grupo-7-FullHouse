@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%-include ('../partials/head')%>
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+ <!--Header - menu-->
+ <%-include ('../partials/header') %>
+ <!--Header - menu-->
+
+ <main class="main-list">
+
+ <% products.forEach(producto => { %>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
+          <div class="containerProduct">
+            <h3><%= producto.marca%></h3>
+            <p class="title"><%= producto.name%></p>
+             <h2 class="price">$ <%= toThousand(producto.price) %></h2>
+            <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>
+          </div>
+        </div>
+      </div>
+    
+      <% }) %>
+
+    </main> 
+ 
+<!-- footer -->
+<%-include ('../partials/footer') %> 
+<!-- footer -->
+           
+        
+            
+            
+           
+            
+        </body>
+        </html>

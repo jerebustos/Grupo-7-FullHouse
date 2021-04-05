@@ -7,6 +7,19 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
+
+    list: (req,res) =>{
+
+        let paraLaVista = {
+            products,
+            toThousand
+        }
+
+
+      return res.render("products/productList", paraLaVista)
+    }, 
+
+
     show:(req,res)=>{
         const productoDetalle = products.find( producto => producto.id == req.params.id);
 

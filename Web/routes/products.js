@@ -5,6 +5,8 @@ const productsController = require('../controllers/productsController');
 const upload = require("../middleware/productsMulter")
 
 
+router.get('/',productsController.list);
+
 router.get('/detalle/:id',productsController.show);
 
 router.get('/nuevo', productsController.create);

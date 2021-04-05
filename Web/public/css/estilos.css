@@ -3,6 +3,9 @@
   font-size: 20px;
 }
 
+.main-list{
+  margin-top: 9% 
+}
 
 /*Portada*/
 
@@ -122,6 +125,9 @@
     .column {
         width: 50%;
     }
+    .main-list{
+      margin-top: 14% 
+    }
 
   }
  
@@ -129,6 +135,9 @@
     .column {
       width: 100%;
       display: block;
+    }
+    .main-list{
+      margin-top: 23% 
     }
   }
   
