@@ -150,6 +150,12 @@
     border: rgb(129, 127, 127) 2px solid;
   }
   
+  .card-list {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  
+  
   /* Some left and right padding inside the container */
   .containerProduct {
     padding: 0 16px;
