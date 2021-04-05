@@ -12,19 +12,19 @@ router.get('/ingresar', guestMiddleware, userBaseController.login);
 
 router.get('/registro', guestMiddleware, userBaseController.register);
 
-router.get('/perfil',authMiddleware, userController.profile);
+router.get('/perfil',authMiddleware, userBaseController.profile);
 
-router.get('/editar', userController.edit);
+router.get('/editar', userBaseController.edit);
 
-router.get('/salir', userController.logout);
+router.get('/salir', userBaseController.logout);
 
 router.post('/acceder', userBaseController.access);
 
-router.post('/',uploadFile.single("avatar"),validations, userController.save);
+router.post('/',uploadFile.single("avatar"),validations, userBaseController.save);
 
-router.put('/perfil', userController.update);
+router.put('/perfil', userBaseController.update);
 
-router.delete('/desactivar', userController.disable);
+router.delete('/desactivar', userBaseController.disable);
 
 
 module.exports = router;
