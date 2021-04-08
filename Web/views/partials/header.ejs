@@ -42,11 +42,14 @@
                         </a>
                     </li>
                     <% if (locals.userLogged) { %>
-                        <li class="menu_items">
-                        
-                        <a href="/usuario/perfil">
-                        hola! <%= locals.userLogged.user %>
-                    </a>       
+                      <a href="#"> <li class="menu_items dropdown">
+                        <i class="fas fa-user"></i>
+                        <%= locals.userLogged.user %></a>
+                        <div class="dropdown-content">
+                            <a id="content" href="/usuario/perfil">Perfil</a>
+                            <a id="content" href="/usuario/salir">Cerrar sesión</a>
+                          </div>
+                           
                     </li>   
                    
                     <% } else { %>
