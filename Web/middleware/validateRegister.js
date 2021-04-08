@@ -4,7 +4,7 @@ const { body } = require('express-validator');
 module.exports = [
 	body('name').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('lastName').notEmpty().withMessage('Tienes que escribir un apellido'),
-    body('user').notEmpty().withMessage('Tienes que escribir un usuario'),
+    body('user').notEmpty().withMessage('Tienes que escribir un usuario').bail().isLength({ min: 3 }).withMessage('Minimo 3 caracteres'),
 	body('email')
 		.notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
 		.isEmail().withMessage('Debes escribir un formato de correo válido'),
