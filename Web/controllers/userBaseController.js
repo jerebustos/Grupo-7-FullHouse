@@ -58,9 +58,9 @@ const controller = {
 
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
-
+            if(req.file){
             let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
-            fs.unlinkSync(filePath);
+            fs.unlinkSync(filePath)};
 
             return res.render('users/register', {
                 errors: resultValidation.mapped(),
@@ -74,6 +74,8 @@ const controller = {
             }
         })
         if (userInDB) {
+            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
+            fs.unlinkSync(filePath);
             return res.render('users/register', {
                 errors: {
                     email: {
@@ -89,6 +91,8 @@ const controller = {
             }
         })
         if (userName) {
+            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
+            fs.unlinkSync(filePath)
             return res.render('users/register', {
                 errors: {
                     user: {
