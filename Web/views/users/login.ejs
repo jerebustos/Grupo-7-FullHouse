@@ -28,11 +28,17 @@
         
             <a class="olvidaste" href="#"> ¿olvidaste tu contraseña? </a>
 
-            <div> <input class="user" type="password" name="pass" placeholder="Contraseña"> </div>
+            <div> <input class="user" type="password" name="pass" id="password" placeholder="Contraseña"> <i id="eye" class="fa fa-eye" onclick="mostrarContrasena()"></i> <i id="notEye" class="fa fa-eye-slash" onclick="mostrarContrasena()"></i></div>
+            <div class="col">
+
+                
+                
             <br>
             <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" name="remember_user">Recordar mi usuario
+
             </label>
+            
 
             <button class="boton" type="submit" value="Enviar"> Enviar </button>
         </form>
@@ -44,7 +50,7 @@
       <%-include ('../partials/footer.ejs') %> 
     <!-- footer -->
         
-    
+    <script src="/js/pass.js"></script>
 
         
 </body>

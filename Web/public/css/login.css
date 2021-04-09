@@ -79,3 +79,16 @@ main{
   color: coral;
   font-weight: bold;
   }
+
+
+#notEye{
+    display: none;
+}
+
+#notEye, #eye{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -30px;
+
+}

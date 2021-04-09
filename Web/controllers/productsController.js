@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const capitalizarPrimeraLetra = require("../middleware/Mayuscula")
 const {validationResult} = require('express-validator');
 const productsFilePath = path.resolve(__dirname, '../data/productosBaseDatos.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -50,7 +51,7 @@ const controller = {
 
         let productoAgregar = {
 			id: products.length == 0 ? 1 : products[products.length -1].id +1,
-			name: req.body.name,
+			name: capitalizarPrimeraLetra(req.body.name),
 			price: req.body.price,
 			color: req.body.color ,
             accesorios: req.body.accesorios,
