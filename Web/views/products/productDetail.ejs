@@ -27,19 +27,19 @@
          <div>
            <div class="detalle1">
             <div class="specName">Color</div>
-            <div class="specValue"><%=productoDetalle.color%> </div>
+            <div class="specValue"><%=productoDetalle.color.name%> </div>
            </div>
            <div class="detalle2">
             <div class="specName">Marca</div>
-            <div class="specValue"><%=productoDetalle.marca%> </div>
+            <div class="specValue"><%=productoDetalle.brand.name%> </div>
            </div>
            <div class="detalle3">
             <div class="specName">Modelo</div>
-            <div class="specValue"><%=productoDetalle.modelo%> </div>
+            <div class="specValue"><%=productoDetalle.model%> </div>
            </div>
            <div class="detalle4">
             <div class="specName">Accesorios</div>
-            <div class="specValue"><%=productoDetalle.accesorios%></div>
+            <div class="specValue"><%=productoDetalle.accessory%></div>
            </div>
            <h3>Descipción</h3>
 
@@ -56,12 +56,14 @@
         <form action="/" method="POST">
           <button class="botonDeCompra" type="submit" value="Comprar"><h3>Comprar</h3></button>
        </form>
-       
+       <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
        <a href="/producto/editar/<%= productoDetalle.id%>" class="editar"><h3>Editar</h3></a>
 
        <form action="/producto/borrar/<%= productoDetalle.id %>?_method=DELETE" method="POST">
         <button type="submit" class="botonDeCompra"><h3>Eliminar</h3></button>
       </form>
+
+      <% } %> 
 
       
        </div>

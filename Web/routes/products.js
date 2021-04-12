@@ -3,20 +3,21 @@ const router = express.Router();
 const validations = require('../middleware/validateCreateProduct');
 const productsController = require('../controllers/productsController');
 const upload = require("../middleware/productsMulter")
+const productsBaseController = require('../controllers/productsBaseController')
 
 
-router.get('/',productsController.list);
+router.get('/',productsBaseController.list);
 
-router.get('/detalle/:id',productsController.show);
+router.get('/detalle/:id',productsBaseController.show);
 
-router.get('/nuevo', productsController.create);
+router.get('/nuevo', productsBaseController.create);
 
-router.get('/editar/:id',productsController.edit);
+router.get('/editar/:id',productsBaseController.edit);
 
-router.post('/',upload.single("image"),validations, productsController.store);
+router.post('/',upload.single("image"),validations, productsBaseController.store);
 
-router.put('/editar/:id', productsController.update);
+router.put('/editar/:id', productsBaseController.update);
 
-router.delete('/borrar/:id', productsController.destroy);
+router.delete('/borrar/:id', productsBaseController.destroy);
 
 module.exports = router

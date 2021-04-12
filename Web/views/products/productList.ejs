@@ -19,7 +19,7 @@
         <div class="card-list">
           <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
           <div class="containerProduct">
-            <h3><%= producto.marca%></h3>
+            <h3><%= producto.brand.name%></h3>
             <p class="title"><%= producto.name%></p>
              <h2 class="price">$ <%= toThousand(producto.price) %></h2>
             <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>

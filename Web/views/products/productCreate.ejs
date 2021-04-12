@@ -32,36 +32,32 @@
                 <%= errors.price.msg %> 
             </div>
         <% } %>
-            <input type="text" name="color" placeholder="Colores del producto" <%= locals.errors && errors.color ? 'is-invalid' : null %>
-            value="<%= locals.oldData ? oldData.color : null %>"
+        <select name="color_id" id="" required>
+            <option value="" disabled selected>- Seleccione el color - </option>
+            <% allColor.forEach(color => { %>
+            <option value="<%= color.id %>"><%= color.name %></option>
+            <% }); %>
+        </select>
+            <input type="text" name="accessory" placeholder="Accesorios del producto" <%= locals.errors && errors.accessory ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.accessory : null %>"
         >
-        <% if (locals.errors && errors.color) { %>
+        <% if (locals.errors && errors.accessory) { %>
             <div class="text-danger">
-                <%= errors.color.msg %> 
+                <%= errors.accessory.msg %> 
             </div>
         <% } %>
-            <input type="text" name="accesorios" placeholder="Accesorios del producto" <%= locals.errors && errors.accesorios ? 'is-invalid' : null %>
-            value="<%= locals.oldData ? oldData.accesorios : null %>"
+        <select name="brand_id" id="" required>
+            <option value="" disabled selected>- Seleccione la marca - </option>
+            <% allBrand.forEach(brand => { %>
+            <option value="<%= brand.id %>"><%= brand.name %></option>
+            <% }); %>
+        </select>
+            <input type="text" name="model" placeholder="Modelo del producto" <%= locals.errors && errors.model ? 'is-invalid' : null %>
+            value="<%= locals.oldData ? oldData.model : null %>"
         >
-        <% if (locals.errors && errors.accesorios) { %>
+        <% if (locals.errors && errors.model) { %>
             <div class="text-danger">
-                <%= errors.accesorios.msg %> 
-            </div>
-        <% } %>
-            <input type="text" name="marca" placeholder="Marca del producto" <%= locals.errors && errors.marca ? 'is-invalid' : null %>
-            value="<%= locals.oldData ? oldData.marca : null %>"
-        >
-        <% if (locals.errors && errors.marca) { %>
-            <div class="text-danger">
-                <%= errors.marca.msg %> 
-            </div>
-        <% } %>
-            <input type="text" name="modelo" placeholder="Modelo del producto" <%= locals.errors && errors.modelo ? 'is-invalid' : null %>
-            value="<%= locals.oldData ? oldData.modelo : null %>"
-        >
-        <% if (locals.errors && errors.modelo) { %>
-            <div class="text-danger">
-                <%= errors.modelo.msg %> 
+                <%= errors.model.msg %> 
             </div>
         <% } %>
             <br>
@@ -79,10 +75,11 @@
 
             <div class="category">
                 <label for="category" class="form-label-1">Categoría</label>
-                <select name="category" id="category" class="form-input" required>
-                    <option value="">Elegí</option>
-                    <option value="pequeño">Pequeños electrodomesticos</option>
-                    <option value="grande">Grandes electrodomesticos</option>
+                <select name="category_id" id="" required>
+                    <option value="" disabled selected>- Seleccione una Categoria - </option>
+                    <% allCategory.forEach(category => { %>
+                    <option value="<%= category.id %>"><%= category.name %></option>
+                    <% }); %>
                 </select>
             </div>
             <div class="category">

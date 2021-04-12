@@ -35,16 +35,19 @@
                     </li>
 
 
-                    <li class="menu_items">
-                        <a href="/producto/nuevo"> 
-                            <i class="fas fa-home"></i> 
-                            Nuevo
-                        </a>
-                    </li>
+                    <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
+                        <li class="menu_items">
+                            <a href="/producto/nuevo"> 
+                                <i class="fas fa-home"></i> 
+                                Nuevo
+                            </a>
+                        </li>
+                        <% } %>
+
                     <% if (locals.userLogged) { %>
-                      <a href="#"> <li class="menu_items dropdown">
+                      <li class="menu_items dropdown"> 
                         <i class="fas fa-user"></i>
-                        <%= locals.userLogged.user %></a>
+                       <a href="/usuario/perfil"> <%= locals.userLogged.user %></a>
                         <div class="dropdown-content">
                             <a id="content" href="/usuario/perfil">Perfil</a>
                             <a id="content" href="/usuario/salir">Cerrar sesión</a>

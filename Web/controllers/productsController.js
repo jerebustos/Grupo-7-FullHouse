@@ -57,7 +57,7 @@ const controller = {
             accesorios: req.body.accesorios,
             marca: req.body.marca,
             modelo: req.body.modelo,
-			category: req.body.category ,
+			category: req.body.category,
 			description: req.body.description,
 			image: req.file.filename
 

@@ -5,10 +5,8 @@ module.exports = [
 	body('name').notEmpty().withMessage('Tienes que escribir un nombre de producto'),
 	body('price').notEmpty().withMessage('Tienes que escribir un precio').bail()
 		.isNumeric().withMessage('Debes escribir un numero'),
-	body('color').notEmpty().withMessage('Tienes que escribir una color'),
-	body('accesorios').notEmpty().withMessage('Tienes que elegir un accesorio'),
-    body('marca').notEmpty().withMessage('Tienes que elegir una marca'),
-    body('modelo').notEmpty().withMessage('Tienes que elegir un modelo'),
+	body('accessory').notEmpty().withMessage('Tienes que elegir un accesorio'),
+    body('model').notEmpty().withMessage('Tienes que elegir un modelo'),
 	body('image').custom((value, { req }) => {
 		let file = req.file;
 		let acceptedExtensions = ['.jpg', '.png', '.gif', ".jpeg"];
