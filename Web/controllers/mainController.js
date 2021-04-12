@@ -1,32 +1,39 @@
 const fs = require('fs');
 const path = require('path');
+const db = require("../database/models");
 
-const productsFilePath = path.resolve(__dirname, '../data/productosBaseDatos.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const Products = db.Product;
+const Brands = db.Brand;
+
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
 const controller = {
-index:(req,res)=>{
-    const ProductosGrandes = [];
-    const ProductosPequeños  = [];
+index: async (req,res)=>{
 
-    products.map(producto => {
-        if(producto.category == "grande"){
-            ProductosGrandes.push(producto)
-         }
-         else if(producto.category == "pequeño"){
-            ProductosPequeños.push(producto)
-         }
-    })
+    const ProductosGrandes = await Products.findAll({
+        where: {
+            category_id: 1
+        },
+        include: ['brand']}
+    );
+    const ProductosPequeños  = await Products.findAll({
+        where: {
+            category_id: 2
+        },
+        include: ['brand']}
+    );;
+
+    
 
     const paraLaVista = {
         pequeños : ProductosPequeños ,
         grandes  : ProductosGrandes,
         toThousand
     }
-    res.render("index",paraLaVista);
+    //return res.send(paraLaVista)
+    return res.render("index",paraLaVista);
 },
 cart:(req,res)=>{
     res.render("cart");
