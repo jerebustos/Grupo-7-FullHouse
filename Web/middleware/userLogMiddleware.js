@@ -1,16 +1,19 @@
 const path = require('path');
 const fs = require('fs');
+const db = require("../database/models");
+
+const Users = db.User //Para usar la base User
 
 
-const userFilePath = path.resolve(__dirname, '../data/users.json');
-    const users = JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
 
 
-function userLoggedMiddleware(req, res, next) {
+ async function userLoggedMiddleware(req, res, next) {
 	res.locals.isLogged = false;
 
 	
-	let userCookie = req.cookies.user
+	let userCookie = req.cookies.user;
+	let users = await Users.findAll();
+
     let userFromCookie = users.find( oneUser => oneUser.user == userCookie);
 
 	if (userFromCookie) {
