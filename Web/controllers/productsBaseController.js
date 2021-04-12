@@ -75,7 +75,7 @@ const controller = {
 		}
 
         await Products.create({
-            name: req.body.name,
+            name: capitalizarPrimeraLetra(req.body.name),
             price: req.body.price,
             color_id: req.body.color_id,
             accessory: req.body.accessory,

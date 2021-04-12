@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Cafetera Dolce Gusto ",
+    "name": "Cafetera Dolce Gusto",
     "price": "15000",
     "color": "roja,gris",
     "accesorios": "aeroccino",
@@ -25,7 +25,7 @@
   },
   {
     "id": 6,
-    "name": "Horno microondas ",
+    "name": "Horno microondas",
     "price": "25000",
     "color": "Blanco",
     "accesorios": "Sin Acceserios",
@@ -69,7 +69,7 @@
     "color": "Blanco",
     "accesorios": "Sin Acceserios",
     "marca": "Inelro",
-    "modelo": " FIH-350A+",
+    "modelo": "FIH-350A+",
     "category": "grande",
     "description": "El freezer Inelro FIH-350A+ está fabricado con ruedas de alta resistencia, canastos plásticos, puerta robusta con manijas ergonómicas e interior de gabinete electrozincado prepintado. Además, ofrece compresor EMBRACO de última generación y termostato de función múltiple (Enfriador/Conservadora/Freezer/Frío extremo). Por otro lado, utilizada gas refrigerante ecológico (R600a, libre CFC) y su clasificación energética es Clase A+.",
     "image": "image-1617483930704.png"
@@ -93,7 +93,7 @@
     "color": "Negro",
     "accesorios": "Sin Acceserios",
     "marca": "Vondom",
-    "modelo": " 18ST",
+    "modelo": "18ST",
     "category": "grande",
     "description": "La cava de vinos Vondom 18ST es especial para vinos tintos. Dada sus medidas es ideal para colocar sobre el piso en cualquier ambiente de su casa, agregando de esta manera sofisticación y elegancia a su hogar. Además, su puerta de vidrio espejado y marco con terminaciones en negro le dan una apariencia atractiva y estilizada de cuerpo completo.",
     "image": "image-1617627855552.jpg"
