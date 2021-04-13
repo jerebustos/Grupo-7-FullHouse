@@ -18,8 +18,8 @@
     font-size: 18px;
   }
   
-  button {
-    border: none;
+  button, .editar {
+    border: black solid 1px;
     font-weight: bold;
     outline: 0;
     display: inline-block;
@@ -32,6 +32,9 @@
     font-size: 18px;
   }
   
+  #delet{
+    background-color: red;
+  }
 
   
   button:hover, a:hover {

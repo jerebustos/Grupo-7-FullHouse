@@ -38,7 +38,7 @@ const controller = {
             return res.render('users/login', {
                 errors: {
                     user: {
-                        msg: 'Contaseña incorrecta'
+                        msg: 'Credenciales invalidas'
                     }
                 }
             });
@@ -126,7 +126,21 @@ const controller = {
     update: (req,res)=>{
 
     },
-    disable: (req,res)=>{
+    disable: async (req,res)=>{
+        let usuario = await Users.findOne({
+            where: {
+                id: req.params.id
+            } })
+
+        await Users.destroy({where: {id: req.params.id}, force: true})
+
+		let filePath = path.resolve(__dirname,'../public/img/users/' + usuario.avatar);
+
+		fs.unlinkSync(filePath);
+		
+        res.clearCookie('user');
+		req.session.destroy();
+		res.redirect("/")
 
     },
 	logout:  (req,res)=>{

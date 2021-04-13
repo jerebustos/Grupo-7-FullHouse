@@ -30,9 +30,18 @@
           <h3>Fecha de nacimiento</h3>
           <p class="title"><%= user.birth_date%></p>
          
-          <form action="/usuario/salir" method="get">
+         
+
+        <a href="/usuario/editar/<%= user.id %>" class="editar">Editar</a>
+
+        <form action="/usuario/salir" method="get">
           <p><button>Cerrar sesión</button></p>
         </form>
+       <form action="/usuario/desactivar/<%= user.id %>?_method=DELETE" method="POST">
+        <p><button id="delet">Eliminar</button></p>
+      </form>
+
+
         </div>
     </div>
         

@@ -24,7 +24,7 @@ router.post('/',uploadFile.single("avatar"),validations, userBaseController.save
 
 router.put('/perfil', userBaseController.update);
 
-router.delete('/desactivar', userBaseController.disable);
+router.delete('/desactivar/:id', userBaseController.disable);
 
 
 module.exports = router;
