@@ -40,18 +40,25 @@ main{
     justify-content: center;
 }
 
-.formulario input{
-    border: none;
+.formulario input, select{
     outline: none;
     font-size: 32px;
     padding:0px 8px;
     border-radius: 36px;
     border: black 1px solid;
     margin-top: 16px;
-    transition: all .3s ease-in-out;
+    
 }
 .formulario input[type="file"]{
-    font-size: 15px;
+    font-size: 16px;
+}
+
+#color{
+  padding: 0px 20px;
+}
+
+#brand{
+  padding: 0px 11px;
 }
 
 

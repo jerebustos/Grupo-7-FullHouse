@@ -14,14 +14,17 @@ index: async (req,res)=>{
 
     const ProductosGrandes = await Products.findAll({
         where: {
-            category_id: 1
+            category_id: 2
         },
+        limit: 4,
         include: ['brand']}
     );
     const ProductosPequeños  = await Products.findAll({
         where: {
-            category_id: 2
+            category_id: 1
         },
+        limit: 4,
+
         include: ['brand']}
     );;
 

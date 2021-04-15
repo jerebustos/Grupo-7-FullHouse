@@ -16,9 +16,9 @@
         <div>
         <form class="formulario" action="/producto/"  method="POST" enctype="multipart/form-data">
             <h1 class="products-title">Formulario de creación </h1>
-            <input type="text" name="name" placeholder="Nombre del producto" <%= locals.errors && errors.name ? 'is-invalid' : null %>
+            <input type="text" name="name" id="name" placeholder="Nombre del producto" <%= locals.errors && errors.name ? 'is-invalid' : null %>
             value="<%= locals.oldData ? oldData.name : null %>"
-        >
+        > <ul id="error"></ul>
         <% if (locals.errors && errors.name) { %>
             <div class="text-danger">
                 <%= errors.name.msg %> 
@@ -32,7 +32,7 @@
                 <%= errors.price.msg %> 
             </div>
         <% } %>
-        <select name="color_id" id="" required>
+        <select name="color_id" id="color" required>
             <option value="" disabled selected>- Seleccione el color - </option>
             <% allColor.forEach(color => { %>
             <option value="<%= color.id %>"><%= color.name %></option>
@@ -46,7 +46,7 @@
                 <%= errors.accessory.msg %> 
             </div>
         <% } %>
-        <select name="brand_id" id="" required>
+        <select name="brand_id" id="brand" required>
             <option value="" disabled selected>- Seleccione la marca - </option>
             <% allBrand.forEach(brand => { %>
             <option value="<%= brand.id %>"><%= brand.name %></option>
@@ -74,7 +74,6 @@
 
 
             <div class="category">
-                <label for="category" class="form-label-1">Categoría</label>
                 <select name="category_id" id="" required>
                     <option value="" disabled selected>- Seleccione una Categoria - </option>
                     <% allCategory.forEach(category => { %>

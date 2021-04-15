@@ -8,3 +8,4 @@ function mostrar_menu(){
    }
     document.getElementById("show-menu").classList.toggle('show-lateral');
 }
+

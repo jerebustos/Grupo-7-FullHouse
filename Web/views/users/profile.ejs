@@ -12,21 +12,21 @@
 <body>
     <%-include ('../partials/header') %>
 
-    
+       <main>   
         <div class="perfil">
-        <h1 style="text-align:center"> <%= user.user%> </h1>
         
         <div class="card">
+          <div class="user"><h1 class="userName" style="text-align:center"> <%= user.user%> </h1></div>
           <img src="/img/users/<%= user.avatar%>"  style="width:100%">
           <h3>Nombre y Apellido</h3>
           <p class="title"><%= user.name%> <%= user.lastName%></p>
-          <br>
+          
           <h3>Email</h3>
           <p class="title"><%= user.email%></p>
-          <br>
+          
           <h3>Dirección</h3>
           <p class="title"><%= user.addres%></p>
-          <br>
+          
           <h3>Fecha de nacimiento</h3>
           <p class="title"><%= user.birth_date%></p>
          
@@ -37,17 +37,32 @@
         <form action="/usuario/salir" method="get">
           <p><button>Cerrar sesión</button></p>
         </form>
-       <form action="/usuario/desactivar/<%= user.id %>?_method=DELETE" method="POST">
-        <p><button id="delet">Eliminar</button></p>
+
+        <p><button id="delet" onclick="document.getElementById('id01').style.display='block'">Eliminar</button></p>
+        <div id="id01" class="modal">
+          <form class="modal-content" action="/usuario/desactivar/<%= user.id %>?_method=DELETE" method="POST">
+            <div class="container">
+              <h1>Eliminar cuenta</h1>
+              <p>Estas seguro de eliminar tu cuenta?</p>
+            
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                <button type="submit" class="deletebtn" >Eliminar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+       
+        
       </form>
 
 
         </div>
     </div>
-        
+  </main> 
         
 
-
+    <script src="/js/delet.js"></script>
 
        <!-- footer -->
        <%-include ('../partials/footer') %> 

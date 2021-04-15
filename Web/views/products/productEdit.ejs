@@ -19,14 +19,14 @@
             <h1 class="products-title"> <i><%= productoAEditar.name  %> </i></h1>
             <input type="text" name="name" placeholder="Nombre del producto" value='<%= productoAEditar.name  %>'>
             <input type="text" name="price" placeholder="Precio del producto" value='<%= productoAEditar.price  %>'>
-            <select name="color_id" id="" required>
+            <select name="color_id" id="color" required>
                 <option value="" disabled selected>- Seleccione el color - </option>
                 <% allColor.forEach(color => { %>
                 <option value="<%= color.id %>"><%= color.name %></option>
                 <% }); %>
             </select>
             <input type="text" name="accesorios" placeholder="Accesorios del producto" value='<%= productoAEditar.accessory  %>'>
-            <select name="brand_id" id="" required>
+            <select name="brand_id" id="brand" required>
                 <option value="" disabled selected>- Seleccione la marca - </option>
                 <% allBrand.forEach(brand => { %>
                 <option value="<%= brand.id %>"><%= brand.name %></option>
@@ -42,7 +42,7 @@
 
 
             <div class="category">
-                <label for="category" class="form-label-1">Categoría</label>
+                
                 <select name="category_id" id="" required>
                     <option value="" disabled selected>- Seleccione una Categoria - </option>
                     <% allCategory.forEach(category => { %>

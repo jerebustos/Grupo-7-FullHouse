@@ -10,7 +10,14 @@ module.exports = [
 		.isEmail().withMessage('Debes escribir un formato de correo válido'),
         body('addres').notEmpty().withMessage('Tienes que escribir una direccion'),
 	body('pass').notEmpty().withMessage('Tienes que escribir una contraseña').bail()
-    .isLength({ min: 5 }).withMessage('Minimo 5 caracteres'),
+	.isStrongPassword({
+        minLength: 8,
+        minLowercase: 1,
+        minUppercase: 1,
+        minNumbers: 1,
+		minSymbols: 1
+    })
+    .withMessage('Minimo 8 caracteres, 1 mayuscula, 1 numero y 1 caracter'),
     body('pass_confirm').custom((value, { req }) => {
         if (value !== req.body.pass) {
           throw new Error('Las contraseñas no coinciden');
