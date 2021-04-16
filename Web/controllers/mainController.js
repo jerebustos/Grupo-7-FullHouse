@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
 const db = require("../database/models");
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 const Products = db.Product;
 const Brands = db.Brand;
@@ -41,8 +41,22 @@ index: async (req,res)=>{
 cart:(req,res)=>{
     res.render("cart");
 },
-search:(req,res)=>{
-    res.render("results");
+search: async (req,res)=>{
+    
+    let products = await Products.findAll({
+        include: ['brand'],
+        where: {
+            name: {[db.Sequelize.Op.like] : "%" + req.query.keyword + "%"}
+        }}
+    );
+
+    let paraLaVista = {
+        products,
+        toThousand
+    }
+    //res.send(req.query.keyword)
+
+    res.render("products/productList", paraLaVista);
 }
 }
 
