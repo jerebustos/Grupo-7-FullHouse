@@ -35,7 +35,7 @@
         <a href="/usuario/editar/<%= user.id %>" class="editar">Editar</a>
 
         <form action="/usuario/salir" method="get">
-          <p><button>Cerrar sesión</button></p>
+          <p><button id="close">Cerrar sesión</button></p>
         </form>
 
         <p><button id="delet" onclick="document.getElementById('id01').style.display='block'">Eliminar</button></p>
@@ -64,9 +64,9 @@
 
     <script src="/js/delet.js"></script>
 
-       <!-- footer -->
-       <%-include ('../partials/footer') %> 
-       <!-- footer -->
+      <!-- footer -->
+<%-include ('../partials/footer') %> 
+<!-- footer -->
       
    </body>
    </html>
