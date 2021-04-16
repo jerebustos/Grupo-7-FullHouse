@@ -85,7 +85,7 @@ li{
 }
 
 .editar{
-  background: #00C0FF;
+  background: coral;
   color: #FFF;
    width: 80%;
     padding: 10px;
@@ -95,8 +95,16 @@ li{
     transition: 150ms
 }
 .editar:hover{
-  background: rgb(75, 205, 248);
+  background: rgba(255, 127, 80, 0.822);
   cursor:pointer;
+}
+
+#delet{
+  background: red;
+}
+
+#delet:hover{
+  background-color: rgba(255, 0, 0, 0.822);
 }
 
 
