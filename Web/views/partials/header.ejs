@@ -1,12 +1,12 @@
 <header>
-    
-    
+
+
     <div class="header-content">
-        
+
         <div class="logo">
             <img src="/img/FullhouseV7.png" class="logotipo">
-            
-            
+
+
         </div>
 
         <div class="menu" id="show-menu">
@@ -22,13 +22,13 @@
                         </form>
                     </li>
                     <li class="menu_items">
-                        <a href="/"> 
-                            <i class="fas fa-home"></i> 
+                        <a href="/">
+                            <i class="fas fa-home"></i>
                             Inicio
                         </a>
                     </li>
                     <li class="menu_items">
-                        <a href="/producto"> 
+                        <a href="/producto">
                             <i class="fas fa-box-open"></i>
                             Productos
                         </a>
@@ -36,39 +36,39 @@
 
 
                     <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
-                        <li class="menu_items">
-                            <a href="/producto/nuevo"> 
-                                <i class="fas fa-home"></i> 
-                                Nuevo
-                            </a>
-                        </li>
-                        <% } %>
+                    <li class="menu_items">
+                        <a href="/producto/nuevo">
+                            <i class="fas fa-home"></i>
+                            Nuevo
+                        </a>
+                    </li>
+                    <% } %>
 
                     <% if (locals.userLogged) { %>
-                      <li class="menu_items dropdown"> 
-                        <i class="fas fa-user"></i>
-                       <a href="/usuario/perfil"> <%= locals.userLogged.user %></a>
+                    <li class="menu_items dropdown">
+
+                        <a href="/usuario/perfil"> <i class="fas fa-user"></i> <%= locals.userLogged.user %></a>
                         <div class="dropdown-content">
                             <a id="content" href="/usuario/perfil">Perfil</a>
                             <a id="content" href="/usuario/salir">Cerrar sesión</a>
-                          </div>
-                           
-                    </li>   
-                   
+                        </div>
+
+                    </li>
+
                     <% } else { %>
                     <li class="menu_items">
-                        <a href="/usuario/ingresar"> 
+                        <a href="/usuario/ingresar">
                             <i class="fas fa-user"></i>
                             Logeate
                         </a>
                     </li>
                     <li class="menu_items">
-                        <a href="/usuario/registro" class="text-menu-selected"> 
+                        <a href="/usuario/registro" class="text-menu-selected">
                             <i class="fas fa-file-alt"></i>Registrate
                         </a>
                     </li>
                     <% } %>
-                    <li >
+                    <li>
                         <a href="/carrito">
                             <i class="fas fa-shopping-cart icono_carrito"></i>
                             <span class="cart-text">
@@ -76,7 +76,7 @@
                             </span>
                         </a>
                     </li>
-                </ul>  
+                </ul>
             </nav>
 
         </div>
@@ -94,9 +94,9 @@
 
     </div>
 
-    
-    
 
-   
+
+
+
 
 </header>

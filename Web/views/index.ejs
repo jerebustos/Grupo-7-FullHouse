@@ -32,7 +32,7 @@
  
 </div>
 <br>
-<h2 class="texto-oferta">Grandes Electros!</h2>
+
 <br>
 <br>
 
@@ -57,12 +57,13 @@
 
 <img class="banner" src="img/Web-1920x296-Desayuno.jpg" alt="baneer">
 
-<h2 class="texto-oferta">Pequeños Electros!</h2>
+
 <br>
 <br>
-<% pequeños.forEach(producto => { %>
+
 
 <div class="row">
+  <% pequeños.forEach(producto => { %>
   <div class="column">
     <div class="card">
       <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
@@ -74,8 +75,15 @@
       </div>
     </div>
   </div>
+  
 
   <% }) %>
+</div>
+
+       <div class="banners">
+         <img class="bannersImg"  src="img/IMG_6019.PNG" alt="">
+         <img class="bannersImg" src="img/IMG_6020.PNG" alt="">
+       </div>
       
     </main>
 

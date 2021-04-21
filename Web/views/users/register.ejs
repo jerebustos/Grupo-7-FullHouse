@@ -49,7 +49,7 @@
     <% } %>
         <br>
         <label for="birth_date"><h3>Fecha de nacimiento</h3></label>
-        <br>
+        
         <input type="date" name="birth_date" id="birth_date" <%= locals.errors && errors.birth_date ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.birth_date : null %>"
     >

@@ -10,7 +10,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  margin-top: 16vh;
+  margin-top: 12vh;
   position: relative;
 }
 
@@ -57,6 +57,17 @@
     
 }
 
+.bannersImg{
+  width: 45%;
+}
+
+.banners{
+  display: flex;
+    justify-content: space-around;
+    margin: 3% 0;
+    flex-direction: row;
+    
+}
 
 
 .row{
@@ -125,6 +136,16 @@
     }
     .main-list{
       margin-top: 14% 
+    }
+
+    .banners{
+      flex-direction: column;
+      padding: 2%
+    }
+
+    .bannersImg{
+      width: 100%;
+      margin-bottom: 2%
     }
 
   }

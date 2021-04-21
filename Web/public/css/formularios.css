@@ -44,8 +44,9 @@ main{
     outline: none;
     font-size: 32px;
     padding:0px 8px;
+    border: none;
     border-radius: 36px;
-    border: black 1px solid;
+    
     margin-top: 16px;
     
 }
@@ -70,7 +71,7 @@ main{
       padding: 10px;
       margin: 20px 0px;
       border-radius: 36px;
-      border: black 1px solid;
+      border:none;
       box-shadow:10px 10px 30px -4px rgb(168, 167, 167);
       transition: 150ms
   }
@@ -104,6 +105,7 @@ main{
 
   .products-title{    
     color: coral;
+    text-shadow: 1px 1px 2px black
     }
 
 
