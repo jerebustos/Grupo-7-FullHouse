@@ -137,6 +137,7 @@
     .main-list{
       margin-top: 14% 
     }
+    
 
     .banners{
       flex-direction: column;
@@ -158,6 +159,8 @@
     .main-list{
       margin-top: 23% 
     }
+    .banner {
+      display: none}
   }
   
   /* Add some shadows to create a card effect */

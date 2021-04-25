@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
 const userBaseController = require("../controllers/userBaseController")
+const userApiController = require("../controllers/apiController/userApiController")
 const validations = require('../middleware/validateRegister');
 const uploadFile = require("../middleware/usersMulter")
 const guestMiddleware = require('../middleware/guestMiddleware');
@@ -17,6 +18,8 @@ router.get('/perfil',authMiddleware, userBaseController.profile);
 router.get('/editar', userBaseController.edit);
 
 router.get('/salir', userBaseController.logout);
+
+router.get("/api/list", userApiController.list)
 
 router.post('/acceder', userBaseController.access);
 

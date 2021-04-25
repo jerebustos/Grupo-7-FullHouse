@@ -1,11 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    
-}
+
 
 main{
     padding-top: 85px;
@@ -25,6 +18,33 @@ main{
   font-weight: bold;
   
 }
+#checkName, #checkEmail, #checkPass, #checkPassConfirm{
+  color: greenyellow;
+  position: absolute;
+  bottom: 12px;
+  left: 335px;
+  display: none;
+  }
+
+  #checkError, #checkEmailError, #checkPasslError, #checkPassConfirmError{
+  color: red;
+  position: absolute;
+  bottom: 12px;
+  left: 335px;
+  display: none;
+  }
+
+  
+
+  .divName, .divEmail, .divPass, .divPassConfirm{
+    position: relative;
+  }
+
+  .error{
+    color: red;
+    list-style: none;
+    font-size: 15px;
+  }
 
 .formulario{
     
@@ -44,9 +64,8 @@ main{
     outline: none;
     font-size: 32px;
     padding:0px 8px;
-    border: none;
     border-radius: 36px;
-    
+    background-color: white;
     margin-top: 16px;
     
 }
@@ -133,3 +152,15 @@ main{
       }
 
       
+      .normal{
+        border: none;
+      }
+
+      .incorrect{
+        border: red solid 1px;
+        
+      }
+
+      .correct{
+        border: springgreen solid 1px;
+      }

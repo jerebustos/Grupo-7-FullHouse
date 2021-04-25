@@ -3,6 +3,7 @@
     <head>
         <%-include ('../partials/head.ejs') %>
         <link rel="stylesheet" href="/css/formularios.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       </head>
     
    
@@ -15,15 +16,17 @@
     <div>
     <form class="formulario" action="/usuario/" method="POST" enctype="multipart/form-data">
         
-        <input type="text" name="name" placeholder="Nombre" <%= locals.errors && errors.name ? 'is-invalid' : null %>
+       <div class="divName"> <input type="text" name="name" id="name" class="normal" placeholder="Nombre" <%= locals.errors && errors.name ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.name : null %>"
-    >
+    > <i class="far fa-check-circle" id="checkName"></i>
+    <i class="far fa-times-circle" id="checkError"></i></div>
+    <ul id="ul" class="error"></ul>
     <% if (locals.errors && errors.name) { %>
         <div class="text-danger">
             <%= errors.name.msg %> 
         </div>
     <% } %>
-        <input type="text" name="lastName" placeholder="Apellido" <%= locals.errors && errors.lastName ? 'is-invalid' : null %>
+        <input type="text" name="lastName" class="normal" placeholder="Apellido" <%= locals.errors && errors.lastName ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.lastName : null %>"
     >
     <% if (locals.errors && errors.lastName) { %>
@@ -31,7 +34,7 @@
             <%= errors.lastName.msg %> 
         </div>
     <% } %>
-        <input type="text" name="user" placeholder="Nombre de usuario" <%= locals.errors && errors.user ? 'is-invalid' : null %>
+        <input type="text" name="user" class="normal" placeholder="Nombre de usuario" <%= locals.errors && errors.user ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.user : null %>"
     >
     <% if (locals.errors && errors.user) { %>
@@ -39,9 +42,12 @@
             <%= errors.user.msg %> 
         </div>
     <% } %>
-        <input type="email" name="email" placeholder="E-mail" <%= locals.errors && errors.email ? 'is-invalid' : null %>
+        <div class="divEmail" ><input type="email" name="email" class="normal" id="email" placeholder="E-mail" <%= locals.errors && errors.email ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.email : null %>"
-    >
+    ><i class="far fa-check-circle" id="checkEmail"></i>
+    <i class="far fa-times-circle" id="checkEmailError"></i></div>
+    <ul id="ulEmail" class="error"></ul>
+
     <% if (locals.errors && errors.email) { %>
         <div class="text-danger">
             <%= errors.email.msg %> 
@@ -50,7 +56,7 @@
         <br>
         <label for="birth_date"><h3>Fecha de nacimiento</h3></label>
         
-        <input type="date" name="birth_date" id="birth_date" <%= locals.errors && errors.birth_date ? 'is-invalid' : null %>
+        <input type="date" name="birth_date" id="birth_date" class="normal" <%= locals.errors && errors.birth_date ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.birth_date : null %>"
     >
     <% if (locals.errors && errors.birth_date) { %>
@@ -59,7 +65,7 @@
         </div>
     <% } %>
         <br>
-        <input type="text" name="addres" placeholder="Domicilio" <%= locals.errors && errors.addres ? 'is-invalid' : null %>
+        <input type="text" name="addres" class="normal" placeholder="Domicilio" <%= locals.errors && errors.addres ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.addres : null %>"
     >
     <% if (locals.errors && errors.addres) { %>
@@ -82,15 +88,22 @@
     <% } %>
         <br>
         <br>
-        <input type="password" name="pass" placeholder="Elegí tu contraseña" <%= locals.errors && errors.pass ? 'is-invalid' : null %>
+        <div class="divPass" >
+        <input type="password" name="pass" class="normal" id="pass" placeholder="Elegí tu contraseña" <%= locals.errors && errors.pass ? 'is-invalid' : null %>
     >
+    <i class="far fa-check-circle" id="checkPass"></i>
+    <i class="far fa-times-circle" id="checkPasslError"></i></div>
+    <ul id="ulPass" class="error"></ul>
     <% if (locals.errors && errors.pass) { %>
         <div class="text-danger">
             <%= errors.pass.msg %> 
         </div>
     <% } %>
-        <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" <%= locals.errors && errors.pass_confirm ? 'is-invalid' : null %>
-        >
+    <div class="divPassConfirm" >
+        <input type="password" name="pass_confirm" id="passConfirm" class="normal" placeholder="Confirmá tu contraseña" <%= locals.errors && errors.pass_confirm ? 'is-invalid' : null %>
+        > <i class="far fa-check-circle" id="checkPassConfirm"></i>
+        <i class="far fa-times-circle" id="checkPassConfirmError"></i></div>
+        <ul id="ulPassConfirm" class="error"></ul>
         <% if (locals.errors && errors.pass_confirm) { %>
             <div class="text-danger">
                 <%= errors.pass_confirm.msg %> 
