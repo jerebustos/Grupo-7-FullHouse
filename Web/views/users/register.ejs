@@ -3,7 +3,6 @@
     <head>
         <%-include ('../partials/head.ejs') %>
         <link rel="stylesheet" href="/css/formularios.css">
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       </head>
     
    
@@ -26,17 +25,24 @@
             <%= errors.name.msg %> 
         </div>
     <% } %>
+    
         <input type="text" name="lastName" class="normal" placeholder="Apellido" <%= locals.errors && errors.lastName ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.lastName : null %>"
     >
+    
+
     <% if (locals.errors && errors.lastName) { %>
         <div class="text-danger">
             <%= errors.lastName.msg %> 
         </div>
     <% } %>
-        <input type="text" name="user" class="normal" placeholder="Nombre de usuario" <%= locals.errors && errors.user ? 'is-invalid' : null %>
+    <div class="divUser">
+        <input type="text" name="user" class="normal" id="user" placeholder="Nombre de usuario" <%= locals.errors && errors.user ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.user : null %>"
     >
+    <i class="far fa-check-circle" id="checkUser"></i>
+    <i class="far fa-times-circle" id="checkUserError"></i></div>
+    <ul id="ulUser" class="error"></ul>
     <% if (locals.errors && errors.user) { %>
         <div class="text-danger">
             <%= errors.user.msg %> 
@@ -78,9 +84,11 @@
         <br>
        
         <h3>Elegí tu foto de usuario</h3>
-        <input type="file" name="avatar" <%= locals.errors && errors.avatar ? 'is-invalid' : null %>
+        <input type="file" name="avatar" id="avatar" class="normal" <%= locals.errors && errors.avatar ? 'is-invalid' : null %>
         value="<%= locals.oldData ? oldData.avatar : null %>"
     >
+    <ul id="ulAvatar" class="error"></ul>
+
     <% if (locals.errors && errors.avatar) { %>
         <div class="text-danger">
             <%= errors.avatar.msg %> 
@@ -125,7 +133,7 @@
       <%-include ('../partials/footer.ejs') %> 
     <!-- footer -->
 
-    
+    <script src="/js/scriptRegister.js"></script>
         
 
 </body>

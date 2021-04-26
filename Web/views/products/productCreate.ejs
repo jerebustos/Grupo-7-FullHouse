@@ -16,7 +16,7 @@
         <div>
         <form class="formulario" action="/producto/"  method="POST" enctype="multipart/form-data">
             <h1 class="products-title">Formulario de creación </h1>
-            <input type="text" name="name" id="name" placeholder="Nombre del producto" <%= locals.errors && errors.name ? 'is-invalid' : null %>
+            <input type="text" name="name" id="name" class="normal" placeholder="Nombre del producto" <%= locals.errors && errors.name ? 'is-invalid' : null %>
             value="<%= locals.oldData ? oldData.name : null %>"
         > <ul id="error"></ul>
         <% if (locals.errors && errors.name) { %>
@@ -24,7 +24,7 @@
                 <%= errors.name.msg %> 
             </div>
         <% } %>
-            <input type="text" name="price" placeholder="Precio del producto" <%= locals.errors && errors.price ? 'is-invalid' : null %>
+            <input type="text" name="price" class="normal" placeholder="Precio del producto" <%= locals.errors && errors.price ? 'is-invalid' : null %>
             value="<%= locals.oldData ? oldData.price : null %>"
         >
         <% if (locals.errors && errors.price) { %>
@@ -32,13 +32,13 @@
                 <%= errors.price.msg %> 
             </div>
         <% } %>
-        <select name="color_id" id="color" required>
+        <select name="color_id" id="color" required class="normal">
             <option value="" disabled selected>- Seleccione el color - </option>
             <% allColor.forEach(color => { %>
             <option value="<%= color.id %>"><%= color.name %></option>
             <% }); %>
         </select>
-            <input type="text" name="accessory" placeholder="Accesorios del producto" <%= locals.errors && errors.accessory ? 'is-invalid' : null %>
+            <input type="text" name="accessory" class="normal" placeholder="Accesorios del producto" <%= locals.errors && errors.accessory ? 'is-invalid' : null %>
             value="<%= locals.oldData ? oldData.accessory : null %>"
         >
         <% if (locals.errors && errors.accessory) { %>
@@ -46,13 +46,13 @@
                 <%= errors.accessory.msg %> 
             </div>
         <% } %>
-        <select name="brand_id" id="brand" required>
+        <select name="brand_id" id="brand" required class="normal">
             <option value="" disabled selected>- Seleccione la marca - </option>
             <% allBrand.forEach(brand => { %>
             <option value="<%= brand.id %>"><%= brand.name %></option>
             <% }); %>
         </select>
-            <input type="text" name="model" placeholder="Modelo del producto" <%= locals.errors && errors.model ? 'is-invalid' : null %>
+            <input type="text" name="model" class="normal" placeholder="Modelo del producto" <%= locals.errors && errors.model ? 'is-invalid' : null %>
             value="<%= locals.oldData ? oldData.model : null %>"
         >
         <% if (locals.errors && errors.model) { %>
@@ -63,7 +63,7 @@
             <br>
 
             <h3>Subi una foto de tu producto</h3>
-            <input type="file" id="image" name="image" <%= locals.errors && errors.image ? 'is-invalid' : null %>"
+            <input type="file" id="image" class="normal" name="image" <%= locals.errors && errors.image ? 'is-invalid' : null %>"
             >
             <% if (locals.errors && errors.image) { %>
                 <div class="text-danger">
@@ -74,17 +74,18 @@
 
 
             <div class="category">
-                <select name="category_id" id="" required>
+                <select name="category_id" id="" required class="normal">
                     <option value="" disabled selected>- Seleccione una Categoria - </option>
                     <% allCategory.forEach(category => { %>
                     <option value="<%= category.id %>"><%= category.name %></option>
                     <% }); %>
                 </select>
             </div>
-            <div class="category">
-                <label for="description" class="form-label-2">Descipción</label>
+                <br><br>
+                <h3>Descipción</h3>
+                <br><br>
                 <textarea name="description" id="description" class="form-input" required></textarea>
-            </div>
+            
             <div>
                 <button class="botonGuardar" type="submit" value="Guardar">Guardar producto</button>
                 
