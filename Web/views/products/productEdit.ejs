@@ -17,33 +17,53 @@
         <div>
         <form class="formulario" action="/producto/editar/<%= productoAEditar.id  %>?_method=PUT" method="POST">
             <h1 class="products-title"> <i><%= productoAEditar.name  %> </i></h1>
-            <input type="text" name="name" placeholder="Nombre del producto" value='<%= productoAEditar.name  %>'>
-            <input type="text" name="price" placeholder="Precio del producto" value='<%= productoAEditar.price  %>'>
-            <select name="color_id" id="color" required>
+            
+            <div class="divName">
+            <input type="text" name="name" id="name" class="normal" placeholder="Nombre del producto" value='<%= productoAEditar.name  %>'>
+            <i class="far fa-check-circle" id="checkName"></i>
+            <i class="far fa-times-circle" id="checkError"></i></div>
+            <ul id="ul" class="error"></ul>
+            
+            <div class="divPrice">
+            <input type="text" name="price" id="price" class="normal" placeholder="Precio del producto" value='<%= productoAEditar.price  %>'>
+            <i class="far fa-check-circle" id="checkPrice"></i>
+            <i class="far fa-times-circle" id="checkPriceError"></i></div>
+             <ul id="ulPrice" class="error"></ul>
+            
+            
+             <select name="color_id" id="color" class="normal" required>
                 <option value="" disabled selected>- Seleccione el color - </option>
                 <% allColor.forEach(color => { %>
                 <option value="<%= color.id %>"><%= color.name %></option>
                 <% }); %>
             </select>
-            <input type="text" name="accesorios" placeholder="Accesorios del producto" value='<%= productoAEditar.accessory  %>'>
+            
+            <div class="divAccessory">
+            <input type="text" name="accessory" id="accessory" class="normal" placeholder="Accesorios del producto" value='<%= productoAEditar.accessory  %>'>
+            <i class="far fa-check-circle" id="checkAccessory"></i>
+            <i class="far fa-times-circle" id="checkAccessoryError"></i></div>
+            <ul id="ulAccessory" class="error"></ul>
+            
             <select name="brand_id" id="brand" required>
                 <option value="" disabled selected>- Seleccione la marca - </option>
                 <% allBrand.forEach(brand => { %>
                 <option value="<%= brand.id %>"><%= brand.name %></option>
                 <% }); %>
             </select>
-            <input type="text" name="modelo" placeholder="Modelo del producto" value='<%= productoAEditar.model  %>'>
+
+            <input type="text" name="model" class="normal" id="model" placeholder="Modelo del producto" value='<%= productoAEditar.model  %>'>
           
             <br>
 
             <h3>Subi una foto de tu producto</h3>
-            <input type="file" id="image" name="image">
+            <input type="file" id="image" class="normal" name="image">
+            <ul id="ulImage" class="error"></ul>
             <br>
 
 
             <div class="category">
                 
-                <select name="category_id" id="" required>
+                <select name="category_id" class="normal" id="" required>
                     <option value="" disabled selected>- Seleccione una Categoria - </option>
                     <% allCategory.forEach(category => { %>
                     <option value="<%= category.id %>"><%= category.name %></option>
@@ -51,8 +71,9 @@
                 </select>
             </div>
             <div class="category">
-                <label for="description" class="form-label-2">Descipción</label>
-                <textarea name="description" id="description" class="form-input"><%= productoAEditar.description %></textarea>
+                <label for="description"  class="form-label-2">Descipción</label>
+                <textarea name="description"  id="description" class="form-input normal"><%= productoAEditar.description %></textarea>
+                <ul id="ulDescription" class="error"></ul>
             </div>
             <div>
                 <button class="botonGuardar" type="submit" value="Guardar">Guardar producto</button>
@@ -69,7 +90,7 @@
     <!-- footer -->
 
     
-       
+    <script src="/js/scriptProductCreate.js"></script>
 
 </body>
 </html>
