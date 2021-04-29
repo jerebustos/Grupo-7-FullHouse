@@ -109,24 +109,45 @@ const controller = {
         res.render('products/productEdit',{productoAEditar,allBrand,allColor,allCategory});
     },
     update: async (req, res) => {
+    
         let productId = req.params.id;
-
-        await Products.update({
-            name: req.body.name,
-            price: req.body.price,
-            color_id: req.body.color_id,
-            accessory: req.body.accessory,
-            brand_id: req.body.brand_id,
-            model: req.body.model,
-            category_id:req.body.category_id,
-            description: req.body.description
+   
+       if (req.file) {
+        let producto = await Products.findOne({
+            where: {
+                id: productId
+            }
+           });
+        let filePath = path.resolve(__dirname,'../public/img/products/' + producto.image);
+        fs.unlinkSync(filePath);
+         await Products.update({
+            image: req.file.filename
         },
         {
             where: {id: productId}
-        })
+        });
+
+        
+         };
 
 
-		res.redirect("/")
+    await Products.update({
+        name: req.body.name,
+        price: req.body.price,
+        color_id: req.body.color_id,
+        accessory: req.body.accessory,
+        brand_id: req.body.brand_id,            
+        model: req.body.model,
+        category_id:req.body.category_id,
+        description: req.body.description,
+        
+    },
+    {
+        where: {id: productId}
+    })
+      
+     
+      res.redirect("/")
         
     },
     destroy: async (req, res) => {
@@ -152,3 +173,4 @@ const controller = {
 
 
 module.exports = controller;
+

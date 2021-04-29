@@ -17,7 +17,7 @@ router.get('/editar/:id',admiMiddleware, productsBaseController.edit);
 
 router.post('/',upload.single("image"),validations, productsBaseController.store);
 
-router.put('/editar/:id',admiMiddleware, productsBaseController.update);
+router.put('/editar/:id',upload.single("image"),admiMiddleware, productsBaseController.update);
 
 router.delete('/borrar/:id',admiMiddleware, productsBaseController.destroy);
 

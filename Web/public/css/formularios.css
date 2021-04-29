@@ -1,166 +1,258 @@
-
-
-main{
-    padding-top: 85px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../img/home-1416381_1920.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+main {
+  padding-top: 85px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/home-1416381_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.text-danger{
+.text-danger {
   color: red;
   font-weight: bold;
-  
+
 }
-#checkName, #checkEmail, #checkPass, #checkPassConfirm, #checkUser, #checkPrice, #checkAccessory{
+
+#checkName,
+#checkEmail,
+#checkPass,
+#checkPassConfirm,
+#checkUser,
+#checkPrice,
+#checkAccessory {
   color: greenyellow;
   position: absolute;
-  bottom: 12px;
-  left: 335px;
+  bottom: 9px;
+  left: 294px;
   display: none;
-  }
+}
 
-  #checkError, #checkEmailError, #checkPasslError, #checkPassConfirmError, #checkUserError, #checkPriceError, #checkAccessoryError{
+#checkError,
+#checkEmailError,
+#checkPasslError,
+#checkPassConfirmError,
+#checkUserError,
+#checkPriceError,
+#checkAccessoryError {
   color: red;
   position: absolute;
-  bottom: 12px;
-  left: 335px;
+  bottom: 9px;
+  left: 294px;
   display: none;
+}
+
+
+
+.divName,
+.divEmail,
+.divPass,
+.divPassConfirm,
+.divUser,
+.divPrice,
+.divAccessory {
+  position: relative;
+}
+
+.error {
+  color: red;
+  list-style: none;
+  font-size: 15px;
+}
+
+.formulario {
+
+  margin: 5%;
+}
+
+.formulario {
+  background-color: rgba(250, 255, 255, .75);
+  padding: 31px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.formulario input,
+select {
+  outline: none;
+  font-size: 27px;
+  padding: 0px 8px;
+  border-radius: 36px;
+  background-color: white;
+  margin-top: 16px;
+  text-align: center;
+  color: #777777;
+
+}
+
+.formulario input[type="file"] {
+  font-size: 13px;
+}
+
+#color {
+  padding: 0px 24px;
+}
+
+#brand {
+  padding: 0px 16px;
+}
+
+#category {
+  font-size: 23px
+}
+
+
+.boton {
+  FONT-WEIGHT: bold;
+  background: #FFF;
+  color: #00C0FF;
+  width: 76%;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 36px;
+  border: none;
+  box-shadow: 10px 10px 30px -4px rgb(168, 167, 167);
+  transition: 150ms
+}
+
+.boton:hover {
+  background: #00C0FF;
+  color: #FFF;
+  cursor: pointer;
+}
+
+textarea.form-input {
+  width: 20rem;
+  height: 6rem;
+  resize: horizontal;
+  padding: 10px;
+}
+
+.form-label-1 {
+  display: inline-block;
+  font-size: 1.6em;
+  margin: 10px 0;
+  position: relative;
+  left: 22%;
+}
+
+.form-label-2 {
+  display: inline-block;
+  font-size: 1.6em;
+  margin: 10px 0;
+  position: relative;
+  left: 30%;
+}
+
+.products-title {
+  font-size: 28px;
+  color: coral;
+  text-shadow: 1px 1px 2px black
+}
+
+
+.botonGuardar {
+  FONT-WEIGHT: bold;
+  background: #FFF;
+  color: #00C0FF;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 36px;
+  border: none;
+  box-shadow: 10px 10px 30px -4px rgb(168, 167, 167);
+  transition: 150ms
+}
+
+.botonGuardar:hover {
+  background: #00C0FF;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.normal {
+  border: none;
+}
+
+.incorrect {
+  border: red solid 1px;
+
+}
+
+.correct {
+  border: springgreen solid 1px;
+}
+
+
+
+
+@media screen and (min-width: 1100px) {
+
+  #checkName,
+  #checkEmail,
+  #checkPass,
+  #checkPassConfirm,
+  #checkUser,
+  #checkPrice,
+  #checkAccessory {
+    bottom: 15px;
+    left: 420px;
+    font-size: 21px;
   }
 
-  
 
-  .divName, .divEmail, .divPass, .divPassConfirm, .divUser, .divPrice, .divAccessory{
-    position: relative;
+  #checkError,
+  #checkEmailError,
+  #checkPasslError,
+  #checkPassConfirmError,
+  #checkUserError,
+  #checkPriceError,
+  #checkAccessoryError {
+    bottom: 15px;
+    left: 420px;
+    font-size: 21px;
   }
 
-  .error{
-    color: red;
-    list-style: none;
-    font-size: 15px;
+  .formulario input,
+  select {
+    font-size: 40px
   }
 
-.formulario{
-    
-    margin: 5%;
-}
-.formulario{
-    background-color: rgba(250, 255, 255, .75);
-    padding:32px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario input, select{
-    outline: none;
-    font-size: 32px;
-    padding:0px 8px;
-    border-radius: 36px;
-    background-color: white;
-    margin-top: 16px;
-    
-}
-.formulario input[type="file"]{
-    font-size: 16px;
-}
-
-#color{
-  padding: 0px 20px;
-}
-
-#brand{
-  padding: 0px 11px;
-}
-
-
-.boton{
-    FONT-WEIGHT: bold;
-    background: #FFF;
-    color: #00C0FF;
-     width: 76%;
-      padding: 10px;
-      margin: 20px 0px;
-      border-radius: 36px;
-      border:none;
-      box-shadow:10px 10px 30px -4px rgb(168, 167, 167);
-      transition: 150ms
+  .formulario input[type="file"] {
+    font-size: 20px
   }
-  .boton:hover{
-    background:#00C0FF ;
-    color: #FFF;
-    cursor:pointer;
+
+  #category {
+    font-size: 35px
+  }
+
+  .products-title {
+    font-size: 38px
   }
 
   textarea.form-input {
-    width: 20vw;
-    height: 5vw;
-    resize: horizontal;
-    padding: 10px;
+    width: 27rem
   }
 
-  .form-label-1 {
-    display: inline-block;
-    font-size: 1.6em;
-    margin: 10px 0;
-    position: relative;
-    left: 22%;
-  }
-  .form-label-2 {
-    display: inline-block;
-    font-size: 1.6em;
-    margin: 10px 0;
-    position: relative;
-    left: 30%;
+  #color {
+    padding: 0px 30px
   }
 
-  .products-title{    
-    color: coral;
-    text-shadow: 1px 1px 2px black
-    }
-
-
-    .botonGuardar{
-        FONT-WEIGHT: bold;
-        background: #FFF;
-        color: #00C0FF;
-          padding: 10px;
-          margin: 20px 0px;
-          border-radius: 36px;
-          border: black 1px solid;
-          box-shadow:10px 10px 30px -4px rgb(168, 167, 167);
-          transition: 150ms
-      }
-      .botonGuardar:hover{
-        background:#00C0FF ;
-        color: #FFF;
-        cursor:pointer;
-      }
-
-      .category{
-        display: flex;
-        flex-direction: column;
-        
-      }
-
-      
-      .normal{
-        border: none;
-      }
-
-      .incorrect{
-        border: red solid 1px;
-        
-      }
-
-      .correct{
-        border: springgreen solid 1px;
-      }
+  #brand {
+    padding: 0px 18px
+  }
+}

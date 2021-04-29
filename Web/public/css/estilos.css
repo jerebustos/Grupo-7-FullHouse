@@ -45,18 +45,6 @@
 /*Contenedor - contenido del articulo*/
 
 
-
-/* imagenes de oferta */
-
-.texto-oferta{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 1%;
-    font-family: arial;
-    color: #00C0FF;
-    
-}
-
 .bannersImg{
   width: 45%;
 }

@@ -15,7 +15,7 @@
         
 
         <div>
-        <form class="formulario" action="/producto/editar/<%= productoAEditar.id  %>?_method=PUT" method="POST">
+        <form class="formulario" action="/producto/editar/<%= productoAEditar.id  %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <h1 class="products-title"> <i><%= productoAEditar.name  %> </i></h1>
             
             <div class="divName">
@@ -44,7 +44,7 @@
             <i class="far fa-times-circle" id="checkAccessoryError"></i></div>
             <ul id="ulAccessory" class="error"></ul>
             
-            <select name="brand_id" id="brand" required>
+            <select name="brand_id" class="normal" id="brand" required>
                 <option value="" disabled selected>- Seleccione la marca - </option>
                 <% allBrand.forEach(brand => { %>
                 <option value="<%= brand.id %>"><%= brand.name %></option>
