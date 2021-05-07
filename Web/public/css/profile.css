@@ -19,7 +19,7 @@ body{
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
     text-align: center;
     
@@ -60,7 +60,9 @@ body{
   }
 
   h3{
+    margin-top: -4px;
     background-color: gainsboro;
+    padding: 6px 0;
   }
 
   .cancelbtn, .deletebtn {
@@ -95,7 +97,7 @@ body{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(2 190 251 / 74%);
     padding-top: 50px;
   }
   

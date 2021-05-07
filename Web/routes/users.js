@@ -15,7 +15,7 @@ router.get('/registro', guestMiddleware, userBaseController.register);
 
 router.get('/perfil',authMiddleware, userBaseController.profile);
 
-router.get('/editar', userBaseController.edit);
+router.get('/editar/:id', userBaseController.edit);
 
 router.get('/salir', userBaseController.logout);
 
@@ -25,7 +25,7 @@ router.post('/acceder', userBaseController.access);
 
 router.post('/',uploadFile.single("avatar"),validations, userBaseController.save);
 
-router.put('/perfil', userBaseController.update);
+router.put('/editar/:id',uploadFile.single("avatar"),validations, userBaseController.update);
 
 router.delete('/desactivar/:id', userBaseController.disable);
 

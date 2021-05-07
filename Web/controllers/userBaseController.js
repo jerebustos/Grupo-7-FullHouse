@@ -121,9 +121,94 @@ const controller = {
 		})
     },
     edit: (req,res)=>{
+        res.render("users/userEdit",{
+			user: req.session.userLogged
+		})
 
     },
-    update: (req,res)=>{
+    update: async (req, res) => {
+        const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+            if(req.file){
+            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
+            fs.unlinkSync(filePath)};
+
+            return res.render("users/userEdit", {
+                errors: resultValidation.mapped(),
+                user: req.session.userLogged,
+                oldData: req.body
+            });
+
+        }
+        let userInDB = await Users.findOne({
+            where: {
+                email: req.body.email
+            }
+        })
+        if (userInDB) {
+            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
+            fs.unlinkSync(filePath);
+            return res.render("users/userEdit", {
+                errors: {
+                    email: {
+                        msg: 'Este email ya está registrado'
+                    }
+                },
+                user: req.session.userLogged,
+                oldData: req.body
+            });
+        }
+        let userName = await Users.findOne({
+            where: {
+                user: req.body.user
+            }
+        })
+        if (userName) {
+            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
+            fs.unlinkSync(filePath)
+            return res.render('users/register', {
+                errors: {
+                    user: {
+                        msg: 'Este nombre de usuario ya existe'
+                    }
+                },
+                user: req.session.userLogged,
+                oldData: req.body
+            });
+        }
+    
+        let userID = req.params.id;
+   
+       if (req.file) {
+        let usuario = await Users.findOne({
+            where: {
+                id: userID
+            }
+           });
+        let filePath = path.resolve(__dirname,'../public/img/users/' + usuario.avatar);
+        fs.unlinkSync(filePath);
+         await Users.update({
+            avatar: req.file.filename
+        },
+        {
+            where: {id: userID}
+        });
+
+        
+         };
+
+
+    await Users.update({
+        ...req.body,
+        pass: bcryptjs.hashSync(req.body.pass, 10)
+        
+    },
+    {
+        where: {id: userID}
+    })
+      
+     
+      res.redirect("/usuario/perfil")
 
     },
     disable: async (req,res)=>{

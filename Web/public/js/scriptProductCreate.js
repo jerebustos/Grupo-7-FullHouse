@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
 
     document.querySelector("#name").addEventListener("keyup", function(e){
 
-        var onlyLetters = /^[A-Za-z]+$/;
+        var onlyLetters = /^[A-ZÁÉÍÓÚÑa-záéíóúñ]+$/;
         if(this.value.length < 5 || !onlyLetters.test(this.value.replaceAll(" ", "")) ){
             this.classList.remove("normal");
             this.classList.add("incorrect");
