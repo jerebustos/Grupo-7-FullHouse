@@ -22,6 +22,36 @@ const controller = {
       })
     },
 
+    detail: async (req,res) =>{
+
+        idUser = req.params.id;
+        let usuarioDetail = await Users.findByPk(idUser, {attributes:{exclude: ["pass","createdAt","updatedAt","admi"]}});
+        
+      
+        if(usuarioDetail){
+        
+         delete usuarioDetail.admi;
+         
+
+         return res.status(200).json({
+        meta:{status: 200, url: "usuarios/api/detail/" + idUser},
+        data:usuarioDetail
+
+        
+      
+            })
+
+        }
+
+        else {
+            return res.send("usuario no encontrado")
+        }
+
+       
+
+
+    }
+
 }
 
 

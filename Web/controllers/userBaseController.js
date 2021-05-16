@@ -140,43 +140,7 @@ const controller = {
             });
 
         }
-        let userInDB = await Users.findOne({
-            where: {
-                email: req.body.email
-            }
-        })
-        if (userInDB) {
-            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
-            fs.unlinkSync(filePath);
-            return res.render("users/userEdit", {
-                errors: {
-                    email: {
-                        msg: 'Este email ya está registrado'
-                    }
-                },
-                user: req.session.userLogged,
-                oldData: req.body
-            });
-        }
-        let userName = await Users.findOne({
-            where: {
-                user: req.body.user
-            }
-        })
-        if (userName) {
-            let filePath = path.resolve(__dirname, '../public/img/users/' + req.file.filename);
-            fs.unlinkSync(filePath)
-            return res.render('users/register', {
-                errors: {
-                    user: {
-                        msg: 'Este nombre de usuario ya existe'
-                    }
-                },
-                user: req.session.userLogged,
-                oldData: req.body
-            });
-        }
-    
+        
         let userID = req.params.id;
    
        if (req.file) {
@@ -198,15 +162,32 @@ const controller = {
          };
 
 
+    
+
+    if(req.body.pass){
+        await Users.update({
+            pass: bcryptjs.hashSync(req.body.pass, 10)
+            
+        },
+        {
+            where: {id: userID}
+        })
+
+    }
     await Users.update({
-        ...req.body,
-        pass: bcryptjs.hashSync(req.body.pass, 10)
+        name : req.name,
+        lastName:req.lastName,
+        addres:req.body.addres,
+        birth_date: req.body.birth_date
+        
         
     },
     {
         where: {id: userID}
     })
-      
+    res.clearCookie('user');
+    req.session.destroy();
+    return res.redirect('/usuario/ingresar');
      
       res.redirect("/usuario/perfil")
 

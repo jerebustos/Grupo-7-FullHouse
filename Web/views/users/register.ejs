@@ -103,7 +103,7 @@
     <i class="far fa-times-circle" id="checkPasslError"></i></div>
     <ul id="ulPass" class="error"></ul>
     <% if (locals.errors && errors.pass) { %>
-        <div class="text-danger">
+        <div id="erroPassword" class="text-danger">
             <%= errors.pass.msg %> 
         </div>
     <% } %>

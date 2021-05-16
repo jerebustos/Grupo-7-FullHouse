@@ -39,29 +39,7 @@
             <%= errors.lastName.msg %> 
         </div>
     <% } %>
-    <div class="divUser">
-        <input type="text" name="user" class="normal" id="user" placeholder="Nombre de usuario" <%= locals.errors && errors.user ? 'is-invalid' : null %>
-        value="<%= user.user %>"
-    >
-    <i class="far fa-check-circle" id="checkUser"></i>
-    <i class="far fa-times-circle" id="checkUserError"></i></div>
-    <ul id="ulUser" class="error"></ul>
-    <% if (locals.errors && errors.user) { %>
-        <div class="text-danger">
-            <%= errors.user.msg %> 
-        </div>
-    <% } %>
-        <div class="divEmail" ><input type="email" name="email" class="normal" id="email" placeholder="E-mail" <%= locals.errors && errors.email ? 'is-invalid' : null %>
-        value="<%= user.email %>"
-    ><i class="far fa-check-circle" id="checkEmail"></i>
-    <i class="far fa-times-circle" id="checkEmailError"></i></div>
-    <ul id="ulEmail" class="error"></ul>
-
-    <% if (locals.errors && errors.email) { %>
-        <div class="text-danger">
-            <%= errors.email.msg %> 
-        </div>
-    <% } %>
+  
         <br>
         <label for="birth_date"><h3>Fecha de nacimiento</h3></label>
         
@@ -99,14 +77,14 @@
     <% } %>
         <br>
         <br>
-        <div class="divPass" >
-        <input type="password" name="pass" class="normal" id="pass" placeholder="Elegí tu contraseña" <%= locals.errors && errors.pass ? 'is-invalid' : null %>
-    >
+        <div class="divPass">
+        <input type="password" name="pass" class="normal" id="pass" placeholder="Elegí tu contraseña" <%= locals.errors && errors.pass_confirm ? 'is-invalid' : null %>>
+
     <i class="far fa-check-circle" id="checkPass"></i>
     <i class="far fa-times-circle" id="checkPasslError"></i></div>
     <ul id="ulPass" class="error"></ul>
     <% if (locals.errors && errors.pass) { %>
-        <div class="text-danger">
+        <div id="erroPassword" class="text-danger">
             <%= errors.pass.msg %> 
         </div>
     <% } %>
@@ -135,7 +113,7 @@
       <%-include ('../partials/footer.ejs') %> 
     <!-- footer -->
 
-    <script src="/js/scriptRegister.js"></script>
+    <script src="/js/scripEditUser.js"></script>
         
 
 </body>

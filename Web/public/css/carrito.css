@@ -1,11 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    
-}
+
 main{
     padding:10px;
     padding-top: 103px;
@@ -81,18 +74,19 @@ h1{
 
             .boton{
                 FONT-WEIGHT: bold;
-                background: #00C0FF;
-                color: #FFF;
-                 width: 100%;
-                  padding: 10px;
-                  margin: 20px 0px;
-                  border-radius: 36px;
-                  border: black 1px solid;
-                  transition: 150ms
+  background: #FFF;
+  color: #00C0FF;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 36px;
+  border: none;
+  transition: 150ms
                   
               }
               .boton:hover{
-                background: rgb(0, 72, 226);
+                background: #00C0FF;
+                color: #FFF;
                 cursor:pointer;
               }
               
