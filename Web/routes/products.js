@@ -20,6 +20,8 @@ router.get("/api/list", productosApiController.list);
 
 router.get("/api/detail/:id", productosApiController.show);
 
+router.get("/api/list/limit", productosApiController.listLimit);
+
 router.post('/',upload.single("image"),validations, productsBaseController.store);
 
 router.put('/editar/:id',upload.single("image"),admiMiddleware, productsBaseController.update);

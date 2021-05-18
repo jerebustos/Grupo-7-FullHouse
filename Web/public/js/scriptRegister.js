@@ -19,7 +19,28 @@ window.addEventListener("load", () => {
             document.querySelector("#checkName").style.display = "block"
         }
     })
+
+    document.querySelector("#lastName").addEventListener("keyup", function(e){
+ 
+     var onlyLetters = /^[A-ZÁÉÍÓÚÑa-záéíóúñ]+$/;
+        if(this.value.length < 3 || !onlyLetters.test(this.value.replaceAll(" ", "")) ){
+            this.classList.remove("normal");
+            this.classList.add("incorrect");
+            this.classList.remove("correct");
+            document.querySelector("#checkLastName").style.display = "none"
+            document.querySelector("#checkLastError").style.display = "block"
+            document.querySelector("#ulLastName").innerHTML= "<li>Minimo 3 caracteres y solo letras</li>"
+        }
+        else{
+         document.querySelector("#ulLastName").innerHTML= ""
+            this.classList.remove("incorrect");
+            this.classList.add("correct")
+            document.querySelector("#checkLastError").style.display = "none"
+            document.querySelector("#checkLastName").style.display = "block"
+        }
+    })
     
+
     document.querySelector("#pass").addEventListener("keyup", function(e){
      let decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,}$/ 
      if(!decimal.test(this.value)){
@@ -61,6 +82,9 @@ window.addEventListener("load", () => {
  
         
     })
+
+
+
     
     document.querySelector("#avatar").addEventListener("change", function(e){
       
@@ -82,7 +106,7 @@ window.addEventListener("load", () => {
      
  
 
- document.querySelector("#email").addEventListener("keyup", async function(e){
+   document.querySelector("#email").addEventListener("keyup", async function(e){
        
     let {data} = await axios.get("http://localhost:3000/usuario/api/list")
     
@@ -125,7 +149,7 @@ window.addEventListener("load", () => {
     let {data} = await axios.get("http://localhost:3000/usuario/api/list");
     
     console.log(data)
-    let resultado = data.user.filter( user => user == this.value)
+    let resultado = data.user.filter( user => user == this.value.replaceAll(" ", ""))
 
      if(this.value.length < 3) {
         this.classList.remove("normal");

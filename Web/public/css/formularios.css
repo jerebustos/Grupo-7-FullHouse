@@ -17,6 +17,7 @@ main {
 
 }
 
+#checkLastName,
 #checkName,
 #checkEmail,
 #checkPass,
@@ -31,6 +32,7 @@ main {
   display: none;
 }
 
+#checkLastError,
 #checkError,
 #checkEmailError,
 #checkPasslError,
@@ -46,7 +48,7 @@ main {
 }
 
 
-
+.divLastName,
 .divName,
 .divEmail,
 .divPass,
@@ -203,6 +205,7 @@ textarea.form-input {
 @media screen and (min-width: 1100px) {
 
   #checkName,
+  #checkLastName,
   #checkEmail,
   #checkPass,
   #checkPassConfirm,
@@ -214,7 +217,7 @@ textarea.form-input {
     font-size: 21px;
   }
 
-
+  #checkLastError,
   #checkError,
   #checkEmailError,
   #checkPasslError,

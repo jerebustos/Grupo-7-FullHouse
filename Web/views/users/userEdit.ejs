@@ -28,10 +28,13 @@
             <%= errors.name.msg %> 
         </div>
     <% } %>
-    
-        <input type="text" name="lastName" class="normal" placeholder="Apellido" <%= locals.errors && errors.lastName ? 'is-invalid' : null %>
+    <div class="divLastName">
+        <input type="text" name="lastName" class="normal" id="lastName" placeholder="Apellido" <%= locals.errors && errors.lastName ? 'is-invalid' : null %>
         value="<%= user.lastName %>"
     >
+    <i class="far fa-check-circle" id="checkLastName"></i>
+    <i class="far fa-times-circle" id="checkLastError"></i></div>
+    <ul id="ulLastName" class="error"></ul>
     
 
     <% if (locals.errors && errors.lastName) { %>

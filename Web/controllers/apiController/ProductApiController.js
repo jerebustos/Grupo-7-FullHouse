@@ -9,15 +9,30 @@ const Categories = db.Category
 const controller = {
 
     list: async (req,res) =>{
-     let productos = await Products.findAll(
-        {include: ['brand',"color", "category"]}
-     )
- 
-      return res.status(200).json({
-          meta:{total: productos.length, status: 200, url: "producto/api/list"},
-          data: productos
 
-      })
+try { 
+    
+    
+    
+    let productos = await Products.findAll(
+       {include: ['brand',"color", "category"]}
+    )
+    
+
+     return res.status(200).json({
+         meta:{total: productos.length, status: 200, url: "producto/api/list"},
+         data: productos
+
+     })
+
+    
+} catch (error) {
+
+    return res.send(error)
+    
+}
+      
+      
     },
 
     show: async (req,res) =>{
@@ -47,8 +62,35 @@ const controller = {
        
 
 
-    }
+    },
 
+    listLimit : async (req,res) =>{
+
+try { 
+    
+    let limitProduct = Number(req.query.limitProduct )
+    let offSet = Number(req.query.offset )
+    
+    let productos = await Products.findAll(
+       {include: ['brand',"color", "category"], offset:offSet ,limit: limitProduct}
+    )
+    
+
+     return res.status(200).json({
+         meta:{total: productos.length, status: 200, url: "producto/api/list"},
+         data: productos
+
+     })
+
+    
+} catch (error) {
+
+    return res.send(error)
+    
+}
+      
+      
+    }
 }
 
 
