@@ -19,7 +19,7 @@
       <div class="poducto">
        <img class="imagen" src= "/img/products/<%= productoDetalle.image%> " > 
        <div class="columna">
-       <h1><%=productoDetalle.name%> </h1>
+       <h1 id="name"><%=productoDetalle.name%> </h1>
        <br>
        <ul>
        <li>
@@ -53,8 +53,8 @@
        <br>
 
        <h2>$<%= toThousand(productoDetalle.price) %></h2>
-        <form action="/" method="POST">
-          <button class="botonDeCompra" type="submit" value="Comprar"><h3>Comprar</h3></button>
+        <form action="" method="POST">
+          <button class="botonDeCompra" type="submit" id="agregar" value="Comprar"><h3>Agregar a carrito</h3></button>
        </form>
        <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
        <a href="/producto/editar/<%= productoDetalle.id%>" class="editar"><h3>Editar</h3></a>
@@ -76,7 +76,8 @@
       <%-include ('../partials/footer') %> 
     <!-- footer -->
 
-    <script src="/js/scriptProductCreate.js"></script>
+   
+    <script src="/js/cart.js"></script>
     
   </body>
 

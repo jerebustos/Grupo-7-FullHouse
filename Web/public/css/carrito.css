@@ -9,6 +9,15 @@ label {
     padding-right: 10px;
 }
 
+.productoCarrito{
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    
+}
+
 select {
     font-size: .9rem;
     padding: 2px 5px;
@@ -16,7 +25,7 @@ select {
 
 .Batidora{
     width: 25%;
-    margin-top: -11px
+   
     
 }
 
@@ -36,7 +45,7 @@ h1{
 
 .descripcion{
     font-size: 3vw;
-    padding-top: 5%
+    
 }
 
 .eliminar{
@@ -53,8 +62,8 @@ h1{
     .precio{
     width: 49%;
     position: relative;
-    bottom: 10vw;
-    left: 24%;;
+    left: 24%;
+    color: coral;
     }
 
     .detalle1,.detalle2{
@@ -106,9 +115,7 @@ h1{
                     margin: 0 0 0px 11px
                 }
 
-                .descripcion{
-                    font-size: 2vw;
-                }
+                
 
                 .eliminar{
                     padding-left: 12%
@@ -119,6 +126,9 @@ h1{
 
               @media screen and (min-width: 1200px){
 
+                .precio{
+                    font-size: 35px
+                }
 
                 .eliminar {
                     padding-left: 18%
@@ -126,10 +136,6 @@ h1{
 
                 .cantidad{
                     bottom: 8vw;
-                }
-
-                .precio{
-                    bottom: 8vw
                 }
                 
                 
