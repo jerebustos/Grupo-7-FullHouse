@@ -41,10 +41,14 @@ h1{
     font-size: 20px;
 }
 
-
+.vaciar{
+    position: relative;
+    left: 71%;
+    color: #42d1ff;
+}
 
 .descripcion{
-    font-size: 3vw;
+    font-size: 2vw;
     
 }
 
@@ -78,7 +82,7 @@ h1{
     padding: 13px;
         }
 
-        h4{
+        .subTotal{
             color: #858585}
 
             .boton{
@@ -114,7 +118,10 @@ h1{
                     width: 27%;
                     margin: 0 0 0px 11px
                 }
-
+                 
+                .vaciar{
+                    
+                    left: 81%}
                 
 
                 .eliminar{
@@ -125,7 +132,16 @@ h1{
               }
 
               @media screen and (min-width: 1200px){
-
+                   
+                #total, #subTotal{
+                    font-size: 36px
+                }
+                .subTotal{
+                    font-size: 36px
+                }
+                .tituloTotal{
+                    font-size: 54px
+                }
                 .precio{
                     font-size: 35px
                 }
@@ -138,6 +154,9 @@ h1{
                     bottom: 8vw;
                 }
                 
+                h1{
+                    font-size: 35px;
+                }
                 
 
               }

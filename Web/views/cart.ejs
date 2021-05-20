@@ -14,19 +14,18 @@
 
     <div class="contenedor">
     <div class="producto" id="producto">
-        
-
+      <a class="vaciar" href="/carrito">Vaciar Carrito</a>
     </div>
     <div class="final">
         <div class="detalle1">
-            <div class="specName"><h4>Subtotal</h4></div>
-            <div class="specValue" id="subTolta">$15.499</div>
+            <div class="specName"><h4 class="subTotal">Subtotal</h4></div>
+            <div class="specValue" id="subTotal">$0</div>
            </div>
            <div class="detalle2">
-            <div class="specName"><h1 class="titulo" id="total">Total</h1></div>
-            <div class="specValue">$15.499</div>
+            <div class="specName"><h1 class="tituloTotal" >Total</h1></div>
+            <div class="specValue" id="total">$0</div>
            </div>
-           <form action="">
+           <form action="/checkout">
             <button  class="boton" type="submit" value="Comprar">FINALIZAR COMPRA</button>
           </form>
           <form action="/" method="get">

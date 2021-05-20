@@ -53,7 +53,7 @@
        <br>
 
        <h2>$<%= toThousand(productoDetalle.price) %></h2>
-        <form action="" method="POST">
+        <form action="/carrito" method="GET">
           <button class="botonDeCompra" type="submit" id="agregar" value="Comprar"><h3>Agregar a carrito</h3></button>
        </form>
        <% if (locals.userLogged && locals.userLogged.admi == 1) { %>

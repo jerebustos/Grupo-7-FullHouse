@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <%-include ('partials/head') %>
+  <link rel="stylesheet" href="/css/checkout.css">
+</head>    
+
+<body>
+    <%-include ('partials/header') %>  
+    <main>
+
+
+
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Dirección de Envio</h3>
+              <label for="fname"><i class="fa fa-user"></i> Nombre</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
+              <input type="text" id="adr" name="address" placeholder="Cordoba 1520">
+              <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+              <input type="text" id="city" name="city" placeholder="Quilmes">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">Provincia</label>
+                  <input type="text" id="state" name="state" placeholder="Buenos Aires">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Codigo Postal</label>
+                  <input type="text" id="zip" name="zip" placeholder="1028">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Pago</h3>
+              <label for="fname">Tarjetas Aceptadas</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Nombre en la tarjeta</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Número de Tarjeta</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Mes de exp</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="Febrero">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Año exp</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2021">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Dirección de envío igual a la de facturación
+          </label>
+          <input type="submit" id="pagar"  value="Pagar" class="btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- footer -->
+   <%-include ('partials/footer') %> 
+ <!-- footer -->
+
+ <script src="js/pagar.js"></script>
+
+</body>
+</html>

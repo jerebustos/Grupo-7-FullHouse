@@ -8,7 +8,9 @@ window.addEventListener("load", async () => {
     
     
 document.querySelector("#agregar").addEventListener("click", function(e){
-    e.preventDefault();
+
+    document.querySelector(".icono_carrito").style.transform = "rotate(360deg)";
+    document.querySelector(".icono_carrito").style.color= "#00C0FF"
    const nameProduct = (document.querySelector("#name").innerHTML);
 
    const paraElCarrito2 = info ? [...info] : [];

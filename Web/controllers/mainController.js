@@ -42,6 +42,10 @@ index: async (req,res)=>{
 cart:(req,res)=>{
     res.render("cart");
 },
+
+checkout:(req,res)=>{
+    res.render("checkout");
+},
 search: async (req,res)=>{
     
     let products = await Products.findAll({

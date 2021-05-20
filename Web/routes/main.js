@@ -8,5 +8,7 @@ router.get('/carrito', mainController.cart);
 
 router.get('/buscar', mainController.search); 
 
+router.get("/checkout", mainController.checkout);
+
 
 module.exports = router;
