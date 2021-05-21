@@ -21,7 +21,9 @@
 
 .imgSlides{
   width: 100vw;
+  height: 300px;
 }
+
 
 /* Fading animation */
 .fade {
@@ -67,6 +69,12 @@
 
 @media screen and (max-width: 800px){
 
+
+  .imgSlides{
+  
+    height: 203px;
+  }
+  
     body{
         overflow-x: hidden;
     }
@@ -119,6 +127,9 @@
   }
 
   @media screen and (max-width: 1000px){
+
+
+    
     .column {
         width: 50%;
     }
