@@ -11,6 +11,14 @@ const Categories = db.Category
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+const formatProduct = p => ({
+    ...p,
+    brand: { name: (typeof p.brand === 'object' && p.brand) ? (p.brand.name || '') : (p.marca || p.brand || '') },
+    color: { name: (typeof p.color === 'object' && p.color) ? (p.color.name || '') : (p.color || '') },
+    model: p.model || p.modelo || '',
+    accessory: p.accessory || p.accesorios || ''
+});
+
 const controller = {
 
     list: async (req,res) =>{
@@ -23,7 +31,7 @@ const controller = {
             const jsonPath = path.join(__dirname, '../data/productosBaseDatos.json');
             if (fs.existsSync(jsonPath)) {
                 try {
-                    products = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+                    products = JSON.parse(fs.readFileSync(jsonPath, 'utf-8')).map(formatProduct);
                 } catch (err) {}
             }
         }
@@ -52,7 +60,7 @@ const controller = {
             const jsonPath = path.join(__dirname, '../data/productosBaseDatos.json');
             if (fs.existsSync(jsonPath)) {
                 try {
-                    const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+                    const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8')).map(formatProduct);
                     productoDetalle = allProducts.find(p => p.id == req.params.id);
                 } catch (err) {}
             }

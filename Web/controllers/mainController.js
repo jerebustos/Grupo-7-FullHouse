@@ -9,8 +9,13 @@ const Products = db.Product;
 const Brands = db.Brand;
 
 
-const toThousand = n => n ? n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : "0";
-
+const formatProduct = p => ({
+    ...p,
+    brand: { name: (typeof p.brand === 'object' && p.brand) ? (p.brand.name || '') : (p.marca || p.brand || '') },
+    color: { name: (typeof p.color === 'object' && p.color) ? (p.color.name || '') : (p.color || '') },
+    model: p.model || p.modelo || '',
+    accessory: p.accessory || p.accesorios || ''
+});
 
 const controller = {
 index: async (req,res)=>{
@@ -32,7 +37,7 @@ index: async (req,res)=>{
         const jsonPath = path.join(__dirname, '../data/productosBaseDatos.json');
         if (fs.existsSync(jsonPath)) {
             try {
-                const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+                const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8')).map(formatProduct);
                 ProductosPequeños = allProducts.filter(p => p.category === 'pequeño').slice(0, 5);
                 ProductosGrandes = allProducts.filter(p => p.category === 'grande').slice(0, 5);
             } catch (err) {}
@@ -67,7 +72,7 @@ search: async (req,res)=>{
         const jsonPath = path.join(__dirname, '../data/productosBaseDatos.json');
         if (fs.existsSync(jsonPath)) {
             try {
-                const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+                const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8')).map(formatProduct);
                 products = allProducts.filter(p => p.name && p.name.toLowerCase().includes(keyword));
             } catch (err) {}
         }
