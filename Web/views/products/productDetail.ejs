@@ -27,11 +27,11 @@
          <div>
            <div class="detalle1">
             <div class="specName">Color</div>
-            <div class="specValue"><%=productoDetalle.color.name%> </div>
+            <div class="specValue"><%= (productoDetalle && productoDetalle.color && productoDetalle.color.name) ? productoDetalle.color.name : (productoDetalle && productoDetalle.color ? productoDetalle.color : '') %> </div>
            </div>
            <div class="detalle2">
             <div class="specName">Marca</div>
-            <div class="specValue"><%=productoDetalle.brand.name%> </div>
+            <div class="specValue"><%= (productoDetalle && productoDetalle.brand && productoDetalle.brand.name) ? productoDetalle.brand.name : (productoDetalle && productoDetalle.marca ? productoDetalle.marca : '') %> </div>
            </div>
            <div class="detalle3">
             <div class="specName">Modelo</div>
