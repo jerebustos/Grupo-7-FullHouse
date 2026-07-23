@@ -1,261 +1,171 @@
-main {
-  padding-top: 85px;
+/* FullHouse - Agency Premium Form Styles (Register & User Forms) */
+
+.register-wrapper {
+  max-width: 680px;
+  margin: 110px auto 60px;
+  padding: 0 20px;
+}
+
+.register-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 36px;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.register-header h1 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.register-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid .full-width {
+  grid-column: span 2;
+}
+
+.field-group {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  background-image: url(../img/home-1416381_1920.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
+}
+
+.field-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 46px;
+  padding: 0 16px;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: #f8fafc;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input-wrapper input:focus {
+  background: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.12);
+}
+
+.input-wrapper i.status-icon {
+  position: absolute;
+  right: 14px;
+  font-size: 1rem;
+  display: none;
+}
+
+.input-wrapper i.status-icon.fa-check-circle {
+  color: #10b981;
+}
+
+.input-wrapper i.status-icon.fa-times-circle {
+  color: #ef4444;
+}
+
+/* File Upload Style */
+input[type="file"].normal {
+  padding: 8px 12px;
+  height: auto;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn-submit {
+  flex: 2;
+  height: 48px;
+  background: var(--accent-gradient);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(2, 132, 199, 0.35);
+}
+
+.btn-reset {
+  flex: 1;
+  height: 48px;
+  background: #f1f5f9;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-reset:hover {
+  background: #e2e8f0;
+  color: var(--text-main);
 }
 
 .text-danger {
-  color: red;
-  font-weight: bold;
-
+  color: #ef4444;
+  font-size: 0.82rem;
+  margin-top: 4px;
 }
 
-#checkLastName,
-#checkName,
-#checkEmail,
-#checkPass,
-#checkPassConfirm,
-#checkUser,
-#checkPrice,
-#checkAccessory {
-  color: greenyellow;
-  position: absolute;
-  bottom: 9px;
-  left: 294px;
-  display: none;
-}
-
-#checkLastError,
-#checkError,
-#checkEmailError,
-#checkPasslError,
-#checkPassConfirmError,
-#checkUserError,
-#checkPriceError,
-#checkAccessoryError {
-  color: red;
-  position: absolute;
-  bottom: 9px;
-  left: 294px;
-  display: none;
-}
-
-
-.divLastName,
-.divName,
-.divEmail,
-.divPass,
-.divPassConfirm,
-.divUser,
-.divPrice,
-.divAccessory {
-  position: relative;
-}
-
-.error {
-  color: red;
-  list-style: none;
-  font-size: 15px;
-}
-
-.formulario {
-
-  margin: 5%;
-}
-
-.formulario {
-  background-color: rgba(250, 255, 255, .75);
-  padding: 31px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.formulario input,
-select {
-  outline: none;
-  font-size: 27px;
-  padding: 0px 8px;
-  border-radius: 36px;
-  background-color: white;
-  margin-top: 16px;
-  text-align: center;
-  color: #777777;
-
-}
-
-.formulario input[type="file"] {
-  font-size: 13px;
-}
-
-#color {
-  padding: 0px 24px;
-}
-
-#brand {
-  padding: 0px 16px;
-}
-
-#category {
-  font-size: 23px
-}
-
-
-.boton {
-  FONT-WEIGHT: bold;
-  background: #FFF;
-  color: #00C0FF;
-  width: 76%;
-  padding: 10px;
-  margin: 20px 0px;
-  border-radius: 36px;
-  border: none;
-  box-shadow: 10px 10px 30px -4px rgb(168, 167, 167);
-  transition: 150ms
-}
-
-.boton:hover {
-  background: #00C0FF;
-  color: #FFF;
-  cursor: pointer;
-}
-
-textarea.form-input {
-  width: 20rem;
-  height: 6rem;
-  resize: horizontal;
-  padding: 10px;
-}
-
-.form-label-1 {
-  display: inline-block;
-  font-size: 1.6em;
-  margin: 10px 0;
-  position: relative;
-  left: 22%;
-}
-
-.form-label-2 {
-  display: inline-block;
-  font-size: 1.6em;
-  margin: 10px 0;
-  position: relative;
-  left: 30%;
-}
-
-.products-title {
-  font-size: 28px;
-  color: coral;
-  text-shadow: 1px 1px 2px black
-}
-
-
-.botonGuardar {
-  FONT-WEIGHT: bold;
-  background: #FFF;
-  color: #00C0FF;
-  width: 100%;
-  padding: 10px;
-  margin: 20px 0px;
-  border-radius: 36px;
-  border: none;
-  box-shadow: 10px 10px 30px -4px rgb(168, 167, 167);
-  transition: 150ms
-}
-
-.botonGuardar:hover {
-  background: #00C0FF;
-  color: #FFF;
-  cursor: pointer;
-}
-
-.category {
-  display: flex;
-  flex-direction: column;
-
-}
-
-
-.normal {
-  border: none;
-}
-
-.incorrect {
-  border: red solid 1px;
-
-}
-
-.correct {
-  border: springgreen solid 1px;
-}
-
-
-
-
-@media screen and (min-width: 1100px) {
-
-  #checkName,
-  #checkLastName,
-  #checkEmail,
-  #checkPass,
-  #checkPassConfirm,
-  #checkUser,
-  #checkPrice,
-  #checkAccessory {
-    bottom: 15px;
-    left: 420px;
-    font-size: 21px;
+@media screen and (max-width: 650px) {
+  .form-grid {
+    grid-template-columns: 1fr;
   }
 
-  #checkLastError,
-  #checkError,
-  #checkEmailError,
-  #checkPasslError,
-  #checkPassConfirmError,
-  #checkUserError,
-  #checkPriceError,
-  #checkAccessoryError {
-    bottom: 15px;
-    left: 420px;
-    font-size: 21px;
+  .form-grid .full-width {
+    grid-column: span 1;
   }
 
-  .formulario input,
-  select {
-    font-size: 40px
-  }
-
-  .formulario input[type="file"] {
-    font-size: 20px
-  }
-
-  #category {
-    font-size: 35px
-  }
-
-  .products-title {
-    font-size: 38px
-  }
-
-  textarea.form-input {
-    width: 27rem
-  }
-
-  #color {
-    padding: 0px 30px
-  }
-
-  #brand {
-    padding: 0px 18px
+  .form-actions {
+    grid-column: span 1;
+    flex-direction: column;
   }
 }

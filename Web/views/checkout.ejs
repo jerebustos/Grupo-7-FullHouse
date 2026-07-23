@@ -1,91 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  
+<html lang="es">
 <head>
-  <%-include ('partials/head') %>
+  <%- include('partials/head') %>
   <link rel="stylesheet" href="/css/checkout.css">
-</head>    
-
+</head>
 <body>
-    <%-include ('partials/header') %>  
-    <main>
 
+  <!-- Encabezado de Navegación -->
+  <%- include('partials/header') %>
 
+  <main class="checkout-wrapper">
+    <header class="checkout-header">
+      <h1>Finalizar Compra - Pago Seguro</h1>
+      <p><i class="fa-solid fa-lock" style="color: #10b981;"></i> Transacción Encriptada SSL de 256-bit</p>
+    </header>
 
-<div class="row">
-    <div class="col-75">
-      <div class="container">
-        <form action="/">
-  
-          <div class="row">
-            <div class="col-50">
-              <h3>Dirección de Envio</h3>
-              <label for="fname"><i class="fa fa-user"></i> Nombre</label>
-              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-              <label for="email"><i class="fa fa-envelope"></i> Email</label>
-              <input type="text" id="email" name="email" placeholder="john@example.com">
-              <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
-              <input type="text" id="adr" name="address" placeholder="Cordoba 1520">
-              <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
-              <input type="text" id="city" name="city" placeholder="Quilmes">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="state">Provincia</label>
-                  <input type="text" id="state" name="state" placeholder="Buenos Aires">
-                </div>
-                <div class="col-50">
-                  <label for="zip">Codigo Postal</label>
-                  <input type="text" id="zip" name="zip" placeholder="1028">
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-50">
-              <h3>Pago</h3>
-              <label for="fname">Tarjetas Aceptadas</label>
-              <div class="icon-container">
-                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                <i class="fa fa-cc-discover" style="color:orange;"></i>
-              </div>
-              <label for="cname">Nombre en la tarjeta</label>
-              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-              <label for="ccnum">Número de Tarjeta</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-              <label for="expmonth">Mes de exp</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="Febrero">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="expyear">Año exp</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="2021">
-                </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352">
-                </div>
-              </div>
-            </div>
-  
+    <article class="checkout-card">
+      <form action="/" method="GET" class="checkout-grid">
+        <!-- Columna 1: Dirección de Envío -->
+        <div class="checkout-col">
+          <h2 class="checkout-section-title"><i class="fa-solid fa-location-dot"></i> Dirección de Envío</h2>
+
+          <div class="field-group">
+            <label for="fname">Nombre y Apellido</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ej. Juan Pérez" required>
           </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Dirección de envío igual a la de facturación
-          </label>
-          <input type="submit" id="pagar"  value="Pagar" class="btn">
-        </form>
-      </div>
-    </div>
-  </div>
 
-</main>
+          <div class="field-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required>
+          </div>
 
-<!-- footer -->
-   <%-include ('partials/footer') %> 
- <!-- footer -->
+          <div class="field-group">
+            <label for="adr">Dirección</label>
+            <input type="text" id="adr" name="address" placeholder="Av. Corrientes 1234, 4to B" required>
+          </div>
 
- <script src="js/pagar.js"></script>
+          <div class="field-row">
+            <div class="field-group">
+              <label for="city">Ciudad</label>
+              <input type="text" id="city" name="city" placeholder="Buenos Aires" required>
+            </div>
+            <div class="field-group">
+              <label for="zip">Código Postal</label>
+              <input type="text" id="zip" name="zip" placeholder="C1043" required>
+            </div>
+          </div>
+        </div>
 
+        <!-- Columna 2: Detalles de Pago -->
+        <div class="checkout-col">
+          <h2 class="checkout-section-title"><i class="fa-solid fa-credit-card"></i> Información de Pago</h2>
+
+          <div class="card-brands">
+            <i class="fa-brands fa-cc-visa" style="color: #1a1f71;"></i>
+            <i class="fa-brands fa-cc-mastercard" style="color: #eb001b;"></i>
+            <i class="fa-brands fa-cc-amex" style="color: #006fcf;"></i>
+          </div>
+
+          <div class="field-group">
+            <label for="cname">Nombre en la Tarjeta</label>
+            <input type="text" id="cname" name="cardname" placeholder="Como figura en el plástico" required>
+          </div>
+
+          <div class="field-group">
+            <label for="ccnum">Número de Tarjeta</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="4509 •••• •••• 1234" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="expmonth">Vencimiento</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="MM/AA" required>
+            </div>
+            <div class="field-group">
+              <label for="cvv">Código CVV</label>
+              <input type="password" id="cvv" name="cvv" placeholder="123" maxlength="4" required>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" id="pagar" class="btn-pay">
+          <i class="fa-solid fa-shield-check"></i> Pagar con Seguridad
+        </button>
+      </form>
+    </article>
+  </main>
+
+  <!-- Pie de Página -->
+  <%- include('partials/footer') %>
+
+  <script src="/js/pagar.js"></script>
 </body>
 </html>

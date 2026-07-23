@@ -1,132 +1,116 @@
+/* FullHouse - Agency Premium Profile Styles */
 
-
-body{
-  background-image:url(../img/kitchen-2640067_1280.png)
-
+.profile-wrapper {
+  max-width: 560px;
+  margin: 110px auto 60px;
+  padding: 0 20px;
 }
 
-.userName{
-  color: coral;
-  font-size: 4rem;
-  font-weight: bold;
-  background-color:#ffffffdb
-}
-.perfil{
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-    
+.profile-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 40px 32px;
+  text-align: center;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-    
-  }
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-    background-color: white;
-    padding: 3% 0%;
-  }
-  
-  button, .editar {
-    border: none;
-    font-weight: bold;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color:#00C0FF;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  #delet{
-    background-color: red;
-  }
+.profile-avatar-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--primary);
+  box-shadow: var(--shadow-md);
+}
 
-  #close{
-    background-color: coral;
-  }
+.profile-avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
+.profile-username {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 24px;
+}
 
-  h3{
-    margin-top: -4px;
-    background-color: gainsboro;
-    padding: 6px 0;
-  }
+.profile-details-list {
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 28px;
+  text-align: left;
+  border: 1px solid var(--border-light);
+}
 
-  .cancelbtn, .deletebtn {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Add a color to the cancel button */
-  .cancelbtn {
-    background-color: #ccc;
-    color: black;
-  }
-  
-  /* Add a color to the delete button */
-  .deletebtn {
-    background-color: #f44336;
-  }
-  
-  /* Add padding and center-align text to the container */
-  .container {
-    padding: 16px;
-    text-align: center;
-  }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(2 190 251 / 74%);
-    padding-top: 50px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 17% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* Style the horizontal ruler */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-   
+.profile-detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.9rem;
+}
 
-  
-  /* Clear floats */
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Change styles for cancel button and delete button on extra small screens */
-  @media screen and (max-width: 300px) {
-    .cancelbtn, .deletebtn {
-       width: 100%;
-    }
-  }
+.profile-detail-item:last-child {
+  border-bottom: none;
+}
+
+.profile-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.profile-value {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-edit-profile {
+  padding: 12px;
+  background: var(--accent-gradient);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-edit-profile:hover {
+  transform: translateY(-2px);
+}
+
+.btn-logout {
+  width: 100%;
+  padding: 12px;
+  background: #f1f5f9;
+  color: var(--text-main);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.btn-delete-account {
+  width: 100%;
+  padding: 12px;
+  background: #ef4444;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}

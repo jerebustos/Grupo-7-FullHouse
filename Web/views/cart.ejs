@@ -1,44 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-  
+<html lang="es">
 <head>
-  <%-include ('partials/head') %>
+  <%- include('partials/head') %>
   <link rel="stylesheet" href="/css/carrito.css">
-</head>    
-
+</head>
 <body>
-    <%-include ('partials/header') %>  
-    <main>
-     <h1 class="titulo">Mi Carrito</h1>
-     <br>
 
-    <div class="contenedor">
-    <div class="producto" id="producto">
-      <a class="vaciar" href="/carrito">Vaciar Carrito</a>
+  <!-- Encabezado de Navegación -->
+  <%- include('partials/header') %>
+
+  <main class="cart-wrapper">
+    <header class="cart-header">
+      <h1>Tu Carrito de Compras</h1>
+    </header>
+
+    <div class="cart-layout">
+      <section class="cart-items-box">
+        <div class="producto" id="producto">
+          <!-- Fallback vació o contenido cargado mediante carrito.js -->
+          <div class="empty-cart-state">
+            <i class="fa-solid fa-basket-shopping empty-cart-icon"></i>
+            <h3>Tu carrito está vacío</h3>
+            <p>Descubrí miles de productos en oferta en nuestra tienda.</p>
+            <a href="/producto" class="btn-catalog">Explorar Catálogo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="order-summary-box">
+        <h2 class="summary-title">Resumen de Compra</h2>
+        
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subTotal">$0</strong>
+        </div>
+        
+        <div class="summary-row">
+          <span>Envío</span>
+          <span style="color: #10b981; font-weight: 600;">Gratis</span>
+        </div>
+
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong class="total-price" id="total">$0</strong>
+        </div>
+
+        <form action="/checkout" method="GET">
+          <button class="btn-checkout" type="submit">Finalizar Compra</button>
+        </form>
+        
+        <form action="/" method="GET">
+          <button class="btn-continue" type="submit">Continuar Comprando</button>
+        </form>
+      </aside>
     </div>
-    <div class="final">
-        <div class="detalle1">
-            <div class="specName"><h4 class="subTotal">Subtotal</h4></div>
-            <div class="specValue" id="subTotal">$0</div>
-           </div>
-           <div class="detalle2">
-            <div class="specName"><h1 class="tituloTotal" >Total</h1></div>
-            <div class="specValue" id="total">$0</div>
-           </div>
-           <form action="/checkout" method="get">
-            <button  class="boton" type="submit" value="Comprar">FINALIZAR COMPRA</button>
-          </form>
-          <form action="/" method="get">
-            <button  class="boton" type="submit" value="SeguirComprando">CONTINUAR COMPRANO</button>
-          </form>
-    </div>
-</div>
-</main>
+  </main>
 
-   <!-- footer -->
-      <%-include ('partials/footer') %> 
-    <!-- footer -->
+  <!-- Pie de Página -->
+  <%- include('partials/footer') %>
 
-   <script src="js/carrito.js"></script>
+  <script src="/js/carrito.js"></script>
 </body>
 </html>

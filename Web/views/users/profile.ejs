@@ -1,72 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <%-include ('../partials/head') %>
-
-        <link rel="stylesheet" href="/css/profile.css">
-
-    
-     
-      </head>
- 
+<html lang="es">
+<head>
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
 <body>
-    <%-include ('../partials/header') %>
 
-       <main>   
-        <div class="perfil">
+  <!-- Encabezado de Navegación -->
+  <%- include('../partials/header') %>
+
+  <main class="profile-wrapper">
+    <article class="profile-card">
+      <div class="profile-avatar-container">
+        <img src="/img/users/<%= user.avatar %>" alt="Avatar de <%= user.user %>" onerror="this.src='/img/FullhouseV7.png'; this.onerror=null;">
+      </div>
+
+      <h1 class="profile-username">@<%= user.user %></h1>
+
+      <div class="profile-details-list">
+        <div class="profile-detail-item">
+          <span class="profile-label">Nombre Completo:</span>
+          <span class="profile-value"><%= user.name %> <%= user.lastName %></span>
+        </div>
+        <div class="profile-detail-item">
+          <span class="profile-label">Correo Electrónico:</span>
+          <span class="profile-value"><%= user.email %></span>
+        </div>
+        <div class="profile-detail-item">
+          <span class="profile-label">Dirección:</span>
+          <span class="profile-value"><%= user.addres || 'No registrada' %></span>
+        </div>
+        <div class="profile-detail-item">
+          <span class="profile-label">Fecha de Nacimiento:</span>
+          <span class="profile-value"><%= user.birth_date || 'No registrada' %></span>
+        </div>
+      </div>
+
+      <div class="profile-actions">
+        <a href="/usuario/editar/<%= user.id %>" class="btn-edit-profile">Editar Datos de Perfil</a>
         
-        <div class="card">
-          <div class="user"><h1 class="userName" style="text-align:center"> <%= user.user%> </h1></div>
-          <img src="/img/users/<%= user.avatar%>"  style="width:100%">
-          <h3>Nombre y Apellido</h3>
-          <p class="title"><%= user.name%> <%= user.lastName%></p>
-          
-          <h3>Email</h3>
-          <p class="title"><%= user.email%></p>
-          
-          <h3>Dirección</h3>
-          <p class="title"><%= user.addres%></p>
-          
-          <h3>Fecha de nacimiento</h3>
-          <p class="title"><%= user.birth_date%></p>
-         
-         
-
-        <a href="/usuario/editar/<%= user.id %>" class="editar">Editar</a>
-
-        <form action="/usuario/salir" method="get">
-          <p><button id="close">Cerrar sesión</button></p>
+        <form action="/usuario/salir" method="GET">
+          <button type="submit" class="btn-logout">Cerrar Sesión</button>
         </form>
 
-        <p><button id="delet" onclick="document.getElementById('id01').style.display='block'">Eliminar</button></p>
-        <div id="id01" class="modal">
-          <form class="modal-content" action="/usuario/desactivar/<%= user.id %>?_method=DELETE" method="POST">
-            <div class="container">
-              <h1>Eliminar cuenta</h1>
-              <p>Estas seguro de eliminar tu cuenta?</p>
-            
-              <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                <button type="submit" class="deletebtn" >Eliminar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-       
-        
-      </form>
+        <form action="/usuario/desactivar/<%= user.id %>?_method=DELETE" method="POST">
+          <button type="submit" class="btn-delete-account" onclick="return confirm('¿Estás seguro de que deseas eliminar tu cuenta?');">Eliminar Cuenta</button>
+        </form>
+      </div>
+    </article>
+  </main>
 
+  <!-- Pie de Página -->
+  <%- include('../partials/footer') %>
 
-        </div>
-    </div>
-  </main> 
-        
-
-    <script src="/js/delet.js"></script>
-
-      <!-- footer -->
-<%-include ('../partials/footer') %> 
-<!-- footer -->
-      
-   </body>
-   </html>
+</body>
+</html>

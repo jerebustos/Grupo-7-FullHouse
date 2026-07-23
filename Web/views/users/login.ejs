@@ -1,57 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <%-include ('../partials/head') %>
-        <link rel="stylesheet" href="/css/login.css">
-      </head>
- 
+<html lang="es">
+<head>
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
 <body>
 
-    
-    <%-include ('../partials/header') %>
+  <!-- Encabezado de Navegación -->
+  <%- include('../partials/header') %>
 
-    
+  <main class="login-wrapper">
+    <article class="login-card">
+      <header class="login-header">
+        <h1>Iniciar Sesión en FullHouse</h1>
+        <p>Ingresá tus credenciales para gestionar tu cuenta</p>
+      </header>
 
-<main class="login">
-        <form class="formulario" action="/usuario/acceder" method="POST">
-            <div> <input class="user" type="text" name="user" placeholder="Nombre de usuario">
-                <br>
-            
+      <form action="/usuario/acceder" method="POST">
+        <div class="form-group">
+          <label for="user">Nombre de usuario</label>
+          <div class="input-icon-wrapper">
+            <i class="fa-solid fa-user input-icon"></i>
+            <input type="text" id="user" name="user" placeholder="Ej. juanperez" required>
+          </div>
+          <% if (locals.errors && errors.user) { %>
+            <div class="text-danger"><%= errors.user.msg %></div>
+          <% } %>
         </div>
 
-        <% if (locals.errors && errors.user) { %>
-            <div class="text-danger">
-                <%= errors.user.msg %>
-            </div>
-        <% } %>
-        
-        
-            <a class="olvidaste" href="#"> ¿olvidaste tu contraseña? </a>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <div class="input-icon-wrapper">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" name="pass" id="password" placeholder="Tu contraseña" required>
+            <i id="eye" class="fa-solid fa-eye toggle-pass" onclick="mostrarContrasena()"></i>
+            <i id="notEye" class="fa-solid fa-eye-slash toggle-pass" style="display:none;" onclick="mostrarContrasena()"></i>
+          </div>
+        </div>
 
-            <div> <input class="user" type="password" name="pass" id="password" placeholder="Contraseña"> <i id="eye" class="fa fa-eye" onclick="mostrarContrasena()"></i> <i id="notEye" class="fa fa-eye-slash" onclick="mostrarContrasena()"></i></div>
-            <div class="col">
+        <div class="login-options">
+          <label class="remember-me">
+            <input type="checkbox" name="remember_user"> Recordar mi usuario
+          </label>
+          <a href="#" class="forgot-pass">¿Olvidaste tu contraseña?</a>
+        </div>
 
-                
-                
-            <br>
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="remember_user">Recordar mi usuario
+        <button type="submit" class="btn-login">Ingresar a mi Cuenta</button>
+      </form>
 
-            </label>
-            
+      <footer class="login-footer">
+        ¿No tenés una cuenta? <a href="/usuario/registro">Registrate gratis acá</a>
+      </footer>
+    </article>
+  </main>
 
-            <button class="boton" type="submit" value="Enviar"> Enviar </button>
-        </form>
-    </main>
-   
-    	
+  <!-- Pie de Página -->
+  <%- include('../partials/footer') %>
 
-        <!-- footer -->
-      <%-include ('../partials/footer.ejs') %> 
-    <!-- footer -->
-        
-    <script src="/js/pass.js"></script>
-
-        
+  <script src="/js/pass.js"></script>
 </body>
 </html>

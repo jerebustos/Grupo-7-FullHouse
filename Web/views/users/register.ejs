@@ -1,143 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <%-include ('../partials/head.ejs') %>
-        <link rel="stylesheet" href="/css/formularios.css">
-      </head>
-    
-   
+<html lang="es">
+<head>
+  <%- include('../partials/head.ejs') %>
+  <link rel="stylesheet" href="/css/formularios.css">
+</head>
 <body>
 
-    <!--Header - menu-->
-    <%-include ('../partials/header.ejs') %>
+  <!-- Encabezado de Navegación -->
+  <%- include('../partials/header.ejs') %>
 
-<main class="register">
-    <div>
-    <form class="formulario" action="/usuario/" method="POST" enctype="multipart/form-data">
-        
-       <div class="divName"> <input type="text" name="name" id="name" class="normal" placeholder="Nombre" <%= locals.errors && errors.name ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.name : null %>"
-    > <i class="far fa-check-circle" id="checkName"></i>
-    <i class="far fa-times-circle" id="checkError"></i></div>
-    <ul id="ul" class="error"></ul>
-    <% if (locals.errors && errors.name) { %>
-        <div class="text-danger">
-            <%= errors.name.msg %> 
-        </div>
-    <% } %>
-         
-         <div class="divLastName">
-        <input type="text" name="lastName" id="lastName" class="normal" placeholder="Apellido" <%= locals.errors && errors.lastName ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.lastName : null %>"
-    ><i class="far fa-check-circle" id="checkLastName"></i>
-    <i class="far fa-times-circle" id="checkLastError"></i></div>
-    <ul id="ulLastName" class="error"></ul>
-    
+  <main class="register-wrapper">
+    <article class="register-card">
+      <header class="register-header">
+        <h1>Crear una Cuenta en FullHouse</h1>
+        <p>Completá el formulario para registrarte y disfrutar de beneficios exclusivos</p>
+      </header>
 
-    <% if (locals.errors && errors.lastName) { %>
-        <div class="text-danger">
-            <%= errors.lastName.msg %> 
-        </div>
-    <% } %>
-    <div class="divUser">
-        <input type="text" name="user" class="normal" id="user" placeholder="Nombre de usuario" <%= locals.errors && errors.user ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.user : null %>"
-    >
-    <i class="far fa-check-circle" id="checkUser"></i>
-    <i class="far fa-times-circle" id="checkUserError"></i></div>
-    <ul id="ulUser" class="error"></ul>
-    <% if (locals.errors && errors.user) { %>
-        <div class="text-danger">
-            <%= errors.user.msg %> 
-        </div>
-    <% } %>
-        <div class="divEmail" ><input type="email" name="email" class="normal" id="email" placeholder="E-mail" <%= locals.errors && errors.email ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.email : null %>"
-    ><i class="far fa-check-circle" id="checkEmail"></i>
-    <i class="far fa-times-circle" id="checkEmailError"></i></div>
-    <ul id="ulEmail" class="error"></ul>
-
-    <% if (locals.errors && errors.email) { %>
-        <div class="text-danger">
-            <%= errors.email.msg %> 
-        </div>
-    <% } %>
-        <br>
-        <label for="birth_date"><h3>Fecha de nacimiento</h3></label>
-        
-        <input type="date" name="birth_date" id="birth_date" class="normal" <%= locals.errors && errors.birth_date ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.birth_date : null %>"
-    >
-    <% if (locals.errors && errors.birth_date) { %>
-        <div class="text-danger">
-            <%= errors.birth_date.msg %> 
-        </div>
-    <% } %>
-        <br>
-        <input type="text" name="addres" class="normal" placeholder="Domicilio" <%= locals.errors && errors.addres ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.addres : null %>"
-    >
-    <% if (locals.errors && errors.addres) { %>
-        <div class="text-danger">
-            <%= errors.addres.msg %> 
-        </div>
-    <% } %>
-        <br>
-        <br>
-        <br>
-       
-        <h3>Elegí tu foto de usuario</h3>
-        <input type="file" name="avatar" id="avatar" class="normal" <%= locals.errors && errors.avatar ? 'is-invalid' : null %>
-        value="<%= locals.oldData ? oldData.avatar : null %>"
-    >
-    <ul id="ulAvatar" class="error"></ul>
-
-    <% if (locals.errors && errors.avatar) { %>
-        <div class="text-danger">
-            <%= errors.avatar.msg %> 
-        </div>
-    <% } %>
-        <br>
-        <br>
-        <div class="divPass" >
-        <input type="password" name="pass" class="normal" id="pass" placeholder="Elegí tu contraseña" <%= locals.errors && errors.pass ? 'is-invalid' : null %>
-    >
-    <i class="far fa-check-circle" id="checkPass"></i>
-    <i class="far fa-times-circle" id="checkPasslError"></i></div>
-    <ul id="ulPass" class="error"></ul>
-    <% if (locals.errors && errors.pass) { %>
-        <div id="erroPassword" class="text-danger">
-            <%= errors.pass.msg %> 
-        </div>
-    <% } %>
-    <div class="divPassConfirm" >
-        <input type="password" name="pass_confirm" id="passConfirm" class="normal" placeholder="Confirmá tu contraseña" <%= locals.errors && errors.pass_confirm ? 'is-invalid' : null %>
-        > <i class="far fa-check-circle" id="checkPassConfirm"></i>
-        <i class="far fa-times-circle" id="checkPassConfirmError"></i></div>
-        <ul id="ulPassConfirm" class="error"></ul>
-        <% if (locals.errors && errors.pass_confirm) { %>
-            <div class="text-danger">
-                <%= errors.pass_confirm.msg %> 
+      <form action="/usuario/" method="POST" enctype="multipart/form-data">
+        <div class="form-grid">
+          
+          <div class="field-group">
+            <label for="name">Nombre</label>
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" placeholder="Tu nombre" value="<%= locals.oldData ? oldData.name : '' %>">
+              <i class="fa-solid fa-circle-check status-icon fa-check-circle" id="checkName"></i>
             </div>
-        <% } %>
-        <br>
-        <br>
-        <button class="boton" type="submit" value="Enviar">Enviar</button>
-        <button class="boton" type="reset" value="Borrar">Borrar</button>
-        <br>
-        <br>
-    </form>
-</div>
-</main>
-    
-   
+            <% if (locals.errors && errors.name) { %>
+              <div class="text-danger"><%= errors.name.msg %></div>
+            <% } %>
+          </div>
 
-        <!-- footer -->
-      <%-include ('../partials/footer.ejs') %> 
-    <!-- footer -->
+          <div class="field-group">
+            <label for="lastName">Apellido</label>
+            <div class="input-wrapper">
+              <input type="text" name="lastName" id="lastName" placeholder="Tu apellido" value="<%= locals.oldData ? oldData.lastName : '' %>">
+              <i class="fa-solid fa-circle-check status-icon fa-check-circle" id="checkLastName"></i>
+            </div>
+            <% if (locals.errors && errors.lastName) { %>
+              <div class="text-danger"><%= errors.lastName.msg %></div>
+            <% } %>
+          </div>
 
-    <script src="/js/scriptRegister.js"></script>
-        
+          <div class="field-group">
+            <label for="user">Nombre de usuario</label>
+            <div class="input-wrapper">
+              <input type="text" name="user" id="user" placeholder="Ej. juanperez" value="<%= locals.oldData ? oldData.user : '' %>">
+              <i class="fa-solid fa-circle-check status-icon fa-check-circle" id="checkUser"></i>
+            </div>
+            <% if (locals.errors && errors.user) { %>
+              <div class="text-danger"><%= errors.user.msg %></div>
+            <% } %>
+          </div>
 
+          <div class="field-group">
+            <label for="email">Correo Electrónico</label>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" placeholder="correo@ejemplo.com" value="<%= locals.oldData ? oldData.email : '' %>">
+              <i class="fa-solid fa-circle-check status-icon fa-check-circle" id="checkEmail"></i>
+            </div>
+            <% if (locals.errors && errors.email) { %>
+              <div class="text-danger"><%= errors.email.msg %></div>
+            <% } %>
+          </div>
+
+          <div class="field-group">
+            <label for="birth_date">Fecha de nacimiento</label>
+            <div class="input-wrapper">
+              <input type="date" name="birth_date" id="birth_date" value="<%= locals.oldData ? oldData.birth_date : '' %>">
+            </div>
+            <% if (locals.errors && errors.birth_date) { %>
+              <div class="text-danger"><%= errors.birth_date.msg %></div>
+            <% } %>
+          </div>
+
+          <div class="field-group">
+            <label for="addres">Domicilio</label>
+            <div class="input-wrapper">
+              <input type="text" name="addres" id="addres" placeholder="Calle y número" value="<%= locals.oldData ? oldData.addres : '' %>">
+            </div>
+            <% if (locals.errors && errors.addres) { %>
+              <div class="text-danger"><%= errors.addres.msg %></div>
+            <% } %>
+          </div>
+
+          <div class="field-group full-width">
+            <label for="avatar">Foto de Perfil (Avatar)</label>
+            <div class="input-wrapper">
+              <input type="file" name="avatar" id="avatar" class="normal" accept="image/*">
+            </div>
+            <% if (locals.errors && errors.avatar) { %>
+              <div class="text-danger"><%= errors.avatar.msg %></div>
+            <% } %>
+          </div>
+
+          <div class="field-group">
+            <label for="pass">Contraseña</label>
+            <div class="input-wrapper">
+              <input type="password" name="pass" id="pass" placeholder="Mínimo 8 caracteres">
+              <i class="fa-solid fa-circle-check status-icon fa-check-circle" id="checkPass"></i>
+            </div>
+            <% if (locals.errors && errors.pass) { %>
+              <div class="text-danger"><%= errors.pass.msg %></div>
+            <% } %>
+          </div>
+
+          <div class="field-group">
+            <label for="passConfirm">Confirmar Contraseña</label>
+            <div class="input-wrapper">
+              <input type="password" name="pass_confirm" id="passConfirm" placeholder="Repetí tu contraseña">
+              <i class="fa-solid fa-circle-check status-icon fa-check-circle" id="checkPassConfirm"></i>
+            </div>
+            <% if (locals.errors && errors.pass_confirm) { %>
+              <div class="text-danger"><%= errors.pass_confirm.msg %></div>
+            <% } %>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Crear mi Cuenta</button>
+            <button type="reset" class="btn-reset">Limpiar</button>
+          </div>
+
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <!-- Pie de Página -->
+  <%- include('../partials/footer.ejs') %>
+
+  <script src="/js/scriptRegister.js"></script>
 </body>
 </html>
