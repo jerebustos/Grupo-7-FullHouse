@@ -10,7 +10,7 @@ const Users = db.User //Para usar la base User
  async function userLoggedMiddleware(req, res, next) {
 	res.locals.isLogged = false;
 
-	let userCookie = req.cookies.user;
+	let userCookie = (req.cookies && req.cookies.user) ? req.cookies.user : null;
 	let users = [];
 
 	try {
