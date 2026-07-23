@@ -67,12 +67,31 @@ header {
   align-items: center;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
 .logotipo {
-  height: 48px;
-  max-width: 220px;
+  height: 44px;
+  max-width: 180px;
   width: auto;
   object-fit: contain;
   display: block;
+}
+
+.brand-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+}
+
+.brand-name b {
+  color: #0284c7;
 }
 
 /* Navigation Menu */
