@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<%-include ('../partials/head')%>
-<link rel="stylesheet" href="/css/estilos.css">
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
 
- <!--Header - menu-->
- <%-include ('../partials/header') %>
- <!--Header - menu-->
+  <!-- Encabezado de Navegación -->
+  <%- include('../partials/header') %>
 
- <main class="main-list">
+  <main class="main-content">
+    <section class="section-header">
+      <h1>Catálogo Completo de Electrodomésticos y Productos FullHouse</h1>
+      <p>Explora toda nuestra gama de equipamiento para el hogar con garantía oficial y el mejor precio del mercado.</p>
+    </section>
 
- <% products.forEach(producto => { %>
-
-    <div class="row">
-      <div class="column">
-        <div class="card-list">
-          <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
-          <div class="containerProduct">
-            <h3><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : '') %></h3>
-            <p class="title"><%= producto.name%></p>
-             <h2 class="price">$ <%= toThousand(producto.price) %></h2>
-            <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>
+    <section class="products-grid">
+      <% products.forEach(producto => { %>
+        <article class="product-card">
+          <div class="product-badge">Disponible</div>
+          <div class="product-image-container">
+            <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Catálogo FullHouse" loading="lazy">
           </div>
-        </div>
-      </div>
-    
+          <div class="product-info">
+            <div class="product-brand"><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : 'FullHouse') %></div>
+            <h2 class="product-title" style="font-size: 1.1rem;"><%= producto.name %></h2>
+            <div class="product-price-container">
+              <div class="product-price">$ <%= toThousand(producto.price) %></div>
+            </div>
+            <a href="/producto/detalle/<%= producto.id %>" style="text-decoration: none;">
+              <button class="btn-detail" type="button">
+                Ver Detalle <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </a>
+          </div>
+        </article>
       <% }) %>
+    </section>
+  </main>
 
-    </main> 
+  <!-- Pie de Página -->
+  <%- include('../partials/footer') %>
 
-    <div id="like_button_container"></div>
- 
-    <%-include ('../partials/react') %> 
-
-<!-- footer -->
-<%-include ('../partials/footer') %> 
-<!-- footer -->
-           
-        
-            
-            
-           
-            
-        </body>
-        </html>
+</body>
+</html>

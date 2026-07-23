@@ -1,103 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <%-include ('partials/head') %>
+  <%- include('partials/head') %>
   <link rel="stylesheet" href="/css/estilos.css">
-  
 </head>
 <body>
 
-    <!--Header - menu-->
-    <%-include ('partials/header') %>
-    
-    <main class="main">
-<!--Portada-->
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    <!-- Encabezado de Navegación -->
+    <%- include('partials/header') %>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img class="imgSlides" src="img/Web-1440x350-Nespresso.jpg">
-  </div>
-
-  <div class="mySlides fade">
-    <img class="imgSlides" src="img/grafica-06.jpg" >
-    
-  </div>
-
-  <div class="mySlides fade">
-    <img class="imgSlides" src="img/4227.jpg" >
-  </div>
-
- 
-</div>
-<br>
-
-<br>
-<br>
-
-<% grandes.forEach(producto => { %>
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
-      <div class="containerProduct">
-        <h3><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : '') %></h3>
-        <p class="title"><%= producto.name%></p>
-         <h2 class="price">$ <%= toThousand(producto.price) %></h2>
-        <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>
-      </div>
-    </div>
-  </div>
-
-  <% }) %>
-  
- 
-
-<img class="banner" src="img/Web-1920x296-Desayuno.jpg" alt="baneer">
-
-<br>
-
-
-
-
-<div class="row">
-  <% pequeños.forEach(producto => { %>
-  <div class="column">
-    <div class="card">
-      <img src="img/products/<%= producto.image%>" alt="<%= producto.name%>" style="width:100%">
-      <div class="containerProduct">
-        <h3><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : '') %></h3>
-        <p class="title"><%= producto.name%></p>
-         <h2 class="price">$ <%= toThousand(producto.price) %></h2>
-        <a href="/producto/detalle/<%= producto.id %>"><p><button class="button"><h4 id="detalle">Detalle</h4></button></p></a>
-      </div>
-    </div>
-  </div>
-  
-
-  <% }) %>
-</div>
-
-       <div class="banners">
-         <a href="/producto/detalle/18" ><img class="bannersImg" src="img/IMG_6019.PNG" alt=""> </a>
-         <a href="/producto/detalle/19"><img class="bannersImg" src="img/IMG_6020.PNG" alt=""></a>
-       </div>
+    <main class="main-content">
       
+      <!-- H1 Único y Principal para SEO On-Page -->
+      <section class="section-header">
+        <h1>FullHouse | Electrodomésticos y Tecnología Premium para tu Hogar</h1>
+        <p>Encuentra las mejores marcas internacionales con garantía oficial y financiamiento en cuotas.</p>
+      </section>
+
+      <!-- Portada Slider / Hero -->
+      <div class="hero-section">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img class="imgSlides" src="/img/Web-1440x350-Nespresso.jpg" alt="Cafeteras Nespresso en Oferta Especial">
+          </div>
+          <div class="mySlides fade">
+            <img class="imgSlides" src="/img/grafica-06.jpg" alt="Electrodomésticos de Alta Calidad para Cocina">
+          </div>
+          <div class="mySlides fade">
+            <img class="imgSlides" src="/img/4227.jpg" alt="Equipa tu Casa con Tecnología de Vanguardia">
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Beneficios y Confianza -->
+      <section class="features-bar">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="feature-text">
+            <h4>Envío Rápido a Todo el País</h4>
+            <p>Recibí tu compra de forma segura en tu domicilio</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <div class="feature-text">
+            <h4>12 Cuotas Sin Interés</h4>
+            <p>Con todas las tarjetas bancarias adheridas</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="feature-text">
+            <h4>Garantía Oficial</h4>
+            <p>Todos nuestros productos cuentan con respaldo directo</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="feature-text">
+            <h4>Atención Personalizada</h4>
+            <p>Asesoramiento experto para tu elección</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 1: Grandes Electrodomésticos -->
+      <section class="section-header">
+        <h2>Grandes Electrodomésticos para tu Hogar</h2>
+        <p>Heladeras, freezers y cocinas de máxima eficiencia energética</p>
+      </section>
+
+      <section class="products-grid">
+        <% grandes.forEach(producto => { %>
+          <article class="product-card">
+            <div class="product-badge">Destacado</div>
+            <div class="product-image-container">
+              <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Electrodoméstico FullHouse" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-brand"><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : 'FullHouse') %></div>
+              <h3 class="product-title"><%= producto.name %></h3>
+              <div class="product-price-container">
+                <div class="product-price">$ <%= toThousand(producto.price) %></div>
+              </div>
+              <a href="/producto/detalle/<%= producto.id %>" style="text-decoration: none;">
+                <button class="btn-detail" type="button">
+                  Ver Detalle <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </article>
+        <% }) %>
+      </section>
+
+      <!-- Banner Promocional -->
+      <div class="banner-promo">
+        <img src="/img/Web-1920x296-Desayuno.jpg" alt="Promoción Especial Desayunos y Cafeterías FullHouse" loading="lazy">
+      </div>
+
+      <!-- Sección 2: Pequeños Electrodomésticos -->
+      <section class="section-header">
+        <h2>Pequeños Electrodomésticos y Tecnología de Cocina</h2>
+        <p>Cafeteras, pavas eléctricas, microondas y procesadores</p>
+      </section>
+
+      <section class="products-grid">
+        <% pequeños.forEach(producto => { %>
+          <article class="product-card">
+            <div class="product-badge">Oferta</div>
+            <div class="product-image-container">
+              <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Pequeños Electrodomésticos" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-brand"><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : 'FullHouse') %></div>
+              <h3 class="product-title"><%= producto.name %></h3>
+              <div class="product-price-container">
+                <div class="product-price">$ <%= toThousand(producto.price) %></div>
+              </div>
+              <a href="/producto/detalle/<%= producto.id %>" style="text-decoration: none;">
+                <button class="btn-detail" type="button">
+                  Ver Detalle <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </article>
+        <% }) %>
+      </section>
+
     </main>
 
-    
+    <!-- Pie de Página Semántico -->
+    <%- include('partials/footer') %>
 
-    
-        <!-- footer -->
-      <%-include ('partials/footer') %> 
-    <!-- footer -->
-   
-
-    
-   
-    <script src="js/slideshow.js"></script>
-    
+    <script src="/js/slideshow.js"></script>
 </body>
 </html>

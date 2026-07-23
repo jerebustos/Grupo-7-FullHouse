@@ -1,44 +1,39 @@
 <header>
-
-
     <div class="header-content">
-
         <div class="logo">
-            <img src="/img/FullhouseV7.png" class="logotipo">
-
-
+            <a href="/">
+                <img src="/img/FullhouseV7.png" alt="FullHouse Logo" class="logotipo">
+            </a>
         </div>
 
         <div class="menu" id="show-menu">
-
-            <nav>
+            <nav aria-label="Navegación principal">
                 <ul>
                     <li>
                         <form action="/buscar" method="GET" class="search-mobile">
-                            <input type="text" name="keyword" class="search_input" placeholder="Click para buscar..." />
-                            <button type="submit" class="search_buton">
-                                <i class="fa fa-search"></i>
+                            <input type="text" name="keyword" class="search_input" placeholder="Buscar electrodomésticos..." aria-label="Buscar productos" />
+                            <button type="submit" class="search_buton" aria-label="Buscar">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </form>
                     </li>
                     <li class="menu_items">
                         <a href="/">
-                            <i class="fas fa-home"></i>
+                            <i class="fa-solid fa-house"></i>
                             Inicio
                         </a>
                     </li>
                     <li class="menu_items">
                         <a href="/producto">
-                            <i class="fas fa-box-open"></i>
+                            <i class="fa-solid fa-store"></i>
                             Productos
                         </a>
                     </li>
 
-
                     <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
                     <li class="menu_items">
                         <a href="/producto/nuevo">
-                            <i class="fas fa-home"></i>
+                            <i class="fa-solid fa-plus-circle"></i>
                             Nuevo
                         </a>
                     </li>
@@ -46,57 +41,49 @@
 
                     <% if (locals.userLogged) { %>
                     <li class="menu_items dropdown">
-
-                        <a href="/usuario/perfil"> <i class="fas fa-user"></i> <%= locals.userLogged.user %></a>
+                        <a href="/usuario/perfil">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <%= locals.userLogged.user %>
+                        </a>
                         <div class="dropdown-content">
-                            <a id="content" href="/usuario/perfil">Perfil</a>
-                            <a id="content" href="/usuario/salir">Cerrar sesión</a>
+                            <a href="/usuario/perfil"><i class="fa-solid fa-user-gear"></i> Mi Perfil</a>
+                            <a href="/usuario/salir"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
                         </div>
-
                     </li>
-
                     <% } else { %>
                     <li class="menu_items">
                         <a href="/usuario/ingresar">
-                            <i class="fas fa-user"></i>
-                            Logeate
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            Ingresar
                         </a>
                     </li>
                     <li class="menu_items">
-                        <a href="/usuario/registro" class="text-menu-selected">
-                            <i class="fas fa-file-alt"></i>Registrate
+                        <a href="/usuario/registro">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Registrarme
                         </a>
                     </li>
                     <% } %>
-                    <li>
+
+                    <li class="menu_items">
                         <a href="/carrito">
-                            <i class="fas fa-shopping-cart icono_carrito"></i>
-                            <span class="cart-text">
-                                Carrito
-                            </span>
+                            <i class="fa-solid fa-cart-shopping icono_carrito"></i>
+                            <span class="cart-text">Carrito</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-
         </div>
 
         <form action="/buscar" method="GET" class="search-desktop">
-            <input type="text" name="keyword" class="search_input" placeholder="Click para buscar..." />
-            <button type="submit" class="search_buton">
-                <i class="fa fa-search"></i>
+            <input type="text" name="keyword" class="search_input" placeholder="Buscar electrodomésticos..." aria-label="Buscar productos" />
+            <button type="submit" class="search_buton" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </form>
 
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
+        <div id="icon-menu" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
         </div>
-
     </div>
-
-
-
-
-
-
 </header>

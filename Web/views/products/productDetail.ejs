@@ -1,86 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <%-include ('../partials/head') %>
-    <link href='/css/producto.css' rel="stylesheet">
-  </head>
-    
-   
-  
+<html lang="es">
+<head>
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/producto.css">
+</head>
 <body>
 
-   
-  <%-include ('../partials/header') %>
-    
-    <main class="main">
-    
+  <!-- Encabezado de Navegación -->
+  <%- include('../partials/header') %>
 
-    <div class="contenedor">
-      <div class="poducto">
-       <img class="imagen" src= "/img/products/<%= productoDetalle.image%> " > 
-       <div class="columna">
-       <h1 id="name"><%=productoDetalle.name%> </h1>
-       <br>
-       <ul>
-       <li>
-         <h3>Caracteristicas generales</h3>
-         <div>
-           <div class="detalle1">
-            <div class="specName">Color</div>
-            <div class="specValue"><%= (productoDetalle && productoDetalle.color && productoDetalle.color.name) ? productoDetalle.color.name : (productoDetalle && productoDetalle.color ? productoDetalle.color : '') %> </div>
-           </div>
-           <div class="detalle2">
-            <div class="specName">Marca</div>
-            <div class="specValue"><%= (productoDetalle && productoDetalle.brand && productoDetalle.brand.name) ? productoDetalle.brand.name : (productoDetalle && productoDetalle.marca ? productoDetalle.marca : '') %> </div>
-           </div>
-           <div class="detalle3">
-            <div class="specName">Modelo</div>
-            <div class="specValue"><%=productoDetalle.model%> </div>
-           </div>
-           <div class="detalle4">
-            <div class="specName">Accesorios</div>
-            <div class="specValue"><%=productoDetalle.accessory%></div>
-           </div>
-           <h3>Descipción</h3>
-
-           <p class="product-detail-description">
-						<%= productoDetalle.description%>
-					</p>
-         </div>
-       </li>
-
-       </ul>
-       <br>
-
-       <h2>$<%= toThousand(productoDetalle.price) %></h2>
-        <form action="/carrito" method="GET">
-          <button class="botonDeCompra" type="submit" id="agregar" value="Comprar"><h3>Agregar a carrito</h3></button>
-       </form>
-       <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
-       <a href="/producto/editar/<%= productoDetalle.id%>" class="editar"><h3>Editar</h3></a>
-
-       <form action="/producto/borrar/<%= productoDetalle.id %>?_method=DELETE" method="POST">
-        <button type="submit" id="delet" class="botonDeCompra"><h3>Eliminar</h3></button>
-      </form>
-
-      <% } %> 
-
-      
-       </div>
+  <main class="product-detail-wrapper">
+    <article class="product-detail-card">
+      <div class="product-detail-gallery">
+        <img src="/img/products/<%= productoDetalle.image %>" alt="<%= productoDetalle.name %> - FullHouse">
       </div>
-    </div>
 
-    </main>
+      <div class="product-detail-content">
+        <h1 class="product-detail-title"><%= productoDetalle.name %></h1>
 
-   <!-- footer -->
-      <%-include ('../partials/footer') %> 
-    <!-- footer -->
+        <div class="product-detail-price">
+          $ <%= toThousand(productoDetalle.price) %>
+          <span>Envío Gratis</span>
+        </div>
 
-   
-    <script src="/js/cart.js"></script>
-    
-  </body>
+        <div class="specs-box">
+          <h3>Especificaciones Técnicas</h3>
+          <div class="spec-row">
+            <span class="spec-label">Marca:</span>
+            <span class="spec-val"><%= (productoDetalle && productoDetalle.brand && productoDetalle.brand.name) ? productoDetalle.brand.name : (productoDetalle && productoDetalle.marca ? productoDetalle.marca : 'FullHouse') %></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Color:</span>
+            <span class="spec-val"><%= (productoDetalle && productoDetalle.color && productoDetalle.color.name) ? productoDetalle.color.name : (productoDetalle && productoDetalle.color ? productoDetalle.color : 'N/A') %></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Modelo:</span>
+            <span class="spec-val"><%= productoDetalle.model || productoDetalle.modelo || 'N/A' %></span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Accesorios:</span>
+            <span class="spec-val"><%= productoDetalle.accessory || productoDetalle.accesorios || 'Incluidos' %></span>
+          </div>
+        </div>
 
+        <div class="product-description-box">
+          <h3>Descripción del Producto</h3>
+          <p><%= productoDetalle.description %></p>
+        </div>
 
+        <form action="/carrito" method="GET">
+          <button class="btn-buy-now" type="submit">
+            <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
+          </button>
+        </form>
 
+        <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
+          <div class="admin-actions">
+            <a href="/producto/editar/<%= productoDetalle.id %>" class="btn-edit">Editar</a>
+            <form action="/producto/borrar/<%= productoDetalle.id %>?_method=DELETE" method="POST" style="flex: 1;">
+              <button type="submit" class="btn-delete">Eliminar</button>
+            </form>
+          </div>
+        <% } %>
+      </div>
+    </article>
+  </main>
+
+  <!-- Pie de Página -->
+  <%- include('../partials/footer') %>
+
+  <script src="/js/cart.js"></script>
+</body>
 </html>
