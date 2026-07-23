@@ -17,6 +17,8 @@ const formatProduct = p => ({
     accessory: p.accessory || p.accesorios || ''
 });
 
+const toThousand = n => n ? n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : "0";
+
 const controller = {
 index: async (req,res)=>{
     let ProductosGrandes = [];
