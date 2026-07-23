@@ -48,11 +48,13 @@
           <p><%= productoDetalle.description %></p>
         </div>
 
-        <form action="/carrito" method="GET">
-          <button class="btn-buy-now" type="submit">
-            <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
-          </button>
-        </form>
+        <button class="btn-buy-now" type="button" id="agregar"
+                data-id="<%= productoDetalle.id %>"
+                data-name="<%= productoDetalle.name %>"
+                data-price="<%= productoDetalle.price %>"
+                data-image="<%= productoDetalle.image %>">
+          <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
+        </button>
 
         <% if (locals.userLogged && locals.userLogged.admi == 1) { %>
           <div class="admin-actions">
