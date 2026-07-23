@@ -75,7 +75,7 @@
           <article class="product-card">
             <div class="product-badge">Destacado</div>
             <div class="product-image-container">
-              <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Electrodoméstico FullHouse" loading="lazy">
+              <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Electrodoméstico FullHouse" loading="lazy" onerror="this.src='/img/FullhouseV7.png'; this.onerror=null;">
             </div>
             <div class="product-info">
               <div class="product-brand"><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : 'FullHouse') %></div>
@@ -109,7 +109,7 @@
           <article class="product-card">
             <div class="product-badge">Oferta</div>
             <div class="product-image-container">
-              <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Pequeños Electrodomésticos" loading="lazy">
+              <img src="/img/products/<%= producto.image %>" alt="<%= producto.name %> - Pequeños Electrodomésticos" loading="lazy" onerror="this.src='/img/FullhouseV7.png'; this.onerror=null;">
             </div>
             <div class="product-info">
               <div class="product-brand"><%= (producto && producto.brand && producto.brand.name) ? producto.brand.name : (producto && producto.marca ? producto.marca : 'FullHouse') %></div>
