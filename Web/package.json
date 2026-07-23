@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "nodemon app.js -e .mjs,.js,.json,.ejs,.css",
-    "start": "node app.js",
-    "install": "npm i express method-override ejs multer express-validator express-session cookie-parser && clear",
-    "postinstall": "npm i nodemon -D"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
