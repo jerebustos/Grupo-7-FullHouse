@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <%- include('../partials/head.ejs') %>
+  <%- include('../partials/head') %>
   <link rel="stylesheet" href="/css/formularios.css">
 </head>
 <body>
 
-  <!-- Encabezado de Navegación -->
-  <%- include('../partials/header.ejs') %>
+  <!-- Encabezado de Navegación Principal -->
+  <%- include('../partials/header') %>
 
   <main class="register-wrapper">
     <article class="register-card">
-      <header class="register-header">
+      <div class="card-title-header">
         <h1>Crear una Cuenta en FullHouse</h1>
         <p>Completá el formulario para registrarte y disfrutar de beneficios exclusivos</p>
-      </header>
+      </div>
 
       <form action="/usuario/" method="POST" enctype="multipart/form-data">
         <div class="form-grid">
@@ -126,7 +126,7 @@
   </main>
 
   <!-- Pie de Página -->
-  <%- include('../partials/footer.ejs') %>
+  <%- include('../partials/footer') %>
 
   <script src="/js/scriptRegister.js"></script>
 </body>

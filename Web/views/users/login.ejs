@@ -6,15 +6,15 @@
 </head>
 <body>
 
-  <!-- Encabezado de Navegación -->
+  <!-- Encabezado de Navegación Principal -->
   <%- include('../partials/header') %>
 
   <main class="login-wrapper">
     <article class="login-card">
-      <header class="login-header">
+      <div class="card-title-header">
         <h1>Iniciar Sesión en FullHouse</h1>
         <p>Ingresá tus credenciales para gestionar tu cuenta</p>
-      </header>
+      </div>
 
       <form action="/usuario/acceder" method="POST">
         <div class="form-group">
@@ -48,9 +48,9 @@
         <button type="submit" class="btn-login">Ingresar a mi Cuenta</button>
       </form>
 
-      <footer class="login-footer">
+      <div class="login-footer">
         ¿No tenés una cuenta? <a href="/usuario/registro">Registrate gratis acá</a>
-      </footer>
+      </div>
     </article>
   </main>
 

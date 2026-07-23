@@ -36,8 +36,8 @@ body {
   line-height: 1.6;
 }
 
-/* Fixed Header Always On Top */
-header {
+/* Fixed Site Header Always On Top */
+header.site-header {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
