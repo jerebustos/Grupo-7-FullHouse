@@ -14,36 +14,55 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const controller = {
 
     list: async (req,res) =>{
-
-        let products = await Products.findAll({
-            include: ['brand']}
-        );
+        let products = [];
+        try {
+            products = await Products.findAll({
+                include: ['brand']}
+            );
+        } catch (e) {
+            const jsonPath = path.join(__dirname, '../data/productosBaseDatos.json');
+            if (fs.existsSync(jsonPath)) {
+                try {
+                    products = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+                } catch (err) {}
+            }
+        }
 
         let paraLaVista = {
             products,
             toThousand
         }
 
-      //return res.send(products)
       return res.render("products/productList", paraLaVista)
     }, 
 
 
     show: async (req,res)=>{
+        let productoDetalle = null;
+        try {
+            productoDetalle = await Products.findOne({
+                where: {
+                    id: req.params.id
+                },
+                include: ['brand',"color"]
+            });
+        } catch (e) {}
 
-        let productoDetalle = await Products.findOne({
-            where: {
-                id: req.params.id
-            },
-            include: ['brand',"color"]
-        });
+        if (!productoDetalle) {
+            const jsonPath = path.join(__dirname, '../data/productosBaseDatos.json');
+            if (fs.existsSync(jsonPath)) {
+                try {
+                    const allProducts = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+                    productoDetalle = allProducts.find(p => p.id == req.params.id);
+                } catch (err) {}
+            }
+        }
         
         let paraLaVista = {
             productoDetalle,
             toThousand
         }
        
-       // return res.send(productoDetalle)
        return res.render('products/productDetail',paraLaVista)
     },
 
